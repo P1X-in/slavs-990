@@ -17,6 +17,7 @@ func bind():
 func _play_button_pressed():
     self.detach()
     self.bag.board.attach()
+    self.bag.action.load_game()
 
 func _quit_button_pressed():
     OS.get_main_loop().quit()
