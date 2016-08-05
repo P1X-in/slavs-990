@@ -1,6 +1,7 @@
 var name
 var family
 var description
+var max_hp
 var hp
 var ap
 var resistances = {}
@@ -18,7 +19,8 @@ func _init(params, player=0):
     for param in self.params:
         self.set(param, params[param])
 
+    self.max_hp = self.hp
     self.player = player
 
-func is_incapable():
-    return false
+func is_consious():
+    return hp > 0

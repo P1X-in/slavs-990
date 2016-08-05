@@ -5,21 +5,20 @@ var start_player = -1
 func _init(units):
     self.stack.insert(0, [])
     self.stack.insert(1, [])
-    self.stack_size.insert(0, 0)
-    self.stack_size.insert(1, 0)
-
 
     var ordered = self.__sort_by_sequence(units)
     #reverse sort
     for unit in ordered:
         self.stack[unit.player].append(unit)
-        self.stack_size[unit.player] = self.stack_size[unit.player] + 1
 
 func prepare_match():
-    return self.match_opponents() + self.match_unpaired()
+    if self.stack[0].size() > 0 and self.stack[1].size() > 0:
+        return  self.match_opponents() + self.match_unpaired()
+
+    return []
 
 func match_opponents():
-    var paired = min(self.stack_size[0], self.stack_size[1])
+    var paired = min(self.stack[0].size(), self.stack[1].size())
     var matching = []
 
     var attacker = self.start_player
@@ -33,15 +32,18 @@ func match_opponents():
 func match_unpaired():
     var attacker = 0
     var defender = 1
-    if self.stack_size[0] == self.stack_size[1]:
+    var stack0_size = self.stack[0].size()
+    var stack1_size = self.stack[1].size()
+
+    if stack0_size == stack1_size:
         return []
 
-    if self.stack_size[0] < self.stack_size[1]:
+    if stack0_size < stack1_size:
         attacker = 1
         defender = 0
 
-    var all = max(self.stack_size[0], self.stack_size[1])
-    var paired = min(self.stack_size[0], self.stack_size[1])
+    var all = max(stack0_size, stack1_size)
+    var paired = min(stack0_size, stack1_size)
     var result = []
     var rand
 
@@ -51,12 +53,13 @@ func match_unpaired():
 
     return result
 
-
-func remove_incapable():
-    for player in stack:
-        for unit in stack[player]:
-            if unit.is_incapable():
-                stack[player].erase(unit)
+func remove_unconsious():
+    for unit in self.stack[1]:
+        if not unit.is_consious():
+            self.stack[1].erase(unit)
+    for unit in self.stack[1]:
+        if not unit.is_consious():
+            self.stack[1].erase(unit)
 
 func __sort_by_sequence(units):
     var ordered = {}
