@@ -5,3 +5,4 @@ func _init_bag(bag):
 
 func load_game():
     self.bag.board.load_map()
+    self.bag.map.load_tiles()
