@@ -8,8 +8,8 @@ func _init():
     self.bind()
 
 func bind():
-    self.play_button = self.screen_scene.get_node('play_button')
-    self.quit_button = self.screen_scene.get_node('quit_button')
+    self.play_button = self.screen_scene.get_node('main/menu_container/play_button')
+    self.quit_button = self.screen_scene.get_node('main/menu_container/quit_button')
 
     self.play_button.connect('pressed', self, '_play_button_pressed')
     self.quit_button.connect('pressed', self, '_quit_button_pressed')

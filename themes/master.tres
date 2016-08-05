@@ -1,0 +1,29 @@
+[gd_resource type="Theme" load_steps=4 format=1]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[resource]
+
+Panel/styles/panel = SubResource( 1 )
+Panel/styles/panelf = SubResource( 2 )
+Panel/styles/panelnc = SubResource( 3 )
+
