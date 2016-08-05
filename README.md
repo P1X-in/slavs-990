@@ -1,1 +1,3 @@
-# slavs-990
+# SLAVS 990
+
+Game made on Slavic Game Jam 2016
