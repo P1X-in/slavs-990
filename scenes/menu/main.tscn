@@ -11,16 +11,31 @@ margin/top = 0.0
 margin/right = 40.0
 margin/bottom = 40.0
 
-[node name="Button" type="Button" parent="."]
+[node name="play_button" type="Button" parent="."]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 213.0
-margin/top = 100.0
+margin/top = 99.0
 margin/right = 412.0
-margin/bottom = 120.0
+margin/bottom = 119.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="quit_button" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 216.0
+margin/top = 139.0
+margin/right = 399.0
+margin/bottom = 159.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
