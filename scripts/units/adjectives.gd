@@ -14,5 +14,22 @@ var values = [
     'gruby',
     'jednooki',
     'chory',
-    'wściekły'
+    'wściekły',
+    'krótkowłosy',
+    'szorstkowłosy',
+    'długowłosy',
+    'agresywny',
+    'leniwy',
+    'futrzasty',
+    'ospały',
+    'spasiony',
+    'ogłupiały',
+    'dziki',
+    'puszysty',
+    'strachliwy',
+    'odważny',
+    'łaciaty',
+    'zwinny',
+    'przebiegły',
+    'bojaźliwy'
 ]

@@ -11,8 +11,7 @@ func attacks(attacker, defender):
     logs.append(attacker.extended_name + ' atakuje ' + defender.extended_name)
 
 func misses():
-    var i
-    # logs.append('..i chybia')
+    logs.append('..i chybia')
 
 func deals_damage(attacker, defender, damage, critical):
     var text = '..i zadaje ' + str(damage) + ' ptk obrażeń'
