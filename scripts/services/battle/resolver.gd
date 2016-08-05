@@ -3,19 +3,21 @@ var battle_log
 var bag
 
 func _init():
-    battle_stack = preload("res://scripts/services/battle_stack.gd")
+    battle_stack = preload("res://scripts/services/battle/stack.gd")
 
 func _init_bag(bag):
     self.bag = bag
 
 func resolve_fight(units):
     var stack = self.battle_stack.new(units)
-    var match = stack.prepare_match()
-    while match.size() > 0:
+    var match
+    while stack.check_winner() == -1:
+        match = stack.prepare_match()
         self.__resolve_turn(match)
         stack.remove_unconsious()
 
-        match = stack.prepare_match()
+    self.bag.battle_log.fight_ends(stack.check_winner())
+
 
 func __resolve_turn(stack):
     self.bag.battle_log.new_turn()

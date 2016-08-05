@@ -12,12 +12,18 @@ func _init(units):
         self.stack[unit.player].append(unit)
 
 func prepare_match():
-    if self.stack[0].size() > 0 and self.stack[1].size() > 0:
-        return  self.match_opponents() + self.match_unpaired()
+    return  self.__match_opponents() + self.__match_unpaired()
 
-    return []
+func check_winner():
+    if self.stack[0].size() == 0:
+        return 1
 
-func match_opponents():
+    elif self.stack[1].size() == 0:
+        return 0
+
+    return -1
+
+func __match_opponents():
     var paired = min(self.stack[0].size(), self.stack[1].size())
     var matching = []
 
@@ -29,7 +35,7 @@ func match_opponents():
 
     return matching
 
-func match_unpaired():
+func __match_unpaired():
     var attacker = 0
     var defender = 1
     var stack0_size = self.stack[0].size()
@@ -54,9 +60,9 @@ func match_unpaired():
     return result
 
 func remove_unconsious():
-    for unit in self.stack[1]:
+    for unit in self.stack[0]:
         if not unit.is_consious():
-            self.stack[1].erase(unit)
+            self.stack[0].erase(unit)
     for unit in self.stack[1]:
         if not unit.is_consious():
             self.stack[1].erase(unit)

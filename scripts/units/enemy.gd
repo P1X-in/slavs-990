@@ -1,4 +1,5 @@
 var name
+var extended_name
 var family
 var description
 var max_hp

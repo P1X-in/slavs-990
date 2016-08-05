@@ -9,13 +9,15 @@ func _ready():
     self.set_fixed_process(true)
 
     self.bag.intro.attach()
-
-    var units = self.bag.unit_factory.generate(6, 0)  + self.bag.unit_factory.generate(6, 1)
-    self.bag.battle_autoresolver.resolve_fight(units)
-
-    print(self.bag.battle_log.show())
+    self.__battle()
 
     #self.bag.sound.play_soundtrack('intro')
 
 func _input(event):
     self.bag.input.handle_event(event)
+
+func __battle():
+    var units = self.bag.unit_factory.generate(2, 0)  + self.bag.unit_factory.generate(4, 1)
+    self.bag.battle_resolver.resolve_fight(units)
+
+    print(self.bag.battle_log.show())
