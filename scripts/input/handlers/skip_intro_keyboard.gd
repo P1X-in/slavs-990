@@ -9,3 +9,4 @@ func _init(bag):
 func handle(event):
     if not self.bag.intro.is_detached:
         self.bag.intro.detach()
+        self.bag.menu.attach()
