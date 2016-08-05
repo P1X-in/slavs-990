@@ -1,2 +1,5 @@
 *.sublime-*
+.idea
+slavs-990.iml
 *.flags
+
