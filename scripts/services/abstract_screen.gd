@@ -11,8 +11,13 @@ func attach():
     if self.container.is_a_parent_of(self.screen_scene):
         return
     self.container.add_child(self.screen_scene)
+    self.bag.screens.register_screen(self)
 
 func detach():
     if !self.container.is_a_parent_of(self.screen_scene):
         return
     self.container.remove_child(self.screen_scene)
+    self.bag.screens.clear_screen()
+
+func go_back():
+    return

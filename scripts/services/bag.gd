@@ -10,6 +10,7 @@ var action = preload("res://scripts/controllers/action_controller.gd").new()
 var menu = preload("res://scripts/menu/menu.gd").new()
 var board = preload("res://scripts/services/board.gd").new()
 var camera = preload("res://scripts/services/camera.gd").new()
+var screens = preload("res://scripts/services/screens.gd").new()
 
 
 func _init(root_node):
@@ -23,3 +24,4 @@ func _init(root_node):
     self.menu._init_bag(self, root_node.mount)
     self.board._init_bag(self, root_node.mount)
     self.camera._init_bag(self)
+    self.screens._init_bag(self)
