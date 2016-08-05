@@ -11,7 +11,12 @@ func bind():
     self.play_button = self.screen_scene.get_node('play_button')
     self.quit_button = self.screen_scene.get_node('quit_button')
 
+    self.play_button.connect('pressed', self, '_play_button_pressed')
     self.quit_button.connect('pressed', self, '_quit_button_pressed')
+
+func _play_button_pressed():
+    self.detach()
+    self.bag.board.attach()
 
 func _quit_button_pressed():
     OS.get_main_loop().quit()
