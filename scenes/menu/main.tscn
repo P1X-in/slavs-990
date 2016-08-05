@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://themes/master.tres" type="Theme" id=1]
 [ext_resource path="res://assets/logo/slavs.png" type="Texture" id=2]
+[ext_resource path="res://assets/forest.png" type="Texture" id=3]
 
-[node name="menu" type="Control"]
+[node name="menu" type="VBoxContainer"]
 
 anchor/right = 1
 anchor/bottom = 1
@@ -13,13 +14,13 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 theme/theme = ExtResource( 1 )
 margin/left = 64.0
-margin/top = 64.0
+margin/top = 32.0
 margin/right = 64.0
-margin/bottom = 64.0
+margin/bottom = 32.0
+alignment = 0
 
 [node name="header" type="CenterContainer" parent="."]
 
-anchor/right = 1
 rect/min_size = Vector2( 0, 192 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -27,7 +28,7 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 0.0
+margin/right = 896.0
 margin/bottom = 192.0
 use_top_left = false
 
@@ -50,15 +51,14 @@ texture = ExtResource( 2 )
 
 [node name="main" type="CenterContainer" parent="."]
 
-anchor/right = 1
 focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 196.0
-margin/right = 0.0
-margin/bottom = 0.0
+margin/right = 896.0
+margin/bottom = 465.0
 use_top_left = false
 
 [node name="menu_container" type="VBoxContainer" parent="main"]
@@ -71,7 +71,7 @@ size_flags/vertical = 2
 margin/left = 320.0
 margin/top = 0.0
 margin/right = 576.0
-margin/bottom = 263.0
+margin/bottom = 269.0
 alignment = 0
 
 [node name="play_button" type="Button" parent="main/menu_container"]
@@ -83,7 +83,7 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
 margin/right = 256.0
-margin/bottom = 85.0
+margin/bottom = 87.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -97,9 +97,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 89.0
+margin/top = 91.0
 margin/right = 256.0
-margin/bottom = 174.0
+margin/bottom = 178.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -113,13 +113,42 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 178.0
+margin/top = 182.0
 margin/right = 256.0
-margin/bottom = 263.0
+margin/bottom = 269.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 text = "QUIT"
 flat = false
+
+[node name="footer" type="CenterContainer" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 469.0
+margin/right = 896.0
+margin/bottom = 469.0
+use_top_left = false
+
+[node name="grass" type="Container" parent="footer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 448.0
+margin/top = 0.0
+margin/right = 448.0
+margin/bottom = 0.0
+
+[node name="Sprite" type="Sprite" parent="footer/grass"]
+
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 3 )
 
 
