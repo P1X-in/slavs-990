@@ -7,6 +7,7 @@ var hp
 var ap
 var resistances = {}
 var attacks = {}
+var loot = {}
 var challenge
 var xp
 
@@ -14,7 +15,7 @@ var status
 var sequence = 1
 var player = 0
 
-var params = ['name', 'family', 'description', 'hp', 'ap', 'resistances', 'attacks', 'challenge', 'xp']
+var params = ['name', 'family', 'description', 'hp','resistances', 'attacks', 'challenge', 'xp', 'loot', 'sequence']
 
 func _init(params, player=0):
     for param in self.params:
