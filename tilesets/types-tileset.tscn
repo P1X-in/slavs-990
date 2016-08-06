@@ -13,39 +13,39 @@ margin/top = 0.0
 margin/right = 0.0
 margin/bottom = 0.0
 
-[node name="not_set" type="Sprite" parent="."]
+[node name="collision" type="Sprite" parent="."]
 
 transform/pos = Vector2( 64, 64 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 0, 0, 64, 64 )
+region_rect = Rect2( 0, 0, 32, 32 )
 
 [node name="main_city" type="Sprite" parent="."]
 
-transform/pos = Vector2( 160, 64 )
+transform/pos = Vector2( 120, 64 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 64, 0, 64, 64 )
+region_rect = Rect2( 32, 0, 32, 32 )
 
 [node name="random_encounter" type="Sprite" parent="."]
 
-transform/pos = Vector2( 256, 64 )
+transform/pos = Vector2( 184, 64 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 128, 0, 64, 64 )
+region_rect = Rect2( 64, 0, 32, 32 )
 
 [node name="creature_spawner" type="Sprite" parent="."]
 
-transform/pos = Vector2( 352, 64 )
+transform/pos = Vector2( 232, 64 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 192, 0, 64, 64 )
+region_rect = Rect2( 96, 0, 32, 32 )
 
 [node name="forest_animals" type="Sprite" parent="."]
 
-transform/pos = Vector2( 64, 160 )
+transform/pos = Vector2( 64, 120 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 0, 64, 64, 64 )
+region_rect = Rect2( 0, 32, 32, 32 )
 
 
