@@ -44,4 +44,12 @@
 4/navigation_offset = Vector2( 16, 16 )
 4/shape_offset = Vector2( 0, 0 )
 4/shapes = [  ]
+5/name = "start_point"
+5/texture = ExtResource( 1 )
+5/tex_offset = Vector2( 0, 0 )
+5/region = Rect2( 32, 32, 32, 32 )
+5/occluder_offset = Vector2( 16, 16 )
+5/navigation_offset = Vector2( 16, 16 )
+5/shape_offset = Vector2( 0, 0 )
+5/shapes = [  ]
 

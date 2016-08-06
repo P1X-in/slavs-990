@@ -13,7 +13,7 @@ font/use_mipmaps = false
 font/use_filter = false
 font/font = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=12]
+[sub_resource type="StyleBoxFlat" id=2]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
@@ -26,7 +26,7 @@ border_size = 0
 border_blend = false
 draw_bg = true
 
-[sub_resource type="StyleBoxTexture" id=13]
+[sub_resource type="StyleBoxTexture" id=3]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
@@ -94,7 +94,7 @@ expand_margin/top = 0.0
 expand_margin/bottom = 0.0
 draw_center = true
 
-[sub_resource type="StyleBoxTexture" id=11]
+[sub_resource type="StyleBoxTexture" id=7]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
@@ -111,7 +111,7 @@ expand_margin/top = 0.0
 expand_margin/bottom = 0.0
 draw_center = true
 
-[sub_resource type="DynamicFont" id=10]
+[sub_resource type="DynamicFont" id=8]
 
 font/size = 16
 font/use_mipmaps = false
@@ -120,15 +120,15 @@ font/font = ExtResource( 1 )
 
 [resource]
 
-default_font = SubResource( 10 )
+default_font = SubResource( 8 )
 Button/colors/font_color = Color( 0.85098, 0.627451, 0.4, 1 )
 Button/colors/font_color_disabled = Color( 0, 0, 0, 1 )
 Button/colors/font_color_hover = Color( 0.933333, 0.764706, 0.603922, 1 )
 Button/colors/font_color_pressed = Color( 0.933333, 0.764706, 0.603922, 1 )
 Button/constants/hseparation = 2
 Button/fonts/font = SubResource( 1 )
-Button/styles/disabled = SubResource( 12 )
-Button/styles/focus = SubResource( 13 )
+Button/styles/disabled = SubResource( 2 )
+Button/styles/focus = SubResource( 3 )
 Button/styles/hover = SubResource( 4 )
 Button/styles/normal = SubResource( 5 )
 Button/styles/pressed = SubResource( 6 )
@@ -139,7 +139,7 @@ Label/constants/shadow_as_outline = 0
 Label/constants/shadow_offset_x = 1
 Label/constants/shadow_offset_y = 1
 Label/fonts/font = null
-Panel/styles/panel = SubResource( 11 )
+Panel/styles/panel = SubResource( 7 )
 Panel/styles/panelf = null
 Panel/styles/panelnc = null
 
