@@ -8,8 +8,8 @@ var water_icon
 
 var current_tile = null
 
-var units
-var loot
+var units = null
+var loot = null
 
 func _init_bag(bag):
     self.bag = bag

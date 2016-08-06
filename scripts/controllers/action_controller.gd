@@ -23,6 +23,10 @@ func handle_map_click(position):
 
     if field.party != null:
         field.party.select()
+    elif self.bag.party.selected and self.bag.party.can_move_to(field) and field.event != null and field.event.units != null:
+        self.bag.party.go_to_field(field)
+        self.bag.board.detach()
+        self.bag.battle.attach()
     elif self.bag.party.selected and self.bag.party.can_move_to(field):
         self.bag.party.go_to_field(field)
     else:
