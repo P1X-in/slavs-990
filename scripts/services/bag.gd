@@ -19,6 +19,7 @@ var battle_log = preload("res://scripts/services/battle/logger.gd").new()
 var battle_actions = preload("res://scripts/services/battle/actions.gd").new()
 var unit_factory = preload("res://scripts/units/factory.gd").new()
 var item_factory = preload("res://scripts/items/factory.gd").new()
+var party = preload("res://scripts/units/party_manager.gd").new()
 
 
 func _init(root_node):
@@ -38,3 +39,4 @@ func _init(root_node):
     self.settlement._init_bag(self, root_node.mount)
     self.screens._init_bag(self)
     self.battle_resolver._init_bag(self)
+    self.party._init_bag(self, root_node.mount)
