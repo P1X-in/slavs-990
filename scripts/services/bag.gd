@@ -16,6 +16,7 @@ var map = preload("res://scripts/services/map.gd").new()
 # var camera = preload("res://scripts/services/camera.gd").new()
 var battle_resolver = preload("res://scripts/services/battle/resolver.gd").new()
 var battle_log = preload("res://scripts/services/battle/logger.gd").new()
+var battle_actions = preload("res://scripts/services/battle/actions.gd").new()
 var unit_factory = preload("res://scripts/units/factory.gd").new()
 var item_factory = preload("res://scripts/items/factory.gd").new()
 

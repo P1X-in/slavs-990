@@ -6,9 +6,13 @@ func _init(units):
     self.stack.insert(0, [])
     self.stack.insert(1, [])
 
-    var ordered = self.__sort_by_sequence(units)
-    #reverse sort
-    for unit in ordered:
+    for unit in units:
+        unit.prepare_fight_sequence()
+
+    units.sort_custom(self, '__sort_sequence')
+    self.start_player = units[0].player
+
+    for unit in units:
         self.stack[unit.player].append(unit)
 
 func prepare_match():
@@ -67,21 +71,8 @@ func remove_unconsious():
         if not unit.is_consious():
             self.stack[1].erase(unit)
 
-func __sort_by_sequence(units):
-    var ordered = {}
-    var result = []
-    for unit in units:
-        if not ordered.has(unit.sequence):
-            ordered[unit.sequence] = []
-
-        ordered[unit.sequence].append(unit)
-
-    for sequence in ordered:
-
-        for unit in ordered[sequence]:
-            if self.start_player == -1:
-                self.start_player = unit.player
-            result.append(unit)
-
-    return result
+func __sort_sequence(unit1, unit2):
+    if unit1.fight_sequence > unit2.fight_sequence:
+        return true
+    return false
 

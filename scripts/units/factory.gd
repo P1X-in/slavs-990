@@ -13,9 +13,6 @@ func generate(challenge, player=0):
     while value < challenge:
         i = i + 1
         var unit = enemy.new(self.units.units[idx], player)
-
-        var mod = randi() % 5
-        unit.sequence = unit.sequence + mod
         unit.extended_name = self.adjectives.values[randi() % adjectives_size] + ' ' + unit.name
         enemies.append(unit)
         value = value + unit.challenge

@@ -10,11 +10,13 @@ func _init_bag(bag):
 
 func resolve_fight(units):
     var stack = self.battle_stack.new(units)
+    self.bag.battle_actions.prepare_for_units(units)
     var match
     while stack.check_winner() == -1:
         match = stack.prepare_match()
         self.__resolve_turn(match)
         stack.remove_unconsious()
+        self.bag.battle_actions.reset()
 
     self.bag.battle_log.fight_ends(stack.check_winner())
 
@@ -24,12 +26,14 @@ func __resolve_turn(stack):
     for units in stack:
         self.bag.battle_log.attacks(units[0], units[1])
         self.__make_attack(units[0], units[1])
-        if units[1].is_consious():
+        if units[1].is_consious() andself.bag.battle_actions.has_actions(units[1]):
             self.bag.battle_log.attacks(units[1], units[0])
             self.__make_attack(units[1], units[0])
 
 func __make_attack(attacker, defender):
     randomize()
+    self.bag.battle_actions.use_actions(attacker)
+
     var attack_type = attacker['attacks'].keys()[randi() % attacker['attacks'].size()]
     var attack = attacker['attacks'][attack_type]
     var critical = false

@@ -19,5 +19,6 @@ var units = [
         'sequence' : 6,
         'challenge' : 1,
         'xp' : 10,
+        'actions' : 1
     }
 ]
