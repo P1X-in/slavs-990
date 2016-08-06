@@ -25,6 +25,8 @@ func set_map_pos(position):
     var global_position = self.bag.map.translate_map_to_global(position)
 
     self.party_scene.set_pos(global_position)
+    if self.current_tile:
+        self.current_tile.party = null
     self.current_tile = self.bag.abstract_map.get_field(position)
     self.current_tile.party = self
 
@@ -44,20 +46,24 @@ func unselect():
 
 func build_range(move_range):
     self.clear_range()
-    self.add_tile_with_neighbours(self.current_tile, move_range)
 
-func add_tile_with_neighbours(tile, iteration):
-    if self.current_range.has(tile.get_instance_ID()):
-        return
+    var tiles_to_process = [];
+    var i = 0
+    var tile
+    tiles_to_process.append([self.current_tile, 0])
 
-    self.current_range[tile.get_instance_ID()] = self.range_selector_template.instance()
-    self.bag.map.objects_mount.add_child(self.current_range[tile.get_instance_ID()])
-    self.current_range[tile.get_instance_ID()].set_pos(self.bag.map.translate_map_to_global(tile.position))
+    while i < tiles_to_process.size():
+        tile = tiles_to_process[i][0]
+        if not self.current_range.has(tile.get_instance_ID()) and tile.is_passable():
+            self.current_range[tile.get_instance_ID()] = self.range_selector_template.instance()
+            self.bag.map.objects_mount.add_child(self.current_range[tile.get_instance_ID()])
+            self.current_range[tile.get_instance_ID()].set_pos(self.bag.map.translate_map_to_global(tile.position))
+            self.current_range[tile.get_instance_ID()].set_frame(1)
 
-    if iteration > 0:
-        var nearby_tiles = tile.get_neighbours()
-        for neighbour in nearby_tiles:
-            self.add_tile_with_neighbours(neighbour, iteration - 1)
+            if tiles_to_process[i][1] < move_range:
+                for neighbour in tile.get_neighbours():
+                    tiles_to_process.append([neighbour, tiles_to_process[i][1] + 1])
+        i = i + 1
 
 func clear_range():
     for tile in self.current_range:

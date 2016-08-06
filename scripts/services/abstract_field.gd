@@ -22,7 +22,7 @@ func is_settlement():
     return false
 
 func is_passable():
-    if self.terrain_type < 0:
+    if self.terrain_type != -1:
         return false
     if self.object != null:
         return false
