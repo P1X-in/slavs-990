@@ -16,7 +16,8 @@ var units = {
         'challenge' : 1,
         'xp' : 10,
         'actions' : 2,
-        'image' : '--- jakis path ---'
+        'image' : '--',
+        'entity' : '--'
     },
     'archer': {
         'name': 'łucznik',
@@ -35,7 +36,8 @@ var units = {
         'challenge' : 1,
         'xp' : 10,
         'actions' : 1,
-        'image' : '--- jakis path ---'
+        'image' : '--',
+        'entity' : '--'
     },
     'shield_bearer': {
         'name': 'tarczownik',
@@ -54,7 +56,8 @@ var units = {
         'challenge' : 1,
         'xp' : 10,
         'actions' : 1,
-        'image' : '--- jakis path ---'
+        'image' : '--',
+        'entity' : '--'
     },
     'warrior': {
         'name': 'wojownik',
@@ -73,6 +76,7 @@ var units = {
         'challenge' : 1,
         'xp' : 10,
         'actions' : 1,
-        'image' : '--- jakis path ---'
+        'image' : '--',
+        'entity' : '--'
     }
 }

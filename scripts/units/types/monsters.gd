@@ -19,6 +19,7 @@ var units = {
         'challenge' : 1,
         'xp' : 10,
         'actions' : 1,
-        'image' : '--- jakis path ---'
+        'image' : '--',
+        'entity' : '--'
     }
 }

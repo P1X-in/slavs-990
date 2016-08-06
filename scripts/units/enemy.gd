@@ -11,13 +11,15 @@ var loot = {}
 var challenge
 var xp
 var actions
+var image
+var entity
 
 var status
 var sequence = 1
 var fight_sequence = 1
 var player = 0
 
-var params = ['name', 'family', 'description', 'hp','resistances', 'attacks', 'challenge', 'xp', 'loot', 'sequence', 'actions']
+var params = ['name', 'family', 'description', 'hp','resistances', 'attacks', 'challenge', 'xp', 'loot', 'sequence', 'actions', 'image', 'entity']
 
 func _init(params, player=0):
     for param in self.params:

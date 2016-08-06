@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://themes/master.tres" type="Theme" id=1]
 [ext_resource path="res://assets/logo/sun.png" type="Texture" id=2]
@@ -7,11 +7,6 @@
 [ext_resource path="res://assets/gui/panel_gray.png" type="Texture" id=5]
 [ext_resource path="res://themes/font_14.tres" type="Theme" id=6]
 [ext_resource path="res://assets/entities/creatures/cmuch.png" type="Texture" id=7]
-[ext_resource path="res://scenes/map/resources/metal.tscn" type="PackedScene" id=8]
-[ext_resource path="res://scenes/map/resources/wood.tscn" type="PackedScene" id=9]
-[ext_resource path="res://scenes/map/resources/meat.tscn" type="PackedScene" id=10]
-[ext_resource path="res://scenes/map/resources/wheat.tscn" type="PackedScene" id=11]
-[ext_resource path="res://scenes/map/resources/amber.tscn" type="PackedScene" id=12]
 
 [node name="battle" type="Control"]
 
@@ -50,7 +45,7 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 32.0
 margin/top = 32.0
-margin/right = 16.0
+margin/right = 32.0
 margin/bottom = 32.0
 custom_constants/separation = 32
 alignment = 1
@@ -154,7 +149,6 @@ alignment = 1
 
 [node name="ally" type="VBoxContainer" parent="panel/container/body/log"]
 
-editor/display_folded = true
 rect/min_size = Vector2( 64, 0 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -253,7 +247,6 @@ visible_characters = -1
 
 [node name="enemy" type="VBoxContainer" parent="panel/container/body/log"]
 
-editor/display_folded = true
 rect/min_size = Vector2( 64, 0 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -355,55 +348,10 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 16.0
-margin/top = 8.0
+margin/top = 16.0
 margin/right = 16.0
-margin/bottom = 32.0
-alignment = 1
-
-[node name="metal" parent="panel/container/footer/rewards/reward_list" instance=ExtResource( 8 )]
-
-margin/left = 72.0
-margin/right = 136.0
-margin/bottom = 64.0
-
-[node name="wood" parent="panel/container/footer/rewards/reward_list" instance=ExtResource( 9 )]
-
-margin/left = 140.0
-margin/right = 204.0
-margin/bottom = 64.0
-
-[node name="meat" parent="panel/container/footer/rewards/reward_list" instance=ExtResource( 10 )]
-
-margin/left = 208.0
-margin/right = 272.0
-margin/bottom = 64.0
-
-[node name="wheat" parent="panel/container/footer/rewards/reward_list" instance=ExtResource( 11 )]
-
-margin/left = 276.0
-margin/right = 340.0
-margin/bottom = 64.0
-
-[node name="amber" parent="panel/container/footer/rewards/reward_list" instance=ExtResource( 12 )]
-
-margin/left = 344.0
-margin/right = 408.0
-margin/bottom = 64.0
-
-[node name="Label" type="Label" parent="panel/container/footer/rewards"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 8.0
-margin/top = 8.0
-margin/right = 40.0
-margin/bottom = 17.0
-text = "nagrody"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
+margin/bottom = 16.0
+alignment = 0
 
 [node name="exit_button" type="Button" parent="panel/container/footer"]
 

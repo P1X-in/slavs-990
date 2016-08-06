@@ -20,6 +20,9 @@ func battle_event(event):
     var rewards = self.screen_scene.get_node('panel/container/footer/rewards/reward_list')
     var loot = []
 
+    self.screen_scene.get_node('panel/container/body/log/enemy/Label').set_text(event.units[0].family)
+    self.screen_scene.get_node('panel/container/body/log/ally/Label').set_text('Drużyna')
+
     for text in self.bag.battle_log.show():
         if not text == '':
             logs.add_text(text)
