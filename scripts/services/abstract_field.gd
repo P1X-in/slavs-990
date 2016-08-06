@@ -14,6 +14,12 @@ func is_adjacent(field):
         return true
     return false
 
+func is_settlement():
+    if self.terrain_type == self.abstract_map.TILE_VILLAGE:
+        return true
+
+    return false
+
 func is_passable():
     if self.terrain_type < 0:
         return false

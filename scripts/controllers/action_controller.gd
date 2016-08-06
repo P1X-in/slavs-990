@@ -13,4 +13,10 @@ func handle_screen_click(position):
     self.handle_map_click(self.bag.map.translate_screen_to_map(position))
 
 func handle_map_click(position):
-    return
+    var field = self.bag.abstract_map.get_field(position)
+
+    print(position)
+
+    if field.is_settlement():
+        self.bag.board.detach()
+        self.bag.settlement.attach()

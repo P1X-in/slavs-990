@@ -16,8 +16,9 @@ func load_tiles():
         self.tilemap.hide()
 
 func translate_screen_to_map(position):
+    var zoom = self.bag.camera.get_zoom()
     var half_screen_size = self.bag.root.get_size() / Vector2(2, 2)
-    var map_click_pixel_position = position - half_screen_size + self.bag.camera.get_pos()
+    var map_click_pixel_position = (position + self.bag.camera.get_pos()) * zoom
 
     return self.tilemap.world_to_map(map_click_pixel_position)
 

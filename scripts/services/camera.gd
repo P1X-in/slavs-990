@@ -36,6 +36,7 @@ func attach():
 
 func detach():
     self.bag.processing.remove(self)
+    self.dragging = false
 
 func get_pos():
     return self.camera.get_offset()
