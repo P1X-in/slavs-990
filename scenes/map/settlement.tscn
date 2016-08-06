@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://themes/master.tres" type="Theme" id=1]
-[ext_resource path="res://assets/sun.png" type="Texture" id=2]
+[ext_resource path="res://assets/logo/sun.png" type="Texture" id=2]
 [ext_resource path="res://themes/font_h1.tres" type="Theme" id=3]
 
 [node name="settlement" type="Control"]
