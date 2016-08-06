@@ -15,58 +15,142 @@ margin/bottom = 0.0
 
 [node name="ground1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 64, 64 )
+transform/pos = Vector2( 48, 48 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 0, 0, 64, 64 )
+region_rect = Rect2( 0, 0, 32, 32 )
 
 [node name="ground2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 160, 64 )
+transform/pos = Vector2( 112, 48 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 64, 0, 64, 64 )
+region_rect = Rect2( 32, 32, 32, 32 )
+
+[node name="ground3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 176, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 32, 0, 32, 32 )
+
+[node name="ground4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 240, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 0, 32, 32, 32 )
+
+[node name="ground5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 48, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 64, 0, 32, 32 )
+
+[node name="ground6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 112, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 96, 32, 32, 32 )
+
+[node name="ground7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 176, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 96, 0, 32, 32 )
+
+[node name="ground8" type="Sprite" parent="."]
+
+transform/pos = Vector2( 240, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 64, 32, 32, 32 )
 
 [node name="grass1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 256, 64 )
+transform/pos = Vector2( 400, 48 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 128, 0, 64, 64 )
+region_rect = Rect2( 128, 0, 32, 32 )
 
 [node name="grass2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 352, 64 )
+transform/pos = Vector2( 464, 48 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 192, 0, 64, 64 )
+region_rect = Rect2( 160, 32, 32, 32 )
 
 [node name="grass3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 64, 160 )
+transform/pos = Vector2( 528, 48 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 0, 64, 64, 64 )
+region_rect = Rect2( 160, 0, 32, 32 )
+
+[node name="grass4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 592, 48 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 128, 32, 32, 32 )
+
+[node name="grass5" type="Sprite" parent="."]
+
+transform/pos = Vector2( 400, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 192, 0, 32, 32 )
+
+[node name="grass6" type="Sprite" parent="."]
+
+transform/pos = Vector2( 464, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 224, 32, 32, 32 )
+
+[node name="grass7" type="Sprite" parent="."]
+
+transform/pos = Vector2( 528, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 224, 0, 32, 32 )
+
+[node name="grass8" type="Sprite" parent="."]
+
+transform/pos = Vector2( 592, 112 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 192, 32, 32, 32 )
 
 [node name="water1" type="Sprite" parent="."]
 
-transform/pos = Vector2( 160, 160 )
+transform/pos = Vector2( 48, 176 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 64, 64, 64, 64 )
+region_rect = Rect2( 0, 64, 32, 32 )
 
 [node name="water2" type="Sprite" parent="."]
 
-transform/pos = Vector2( 256, 160 )
+transform/pos = Vector2( 112, 176 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 128, 64, 64, 64 )
+region_rect = Rect2( 32, 64, 32, 32 )
 
-[node name="forest1" type="Sprite" parent="."]
+[node name="water3" type="Sprite" parent="."]
 
-transform/pos = Vector2( 352, 160 )
+transform/pos = Vector2( 176, 176 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 192, 64, 64, 64 )
+region_rect = Rect2( 0, 96, 32, 32 )
+
+[node name="water4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 240, 176 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 32, 96, 32, 32 )
 
 
