@@ -1,6 +1,6 @@
 extends "res://scripts/services/abstract_screen.gd"
 
-const TILE_SIZE = 64
+const TILE_SIZE = 32
 
 var tilemap
 
