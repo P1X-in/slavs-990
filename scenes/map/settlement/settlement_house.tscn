@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/map/house.png" type="Texture" id=1]
 
-[node name="settlement_house1" type="Sprite"]
+[node name="settlement_house" type="Sprite"]
 
 texture = ExtResource( 1 )
 region_rect = Rect2( 64, 0, 64, 64 )
