@@ -21,7 +21,7 @@ alignment = 0
 
 [node name="header" type="CenterContainer" parent="."]
 
-rect/min_size = Vector2( 0, 192 )
+rect/min_size = Vector2( 0, 256 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -29,7 +29,7 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
 margin/right = 896.0
-margin/bottom = 192.0
+margin/bottom = 256.0
 use_top_left = false
 
 [node name="logo" type="Container" parent="header"]
@@ -40,9 +40,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 448.0
-margin/top = 96.0
+margin/top = 128.0
 margin/right = 448.0
-margin/bottom = 96.0
+margin/bottom = 128.0
 
 [node name="logo" type="Sprite" parent="header/logo"]
 
@@ -56,9 +56,9 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 196.0
+margin/top = 260.0
 margin/right = 896.0
-margin/bottom = 376.0
+margin/bottom = 438.0
 use_top_left = false
 
 [node name="menu_container" type="VBoxContainer" parent="main"]
@@ -71,7 +71,7 @@ size_flags/vertical = 2
 margin/left = 320.0
 margin/top = 0.0
 margin/right = 576.0
-margin/bottom = 180.0
+margin/bottom = 178.0
 alignment = 0
 
 [node name="play_button" type="Button" parent="main/menu_container"]
@@ -83,7 +83,7 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
 margin/right = 256.0
-margin/bottom = 88.0
+margin/bottom = 87.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -98,9 +98,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 92.0
+margin/top = 91.0
 margin/right = 256.0
-margin/bottom = 180.0
+margin/bottom = 178.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -114,9 +114,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 92.0
+margin/top = 91.0
 margin/right = 256.0
-margin/bottom = 180.0
+margin/bottom = 178.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -125,31 +125,33 @@ flat = false
 
 [node name="footer" type="CenterContainer" parent="."]
 
-focus/ignore_mouse = false
-focus/stop_mouse = true
+rect/min_size = Vector2( 0, 64 )
+focus/ignore_mouse = true
+focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 460.0
+margin/top = 442.0
 margin/right = 896.0
-margin/bottom = 460.0
+margin/bottom = 506.0
 use_top_left = false
 
 [node name="grass" type="Container" parent="footer"]
 
-editor/display_folded = true
-focus/ignore_mouse = false
-focus/stop_mouse = true
+focus/ignore_mouse = true
+focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 448.0
-margin/top = 0.0
+margin/top = 32.0
 margin/right = 448.0
-margin/bottom = 0.0
+margin/bottom = 32.0
 
 [node name="Sprite" type="Sprite" parent="footer/grass"]
 
-transform/scale = Vector2( 2, 2 )
+transform/pos = Vector2( 0, -160 )
+transform/scale = Vector2( 4, 4 )
+z/z = -1
 texture = ExtResource( 3 )
 
 

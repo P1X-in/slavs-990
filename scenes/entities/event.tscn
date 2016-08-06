@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=1]
 
-[ext_resource path="res://scenes/entities/entity_animals_wolf.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/entities/entity_creatures_cmuch.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/entities/animals/wilk.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/entities/creatures/cmuch.tscn" type="PackedScene" id=2]
 
 [node name="event" type="Control"]
 

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/entities/slav2.png" type="Texture" id=1]
 
-[node name="entity_slav_unit2" type="Control"]
+[node name="unit2" type="Control"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
