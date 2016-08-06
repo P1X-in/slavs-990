@@ -16,7 +16,7 @@ margin/right = 0.0
 margin/bottom = 0.0
 use_top_left = false
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="Control" parent="."]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true

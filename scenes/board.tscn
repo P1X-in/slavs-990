@@ -17,6 +17,7 @@ margin/bottom = 0.0
 
 [node name="viewport" type="Viewport" parent="."]
 
+editor/display_folded = true
 rect = Rect2( 0, 0, 1024, 600 )
 own_world = false
 world = null

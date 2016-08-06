@@ -1,9 +1,10 @@
-[gd_resource type="Theme" load_steps=15 format=1]
+[gd_resource type="Theme" load_steps=14 format=1]
 
 [ext_resource path="res://assets/fonts/Magda.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/gui/button_focus.png" type="Texture" id=2]
 [ext_resource path="res://assets/gui/button_active.png" type="Texture" id=3]
 [ext_resource path="res://assets/gui/button_normal.png" type="Texture" id=4]
+[ext_resource path="res://assets/gui/panel.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -93,26 +94,22 @@ expand_margin/top = 0.0
 expand_margin/bottom = 0.0
 draw_center = true
 
-[sub_resource type="StyleBoxEmpty" id=7]
+[sub_resource type="StyleBoxTexture" id=11]
 
 content_margin/left = -1.0
 content_margin/right = -1.0
 content_margin/top = -1.0
 content_margin/bottom = -1.0
-
-[sub_resource type="StyleBoxEmpty" id=8]
-
-content_margin/left = -1.0
-content_margin/right = -1.0
-content_margin/top = -1.0
-content_margin/bottom = -1.0
-
-[sub_resource type="StyleBoxEmpty" id=9]
-
-content_margin/left = -1.0
-content_margin/right = -1.0
-content_margin/top = -1.0
-content_margin/bottom = -1.0
+texture = ExtResource( 5 )
+margin/left = 30.0
+margin/right = 30.0
+margin/top = 30.0
+margin/bottom = 30.0
+expand_margin/left = 0.0
+expand_margin/right = 0.0
+expand_margin/top = 0.0
+expand_margin/bottom = 0.0
+draw_center = true
 
 [sub_resource type="DynamicFont" id=10]
 
@@ -135,7 +132,14 @@ Button/styles/focus = SubResource( 3 )
 Button/styles/hover = SubResource( 4 )
 Button/styles/normal = SubResource( 5 )
 Button/styles/pressed = SubResource( 6 )
-Panel/styles/panel = SubResource( 7 )
-Panel/styles/panelf = SubResource( 8 )
-Panel/styles/panelnc = SubResource( 9 )
+Label/colors/font_color = Color( 0.933333, 0.764706, 0.603922, 1 )
+Label/colors/font_color_shadow = Color( 0, 0, 0, 0 )
+Label/constants/line_spacing = 3
+Label/constants/shadow_as_outline = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/fonts/font = null
+Panel/styles/panel = SubResource( 11 )
+Panel/styles/panelf = null
+Panel/styles/panelnc = null
 
