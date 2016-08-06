@@ -13,3 +13,6 @@ func bind():
 func _exit_button_pressed():
     self.detach()
     self.bag.board.attach()
+
+func battle_event(event):
+    return

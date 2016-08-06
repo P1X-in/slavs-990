@@ -16,6 +16,8 @@ func _init_bag(bag):
     self.bag = bag
 
 func spawn_events():
+    self.bag.party.units = self.generate_party()
+
     for tile in self.bag.abstract_map.events['animals']:
         self.spawn_event_on_field(tile, self.bag.abstract_map.TILE_FOREST_ANIMAL)
     for tile in self.bag.abstract_map.events['water']:
@@ -24,6 +26,7 @@ func spawn_events():
         self.spawn_event_on_field(tile, self.bag.abstract_map.TILE_FOREST_CREATURE)
 
 func spawn_event_on_field(field, type):
+    randomize()
     var new_event = self.event_template.new()
     new_event._init_bag(bag)
 
@@ -32,12 +35,14 @@ func spawn_event_on_field(field, type):
 
     if type == self.bag.abstract_map.TILE_FOREST_ANIMAL:
         new_event.animal_icon.show()
+        new_event.units = self.generate_units('animals', 'wolf', randi() % 10)
     if type == self.bag.abstract_map.TILE_WATER_CREATURE:
         new_event.water_icon.show()
+        new_event.units = self.generate_units('monsters', 'rat', randi() % 4)
     if type == self.bag.abstract_map.TILE_FOREST_CREATURE:
         new_event.forest_icon.show()
+        new_event.units = self.generate_units('monsters', 'rat', randi() % 2)
 
-    new_event.units = self.generate(10)
     new_event.loot = self.bag.item_factory.generate_for_opponents(new_event.units)
 
 

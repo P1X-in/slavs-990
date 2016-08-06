@@ -11,6 +11,8 @@ var current_range = {}
 var current_tile
 var selected = false
 
+var units
+
 func _init():
     self.inner_selector = self.party_scene.get_node('selector')
     self.unselect()
