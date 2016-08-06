@@ -26,5 +26,7 @@ func load_basic_input():
     self.devices['mouse'].register_handler(preload("res://scripts/input/handlers/map_click_mouse.gd").new(self.bag))
     #self.devices['mouse'].register_handler(preload("res://scripts/input/handlers/zoom_in_mouse.gd").new(self.bag))
     #self.devices['mouse'].register_handler(preload("res://scripts/input/handlers/zoom_out_mouse.gd").new(self.bag))
+    self.devices['mouse'].register_handler(preload("res://scripts/input/handlers/move_selector_mouse.gd").new(self.bag))
+
     self.devices['keyboard'].register_handler(preload("res://scripts/input/handlers/skip_intro_keyboard.gd").new(self.bag))
     self.devices['keyboard'].register_handler(preload("res://scripts/input/handlers/go_back_keyboard.gd").new(self.bag))
