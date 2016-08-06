@@ -19,4 +19,9 @@ var items = {
         'description': '',
         'availability' : 1
     },
+    'wheat' : {
+        'name': 'zboże',
+        'description': '',
+        'availability' : 1
+    },
 }
