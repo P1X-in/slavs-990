@@ -87,5 +87,5 @@ func generate_units(unit_type, unit_name, player=0, quantity=1):
         unit.extended_name = self.adjectives.values[randi() % adjectives_size] + ' ' + unit.name
         enemies.append(unit)
 
-    return unit
+    return enemies
 
