@@ -104,3 +104,9 @@ func create_field(position):
 
 
 	return field
+
+func reveal_events(field):
+	for group in self.events:
+		for event_field in self.events[group]:
+			if field.get_distance_factor(event_field) < 200:
+				event_field.event.reveal()

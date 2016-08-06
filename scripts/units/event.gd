@@ -20,7 +20,10 @@ func _init_bag(bag):
 
 func attach():
     self.bag.map.objects_mount.add_child(self.event_scene)
+    self.event_scene.hide()
 
+func reveal():
+    self.event_scene.show()
 
 func set_map_pos(position):
     var global_position = self.bag.map.translate_map_to_global(position)
@@ -33,3 +36,10 @@ func set_map_pos(position):
 
 func go_to_field(field):
     self.set_map_pos(field.position)
+
+func randomize_animation():
+    randomize()
+    var time_seed = randi() % 5
+    self.animal_icon.get_node('anim').seek(time_seed * 0.1, true)
+    self.water_icon.get_node('anim').seek(time_seed * 0.1, true)
+    self.forest_icon.get_node('anim').seek(time_seed * 0.1, true)

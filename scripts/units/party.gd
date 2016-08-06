@@ -35,6 +35,7 @@ func set_map_pos(position):
 func go_to_field(field):
     self.set_map_pos(field.position)
     self.build_range(self.MOVE_RANGE)
+    self.bag.abstract_map.reveal_events(field)
 
 func select():
     #self.inner_selector.show()

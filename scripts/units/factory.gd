@@ -44,6 +44,7 @@ func spawn_event_on_field(field, type):
         new_event.units = self.generate_units('monsters', 'rat', randi() % 2)
 
     new_event.loot = self.bag.item_factory.generate_for_opponents(new_event.units)
+    new_event.randomize_animation()
 
 
 func generate(challenge, player=0, type='animals'):

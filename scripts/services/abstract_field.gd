@@ -57,3 +57,9 @@ func get_neighbours():
         self.abstract_map.get_field(self.position + Vector2(-1, 0)),
         self.abstract_map.get_field(self.position + Vector2(1, 0))
     ]
+
+func get_distance_factor(field):
+    var diff_x = abs(self.position.x - field.position.x)
+    var diff_y = abs(self.position.y - field.position.y)
+
+    return diff_x * diff_x + diff_y * diff_y
