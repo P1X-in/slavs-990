@@ -5,6 +5,7 @@
 [node name="selector" type="Sprite"]
 
 texture = ExtResource( 1 )
+centered = false
 hframes = 2
 region_rect = Rect2( 0, 0, 32, 32 )
 
