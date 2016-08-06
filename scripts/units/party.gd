@@ -1,5 +1,5 @@
 
-const MOVE_RANGE = 4
+const MOVE_RANGE = 8
 
 var party_scene = preload("res://scenes/entities/party.tscn").instance()
 var inner_selector
