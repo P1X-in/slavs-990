@@ -33,7 +33,6 @@ func get_pos():
 func set_pos(position):
     self.pan_to_position = position
     self.camera.set_offset(position)
-    print(position)
 
 func offset_camera(offset):
     var position = self.get_pos()

@@ -11,3 +11,9 @@ func _init():
 
 func load_tiles():
     return
+
+func translate_screen_to_map(position):
+    var half_screen_size = self.bag.root.get_size() / Vector2(2, 2)
+    var map_click_pixel_position = position - half_screen_size + self.bag.camera.get_pos()
+
+    return tilemap.world_to_map(map_click_pixel_position)
