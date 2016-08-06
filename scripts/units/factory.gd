@@ -12,14 +12,21 @@ func _init_bag(bag):
 
 func spawn_events():
     for tile in self.bag.abstract_map.events['animals']:
-        self.spawn_event_on_field(tile)
+        self.spawn_event_on_field(tile, self.bag.abstract_map.TILE_FOREST_ANIMAL)
+    for tile in self.bag.abstract_map.events['water']:
+        self.spawn_event_on_field(tile, self.bag.abstract_map.TILE_WATER_CREATURE)
 
-func spawn_event_on_field(field):
+func spawn_event_on_field(field, type):
     var new_event = self.event_template.new()
     new_event._init_bag(bag)
 
     new_event.attach()
     new_event.go_to_field(field)
+
+    if type == self.bag.abstract_map.TILE_FOREST_ANIMAL:
+        new_event.animal_icon.show()
+    if type == self.bag.abstract_map.TILE_WATER_CREATURE:
+        new_event.water_icon.show()
 
 
 func generate(challenge, player=0):

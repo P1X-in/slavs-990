@@ -3,11 +3,15 @@ var event_scene = preload("res://scenes/entities/event.tscn").instance()
 
 var bag
 
+var animal_icon
+var water_icon
+
 var current_tile = null
 
 func _init_bag(bag):
     self.bag = bag
-
+    self.animal_icon = self.event_scene.get_node('animals')
+    self.water_icon = self.event_scene.get_node('water')
 
 func attach():
     self.bag.map.objects_mount.add_child(self.event_scene)
