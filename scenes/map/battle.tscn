@@ -3,10 +3,10 @@
 [ext_resource path="res://themes/master.tres" type="Theme" id=1]
 [ext_resource path="res://assets/logo/sun.png" type="Texture" id=2]
 [ext_resource path="res://themes/font_h1.tres" type="Theme" id=3]
-[ext_resource path="res://assets/entities/slav1.png" type="Texture" id=4]
+[ext_resource path="res://assets/entities/slavs/slav1.png" type="Texture" id=4]
 [ext_resource path="res://assets/gui/panel_gray.png" type="Texture" id=5]
 [ext_resource path="res://themes/font_14.tres" type="Theme" id=6]
-[ext_resource path="res://assets/entities/cmuch.png" type="Texture" id=7]
+[ext_resource path="res://assets/entities/creatures/cmuch.png" type="Texture" id=7]
 
 [node name="battle" type="Control"]
 

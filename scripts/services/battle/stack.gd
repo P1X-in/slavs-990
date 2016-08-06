@@ -71,8 +71,8 @@ func remove_unconsious():
         if not unit.is_consious():
             self.stack[1].erase(unit)
 
-func __sort_sequence(unit1, unit2):
-    if unit1.fight_sequence > unit2.fight_sequence:
+func __sort_sequence(slav1, slav2):
+    if slav1.fight_sequence > slav2.fight_sequence:
         return true
     return false
 

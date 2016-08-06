@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=1]
 
-[ext_resource path="res://assets/entities/borowy.png" type="Texture" id=1]
+[ext_resource path="res://assets/entities/creatures/borowy.png" type="Texture" id=1]
 
 [sub_resource type="Animation" id=1]
 
