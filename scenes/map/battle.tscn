@@ -298,7 +298,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="buttons" type="HBoxContainer" parent="panel/container"]
+[node name="footer" type="HBoxContainer" parent="panel/container"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = false
@@ -309,35 +309,62 @@ margin/top = 370.0
 margin/right = 912.0
 margin/bottom = 457.0
 custom_constants/separation = 16
-alignment = 2
+alignment = 1
 
-[node name="skip_button" type="Button" parent="panel/container/buttons"]
+[node name="rewards" type="Container" parent="panel/container/footer"]
+
+rect/min_size = Vector2( 512, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 41.0
+margin/top = 0.0
+margin/right = 553.0
+margin/bottom = 87.0
+
+[node name="background" type="Patch9Frame" parent="panel/container/footer/rewards"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 5 )
+patch_margin/left = 30
+patch_margin/top = 30
+patch_margin/right = 30
+patch_margin/bottom = 30
+
+[node name="reward_list" type="HBoxContainer" parent="panel/container/footer/rewards"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 16.0
+margin/top = 16.0
+margin/right = 16.0
+margin/bottom = 16.0
+alignment = 0
+
+[node name="exit_button" type="Button" parent="panel/container/footer"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 262.0
+margin/left = 569.0
 margin/top = 0.0
-margin/right = 594.0
+margin/right = 871.0
 margin/bottom = 87.0
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-text = "Przyspiesz walkę"
-flat = false
-
-[node name="exit_button" type="Button" parent="panel/container/buttons"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 610.0
-margin/top = 0.0
-margin/right = 912.0
-margin/bottom = 87.0
-disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
