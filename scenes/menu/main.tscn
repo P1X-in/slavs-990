@@ -58,7 +58,7 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 196.0
 margin/right = 896.0
-margin/bottom = 465.0
+margin/bottom = 376.0
 use_top_left = false
 
 [node name="menu_container" type="VBoxContainer" parent="main"]
@@ -71,7 +71,7 @@ size_flags/vertical = 2
 margin/left = 320.0
 margin/top = 0.0
 margin/right = 576.0
-margin/bottom = 269.0
+margin/bottom = 180.0
 alignment = 0
 
 [node name="play_button" type="Button" parent="main/menu_container"]
@@ -83,23 +83,24 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
 margin/right = 256.0
-margin/bottom = 87.0
+margin/bottom = 88.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "PLAY"
+text = "GRAJ"
 flat = false
 
 [node name="credits_button" type="Button" parent="main/menu_container"]
 
+visibility/visible = false
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 91.0
+margin/top = 92.0
 margin/right = 256.0
-margin/bottom = 178.0
+margin/bottom = 180.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -113,13 +114,13 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 182.0
+margin/top = 92.0
 margin/right = 256.0
-margin/bottom = 269.0
+margin/bottom = 180.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "QUIT"
+text = "WYJDŹ"
 flat = false
 
 [node name="footer" type="CenterContainer" parent="."]
@@ -129,9 +130,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 469.0
+margin/top = 460.0
 margin/right = 896.0
-margin/bottom = 469.0
+margin/bottom = 460.0
 use_top_left = false
 
 [node name="grass" type="Container" parent="footer"]
