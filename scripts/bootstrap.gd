@@ -14,6 +14,8 @@ func _ready():
     # var loot = self.bag.item_factory.generate_for_opponents(units)
     # print(loot)
 
+    self.__prepare_party()
+
     self.bag.hud.refresh_resources()
 
     self.bag.sound.play_soundtrack('theme')
@@ -26,3 +28,8 @@ func __battle():
     self.bag.battle_resolver.resolve_fight(units)
 
     print(self.bag.battle_log.show())
+
+func __prepare_party():
+    var party = self.bag.unit_factory.generate_party()
+    for unit in party:
+        print(unit.extended_name)

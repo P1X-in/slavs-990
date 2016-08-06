@@ -1,7 +1,15 @@
+<<<<<<< 9a91224f6e14fd07f58e93ee84056b5dd2eac789
 
 var bag
 
 var units = preload('units.gd').new()
+=======
+var creatures = preload('types/creatures.gd').new()
+
+var slavs = preload('types/slavs.gd').new()
+var slavian_names = preload('slavian_names.gd').new()
+
+>>>>>>> generate party factory method
 var adjectives = preload('adjectives.gd').new()
 var enemy = preload('enemy.gd')
 
@@ -30,18 +38,34 @@ func spawn_event_on_field(field, type):
 
 
 func generate(challenge, player=0):
+    randomize()
     var enemies = []
     var value = 0
-    var idx = randi() % units.units.size()
+    var idx = randi() % self.creatures.units.size()
     var i = 0
     var i = 0
     var adjectives_size = self.adjectives.values.size()
 
     while value < challenge:
         i = i + 1
-        var unit = enemy.new(self.units.units[idx], player)
+        var unit = enemy.new(self.creatures.units[idx], player)
         unit.extended_name = self.adjectives.values[randi() % adjectives_size] + ' ' + unit.name
         enemies.append(unit)
         value = value + unit.challenge
 
     return enemies
+
+func generate_party(player=0):
+    randomize()
+    var party = []
+    var idx
+    var names_size = self.slavian_names.male.size()
+
+    for i in range(0, 5):
+        idx = randi() % self.slavs.units.size()
+        var unit = enemy.new(self.slavs.units[idx], player)
+        unit.extended_name = unit.name + ' ' +self.slavian_names.male[randi() % names_size]
+        party.append(unit)
+
+    return party
+
