@@ -32,37 +32,37 @@ region_rect = Rect2( 64, 0, 64, 64 )
 transform/pos = Vector2( 256, 64 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 0, 64, 64, 64 )
+region_rect = Rect2( 128, 0, 64, 64 )
 
-[node name="water1" type="Sprite" parent="."]
+[node name="grass2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 352, 64 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 64, 64, 64, 64 )
+region_rect = Rect2( 192, 0, 64, 64 )
 
-[node name="forest1" type="Sprite" parent="."]
+[node name="grass3" type="Sprite" parent="."]
 
 transform/pos = Vector2( 64, 160 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 128, 0, 64, 64 )
+region_rect = Rect2( 0, 64, 64, 64 )
 
-[node name="forest2" type="Sprite" parent="."]
+[node name="water1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 160, 160 )
 texture = ExtResource( 1 )
 region = true
-region_rect = Rect2( 192, 0, 64, 64 )
+region_rect = Rect2( 64, 64, 64, 64 )
 
-[node name="forest3" type="Sprite" parent="."]
+[node name="water2" type="Sprite" parent="."]
 
 transform/pos = Vector2( 256, 160 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 128, 64, 64, 64 )
 
-[node name="forest4" type="Sprite" parent="."]
+[node name="forest1" type="Sprite" parent="."]
 
 transform/pos = Vector2( 352, 160 )
 texture = ExtResource( 1 )

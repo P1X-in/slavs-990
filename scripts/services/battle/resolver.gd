@@ -26,7 +26,7 @@ func __resolve_turn(stack):
     for units in stack:
         self.bag.battle_log.attacks(units[0], units[1])
         self.__make_attack(units[0], units[1])
-        if units[1].is_consious() andself.bag.battle_actions.has_actions(units[1]):
+        if units[1].is_consious() and self.bag.battle_actions.has_actions(units[1]):
             self.bag.battle_log.attacks(units[1], units[0])
             self.__make_attack(units[1], units[0])
 
