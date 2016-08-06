@@ -7,9 +7,7 @@ var fields = [[null]]
 var tilemap
 var field_template = preload('res://scripts/services/abstract_field.gd')
 
-var MAX_MAP_SIZE = 40
-const MAP_MAX_X = 40
-const MAP_MAX_Y = 40
+const MAX_MAP_DIMENSION = 100
 
 func _init_bag(bag):
 	self.bag = bag
