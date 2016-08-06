@@ -16,7 +16,7 @@ func _ready():
 
     self.bag.hud.refresh_resources()
 
-    #self.bag.sound.play_soundtrack('intro')
+    self.bag.sound.play_soundtrack('theme')
 
 func _input(event):
     self.bag.input.handle_event(event)

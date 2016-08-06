@@ -55,7 +55,7 @@ func set_pos(position):
     self.camera.set_offset(position)
 
 func set_pos_map(position):
-    self.set_pos(self.bag.map.translate_map_to_global(position))
+    self.set_pos(self.bag.map.translate_map_to_global_corner(position))
 
 func offset_camera(offset):
     var position = self.get_pos()
@@ -63,7 +63,7 @@ func offset_camera(offset):
     self.set_pos(position)
 
 func pan_to_map(position):
-    self.pan_to(self.bag.map.translate_map_to_global(position))
+    self.pan_to(self.bag.map.translate_map_to_global_corner(position))
 
 func pan_to(position):
     self.game_size = self.bag.root.get_size()

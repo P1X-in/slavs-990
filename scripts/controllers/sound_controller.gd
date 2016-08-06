@@ -11,7 +11,7 @@ var samples = [
 ]
 
 var soundtracks = {
-    #'stage_2.2' : preload("res://scenes/sounds/soundtrack/stage_2.2.ogg"),
+    'theme' : preload("res://assets/audio/slavic_ethnic_music.ogg"),
 }
 
 var current_soundtrack = null

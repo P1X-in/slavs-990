@@ -1,6 +1,7 @@
 var terrain_type
 var position
 var object = null
+var party = null
 var abstract_map = null
 
 func is_adjacent(field):
