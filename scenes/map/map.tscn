@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=1]
+[gd_scene load_steps=17 format=1]
 
 [ext_resource path="res://tilesets/terrain.tres" type="TileSet" id=1]
 [ext_resource path="res://scenes/map/settlement/swiatowid.tscn" type="PackedScene" id=2]
@@ -13,7 +13,9 @@
 [ext_resource path="res://scenes/map/vegetation/vegetation_berries1.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/map/settlement/settlement_house1.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/map/settlement/settlement_fireplace.tscn" type="PackedScene" id=13]
-[ext_resource path="res://tilesets/types.tres" type="TileSet" id=14]
+[ext_resource path="res://scenes/map/settlement/settlement_farm.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/map/settlement/settlement_house2.tscn" type="PackedScene" id=15]
+[ext_resource path="res://tilesets/types.tres" type="TileSet" id=16]
 
 [node name="map" type="Control"]
 
@@ -1245,6 +1247,10 @@ transform/pos = Vector2( 1488, 1160 )
 
 transform/pos = Vector2( 1208, 2360 )
 
+[node name="vegetation_tree68299" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 760, 2368 )
+
 [node name="vegetation_tree68297 4" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 2920, 2872 )
@@ -2015,6 +2021,10 @@ flip_h = true
 
 transform/pos = Vector2( 1184, 2520 )
 
+[node name="vegetation_tree68298" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 944, 2216 )
+
 [node name="vegetation_tree68293 4" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 2544, 1176 )
@@ -2737,14 +2747,51 @@ flip_h = true
 transform/pos = Vector2( 1328, 1752 )
 flip_h = true
 
+[node name="settlement_house5" parent="terrain" instance=ExtResource( 12 )]
+
+transform/pos = Vector2( 880, 2248 )
+flip_h = true
+
 [node name="settlement_fireplace" parent="terrain" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 1376, 1648 )
 
+[node name="settlement_farm" parent="terrain" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 840, 2216 )
+
+[node name="settlement_farm1" parent="terrain" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 824, 2296 )
+
+[node name="settlement_farm3" parent="terrain" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 824, 2344 )
+
+[node name="settlement_farm5" parent="terrain" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 936, 2296 )
+
+[node name="settlement_farm6" parent="terrain" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 976, 2248 )
+
+[node name="settlement_farm4" parent="terrain" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 936, 2336 )
+
+[node name="settlement_farm2" parent="terrain" instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 800, 2256 )
+
+[node name="settlement_house_wood" parent="terrain" instance=ExtResource( 15 )]
+
+transform/pos = Vector2( 2048, 1960 )
+
 [node name="types" type="TileMap" parent="."]
 
 mode = 0
-tile_set = ExtResource( 14 )
+tile_set = ExtResource( 16 )
 cell/size = Vector2( 32, 32 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
