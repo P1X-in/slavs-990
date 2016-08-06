@@ -84,6 +84,12 @@ func pan_to(position):
 func update_zoom():
     self.zoom = self.camera.get_zoom()
 
+func get_zoom():
+    return self.camera.get_zoom()
+
+func set_zoom(zoom):
+    self.camera.set_zoom(zoom)
+
 func lock():
     self.locked = true
 func unlock():
