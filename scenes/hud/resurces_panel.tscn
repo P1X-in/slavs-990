@@ -310,7 +310,7 @@ margin/bottom = 32.0
 texture = ExtResource( 1 )
 centered = false
 region = true
-region_rect = Rect2( 0, 0, 32, 32 )
+region_rect = Rect2( 96, 0, 32, 32 )
 
 [node name="value" type="Label" parent="list/metal/box"]
 
@@ -388,7 +388,7 @@ margin/bottom = 32.0
 texture = ExtResource( 1 )
 centered = false
 region = true
-region_rect = Rect2( 0, 0, 32, 32 )
+region_rect = Rect2( 0, 32, 32, 32 )
 
 [node name="value" type="Label" parent="list/bursztyn/box"]
 
@@ -466,7 +466,7 @@ margin/bottom = 32.0
 texture = ExtResource( 1 )
 centered = false
 region = true
-region_rect = Rect2( 0, 0, 32, 32 )
+region_rect = Rect2( 32, 32, 32, 32 )
 
 [node name="value" type="Label" parent="list/futra/box"]
 
