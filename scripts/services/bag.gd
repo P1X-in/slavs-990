@@ -46,3 +46,4 @@ func _init(root_node):
     self.hud._init_bag(self)
     self.party._init_bag(self)
     self.party_manager._init_bag(self, root_node.mount)
+    self.unit_factory._init_bag(bag)

@@ -22,7 +22,6 @@ func _init_bag(bag):
     self.camera = self.bag.board.screen_scene.get_node('viewport/camera')
     self.update_zoom()
 
-    var half_screen_size = self.bag.root.get_size() / Vector2(2, 2)
     self.max_camera_move = self.bag.map.TILE_SIZE * self.bag.abstract_map.MAX_MAP_DIMENSION
 
     self.camera.set_limit(0, 0)
@@ -42,14 +41,16 @@ func get_pos():
     return self.camera.get_offset()
 
 func set_pos(position):
+    var screen_size = self.bag.root.get_size()
+
     if position.x < 0:
         position.x = 0
-    if position.x > self.max_camera_move:
-        position.x = self.max_camera_move
+    if position.x > self.max_camera_move - screen_size.x:
+        position.x = self.max_camera_move - screen_size.x
     if position.y < 0:
         position.y = 0
-    if position.y > self.max_camera_move:
-        position.y = self.max_camera_move
+    if position.y > self.max_camera_move - screen_size.y:
+        position.y = self.max_camera_move - screen_size.y
 
     self.pan_to_position = position
     self.camera.set_offset(position)
