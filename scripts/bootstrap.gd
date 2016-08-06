@@ -9,7 +9,10 @@ func _ready():
     self.set_fixed_process(true)
 
     self.bag.intro.attach()
-    self.__battle()
+    # self.__battle()
+    var units = self.bag.unit_factory.generate(4, 1)
+    var loot = self.bag.item_factory.generate_for_opponents(units)
+    # print(loot)
 
     #self.bag.sound.play_soundtrack('intro')
 

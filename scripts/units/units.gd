@@ -14,7 +14,7 @@ var units = [
             'bite' : {'damage' : 4, 'skill' : 0.20, 'critical': 0.02}
         },
         'loot' : {
-            'metal' : 0.05
+            'jewelry' : 0.02
         },
         'sequence' : 6,
         'challenge' : 1,
