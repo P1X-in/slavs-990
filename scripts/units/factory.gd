@@ -1,7 +1,10 @@
 var bag
-var creatures = preload('types/creatures.gd').new()
+var units = {
+    'animals' : preload('types/animals.gd').new().units,
+    'monsters' : preload('types/monsters.gd').new().units,
+    'slavs' : preload('types/slavs.gd').new().units
+}
 
-var slavs = preload('types/slavs.gd').new()
 var slavian_names = preload('slavian_names.gd').new()
 
 var adjectives = preload('adjectives.gd').new()
@@ -38,18 +41,15 @@ func spawn_event_on_field(field, type):
     new_event.loot = self.bag.item_factory.generate_for_opponents(new_event.units)
 
 
-func generate(challenge, player=0):
+func generate(challenge, player=0, type='animals'):
     randomize()
     var enemies = []
     var value = 0
-    var idx = randi() % self.creatures.units.size()
-    var i = 0
-    var i = 0
+    var name =  self.units[type].keys()[randi() % self.units[type].size()]
     var adjectives_size = self.adjectives.values.size()
 
     while value < challenge:
-        i = i + 1
-        var unit = enemy.new(self.creatures.units[idx], player)
+        var unit = enemy.new(self.units[type][name], player)
         unit.extended_name = self.adjectives.values[randi() % adjectives_size] + ' ' + unit.name
         enemies.append(unit)
         value = value + unit.challenge
@@ -59,14 +59,28 @@ func generate(challenge, player=0):
 func generate_party(player=0):
     randomize()
     var party = []
-    var idx
+    var name
     var names_size = self.slavian_names.male.size()
+    var unit_type_size = self.units['slavs'].size()
 
     for i in range(0, 5):
-        idx = randi() % self.slavs.units.size()
-        var unit = enemy.new(self.slavs.units[idx], player)
+        name = self.units['slavs'].keys()[randi() % unit_type_size]
+
+        var unit = enemy.new(self.units['slavs'][name], player)
         unit.extended_name = unit.name + ' ' +self.slavian_names.male[randi() % names_size]
         party.append(unit)
 
     return party
+
+func generate_units(unit_type, unit_name, player=0, quantity=1):
+    var enemies = []
+    var unit
+    var adjectives_size = self.adjectives.values.size()
+    var params = self.units[unit_type][unit_name]
+    for i in range(0, quantity):
+        unit = enemy.new(params, player)
+        unit.extended_name = self.adjectives.values[randi() % adjectives_size] + ' ' + unit.name
+        enemies.append(unit)
+
+    return unit
 

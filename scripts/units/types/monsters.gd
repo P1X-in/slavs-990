@@ -1,5 +1,5 @@
-var units = [
-    {
+var units = {
+    'rat': {
         'name': 'szczur',
         'family' : 'szczury',
         'description': 'małe i gryzie',
@@ -22,4 +22,4 @@ var units = [
         'actions' : 1,
         'image' : '--- jakis path ---'
     }
-]
+}

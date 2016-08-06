@@ -11,9 +11,9 @@ func _init():
 
 func generate_for_opponents(units):
     var loot = []
-    for unit in units:
-        for type in unit['loot'].keys():
-            loot.append(self.generate(type, unit['loot'][type]))
+    # for unit in units:
+    #     for type in unit['loot'].keys():
+    #         loot.append(self.generate(type, unit['loot'][type]))
     return loot
 
 func generate(type, chance):

@@ -1,5 +1,5 @@
-var units = [
-    {
+var units = {
+    'lumberjack': {
         'name': 'drwal',
         'family' : 'slavs',
         'description': '',
@@ -18,7 +18,7 @@ var units = [
         'actions' : 2,
         'image' : '--- jakis path ---'
     },
-    {
+    'archer': {
         'name': 'łucznik',
         'family' : 'slavs',
         'description': '',
@@ -37,7 +37,7 @@ var units = [
         'actions' : 1,
         'image' : '--- jakis path ---'
     },
-    {
+    'shield_bearer': {
         'name': 'tarczownik',
         'family' : 'slavs',
         'description': '',
@@ -56,7 +56,7 @@ var units = [
         'actions' : 1,
         'image' : '--- jakis path ---'
     },
-    {
+    'warrior': {
         'name': 'wojownik',
         'family' : 'slavs',
         'description': '',
@@ -75,4 +75,4 @@ var units = [
         'actions' : 1,
         'image' : '--- jakis path ---'
     }
-]
+}
