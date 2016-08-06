@@ -8,7 +8,7 @@ var tiles = []
 
 func _init():
     self.screen_scene = preload("res://scenes/map/map.tscn").instance()
-    self.tilemap = self.screen_scene.get_node('tiles')
+    self.tilemap = self.screen_scene.get_node('types')
     self.register_main_scene = false
 
 func load_tiles():
