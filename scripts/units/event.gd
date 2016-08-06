@@ -8,6 +8,9 @@ var water_icon
 
 var current_tile = null
 
+var units
+var loot
+
 func _init_bag(bag):
     self.bag = bag
     self.animal_icon = self.event_scene.get_node('animals')

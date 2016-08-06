@@ -30,6 +30,9 @@ func spawn_event_on_field(field, type):
     if type == self.bag.abstract_map.TILE_WATER_CREATURE:
         new_event.water_icon.show()
 
+    new_event.units = self.generate(10)
+    new_event.loot = self.bag.item_factory.generate_for_opponents(new_event.units)
+
 
 func generate(challenge, player=0):
     randomize()
