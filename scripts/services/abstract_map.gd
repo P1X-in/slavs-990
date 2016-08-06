@@ -3,6 +3,7 @@ const TILE_VILLAGE = 1
 const TILE_START = 5
 const TILE_FOREST_ANIMAL = 4
 const TILE_WATER_CREATURE = 3
+const TILE_FOREST_CREATURE = 6
 
 var bag
 
@@ -11,7 +12,8 @@ var fields = [[null]]
 
 var events = {
 	'animals' : [],
-	'water' : []
+	'water' : [],
+	'forest' : []
 }
 
 var tilemap
@@ -34,7 +36,8 @@ func reset():
 	self.start_tile = null
 	self.events = {
 		'animals' : [],
-		'water' : []
+		'water' : [],
+		'forest' : []
 	}
 
 func get_field(position):
@@ -92,6 +95,10 @@ func create_field(position):
 		field.terrain_type = -1
 	if field.terrain_type == self.TILE_WATER_CREATURE:
 		self.events['water'].append(field)
+		self.tilemap.set_cell(position.x, position.y, -1)
+		field.terrain_type = -1
+	if field.terrain_type == self.TILE_FOREST_CREATURE:
+		self.events['forest'].append(field)
 		self.tilemap.set_cell(position.x, position.y, -1)
 		field.terrain_type = -1
 

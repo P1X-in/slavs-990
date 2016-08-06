@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://scenes/entities/animals/wilk.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/entities/creatures/cmuch.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/entities/creatures/borowy.tscn" type="PackedScene" id=3]
 
 [node name="event" type="Control"]
 
@@ -19,6 +20,10 @@ margin/bottom = 40.0
 visibility/visible = false
 
 [node name="water" parent="." instance=ExtResource( 2 )]
+
+visibility/visible = false
+
+[node name="forest" parent="." instance=ExtResource( 3 )]
 
 visibility/visible = false
 

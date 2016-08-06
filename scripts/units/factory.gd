@@ -17,6 +17,8 @@ func spawn_events():
         self.spawn_event_on_field(tile, self.bag.abstract_map.TILE_FOREST_ANIMAL)
     for tile in self.bag.abstract_map.events['water']:
         self.spawn_event_on_field(tile, self.bag.abstract_map.TILE_WATER_CREATURE)
+    for tile in self.bag.abstract_map.events['forest']:
+        self.spawn_event_on_field(tile, self.bag.abstract_map.TILE_FOREST_CREATURE)
 
 func spawn_event_on_field(field, type):
     var new_event = self.event_template.new()
@@ -29,6 +31,8 @@ func spawn_event_on_field(field, type):
         new_event.animal_icon.show()
     if type == self.bag.abstract_map.TILE_WATER_CREATURE:
         new_event.water_icon.show()
+    if type == self.bag.abstract_map.TILE_FOREST_CREATURE:
+        new_event.forest_icon.show()
 
     new_event.units = self.generate(10)
     new_event.loot = self.bag.item_factory.generate_for_opponents(new_event.units)
