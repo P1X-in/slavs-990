@@ -78,7 +78,7 @@ func generate_party(player=0):
 
     return party
 
-func generate_units(unit_type, unit_name, player=0, quantity=1):
+func generate_units(unit_type, unit_name, quantity=1, player=1):
     var enemies = []
     var unit
     var adjectives_size = self.adjectives.values.size()

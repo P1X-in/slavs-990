@@ -12,5 +12,6 @@ func refresh_resources():
     resources_panel.get_node('zborze/box/value').set_text(str(resources['wheat']))
     resources_panel.get_node('metal/box/value').set_text(str(resources['metal']))
     resources_panel.get_node('bursztyn/box/value').set_text(str(resources['amber']))
+    resources_panel.get_node('futra/box/value').set_text(str(resources['fur']))
 
 

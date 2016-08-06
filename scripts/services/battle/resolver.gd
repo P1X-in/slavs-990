@@ -20,6 +20,7 @@ func resolve_fight(units):
 
     self.bag.battle_log.fight_ends(stack.check_winner())
 
+    return stack.check_winner()
 
 func __resolve_turn(stack):
     self.bag.battle_log.new_turn()
@@ -44,8 +45,12 @@ func __make_attack(attacker, defender):
 
         var defence_type = defender['resistances']['normal']
         damage = damage - defence_type['threshold']
-        damage = damage - defence_type['resistance']
+        damage = damage - damage * defence_type['resistance']
         damage = ceil(damage)
+
+        if damage < 0:
+            damage = 0
+
         defender.hp = defender.hp - damage
 
         self.bag.battle_log.deals_damage(attacker, defender, damage, critical)

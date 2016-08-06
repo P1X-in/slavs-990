@@ -14,8 +14,8 @@ var units = {
             'bite' : {'damage' : 4, 'skill' : 0.20, 'critical': 0.02}
         },
         'loot' : {
-            'fur' : 0.8,
-            'meat': 0.2
+            'fur' : 0.7,
+            'meat': 0.5
         },
         'sequence' : 8,
         'challenge' : 3,

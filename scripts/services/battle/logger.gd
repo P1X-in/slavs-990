@@ -4,11 +4,11 @@ func clear():
     self.logs.clear()
 
 func show():
-    for text in self.logs:
-        print(text)
+    return self.logs
 
 func attacks(attacker, defender):
-    logs.append(attacker.extended_name + ' atakuje ' + defender.extended_name)
+    logs.append('')
+    logs.append('#' + attacker.extended_name + ' atakuje ' + defender.extended_name)
 
 func misses():
     logs.append('..i chybia')
@@ -21,9 +21,11 @@ func deals_damage(attacker, defender, damage, critical):
 
 func fight_ends(winner):
     if winner == 0:
-        logs.append('Wygrałeś!')
+        logs.append('# Wygrałeś!')
     else:
-        logs.append('Przegrałeś!')
+        logs.append('# Przegrałeś!')
 
 func new_turn():
+    logs.append('')
     logs.append('-- NOWA TURA --')
+    logs.append('')

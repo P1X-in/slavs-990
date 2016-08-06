@@ -15,4 +15,23 @@ func _exit_button_pressed():
     self.bag.board.attach()
 
 func battle_event(event):
+    var winner = self.bag.battle_resolver.resolve_fight(self.bag.party.units + event.units)
+    var logs = self.screen_scene.get_node('panel/container/body/log/container/text')
+    var rewards = self.screen_scene.get_node('panel/container/footer/rewards/reward_list')
+    var loot = []
+
+    for text in self.bag.battle_log.show():
+        if not text == '':
+            logs.add_text(text)
+        logs.newline()
+
+    if winner == 0:
+        loot = self.bag.item_factory.generate_for_opponents(event.units)
+        for name in loot.keys():
+            self.bag.resources.add(name, loot[name])
+            #TODO add loot named <name> with quantity <loot[name]>
+
+        self.bag.hud.refresh_resources()
+        #TODO - defeated enemy remove
+
     return

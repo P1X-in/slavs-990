@@ -203,7 +203,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Container" type="Container" parent="panel/container/body/log"]
+[node name="container" type="Container" parent="panel/container/body/log"]
 
 rect/min_size = Vector2( 640, 256 )
 focus/ignore_mouse = false
@@ -215,7 +215,7 @@ margin/top = 0.0
 margin/right = 776.0
 margin/bottom = 256.0
 
-[node name="background" type="Patch9Frame" parent="panel/container/body/log/Container"]
+[node name="background" type="Patch9Frame" parent="panel/container/body/log/container"]
 
 anchor/right = 1
 anchor/bottom = 1
@@ -233,7 +233,7 @@ patch_margin/top = 30
 patch_margin/right = 30
 patch_margin/bottom = 30
 
-[node name="text" type="RichTextLabel" parent="panel/container/body/log/Container"]
+[node name="text" type="RichTextLabel" parent="panel/container/body/log/container"]
 
 anchor/right = 1
 anchor/bottom = 1
@@ -247,8 +247,8 @@ margin/left = 16.0
 margin/top = 16.0
 margin/right = 16.0
 margin/bottom = 16.0
-bbcode/enabled = true
-bbcode/bbcode = "# Dzikia ryjówka ugryzła Swodzibora Walecznego zadając mu 30 obrażeń. #\n\n# Swodzibor Waleczny ucieka z pola walki. #\n\n# Przegrałeś walkę. Nie jesteś zwyciężcą. #"
+bbcode/enabled = false
+bbcode/bbcode = ""
 visible_characters = -1
 
 [node name="enemy" type="VBoxContainer" parent="panel/container/body/log"]

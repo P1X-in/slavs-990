@@ -10,22 +10,27 @@ func _init():
     self.__calculate_availability()
 
 func generate_for_opponents(units):
-    var loot = []
+    var loot = {}
     for unit in units:
         for name in unit['loot'].keys():
-            loot.append(self.generate(name, unit['loot'][name]))
+            randomize()
+            if randf() <= unit['loot'][name]:
+                if loot.has(name):
+                    loot[name] = loot[name] + 1
+                else:
+                    loot[name] = 1
+
     return loot
 
-func generate(name, chance):
-    randomize()
-    var name = null
-    var type = self.__get_item_type(name)
-
-    if randf() <= chance:
-        name = self.items_availability_table[type][randi() % self.items_availability_table[type].size()]
-        return self.items[type].items[name]
-
-    return null
+# func generate(name, chance):
+#     randomize()
+#     var name = null
+#     # var type = self.__get_item_type(name)
+#
+#     if randf() <= chance:
+#         return name
+#
+#     return -1
 
 func __get_item_type(name):
     for type in self.items.keys():
