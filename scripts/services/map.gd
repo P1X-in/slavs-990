@@ -12,7 +12,8 @@ func _init():
     self.register_main_scene = false
 
 func load_tiles():
-    return
+    if self.tilemap.is_visible():
+        self.tilemap.hide()
 
 func translate_screen_to_map(position):
     var half_screen_size = self.bag.root.get_size() / Vector2(2, 2)
