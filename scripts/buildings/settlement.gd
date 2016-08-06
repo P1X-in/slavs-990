@@ -7,7 +7,7 @@ func _init():
     self.bind()
 
 func bind():
-    self.back_button = self.screen_scene.get_node('panel/container/HBoxContainer/Button3')
+    self.back_button = self.screen_scene.get_node('panel/container/buttons/exit_button')
     self.back_button.connect('pressed', self, '_back_button_pressed')
 
 func go_back():

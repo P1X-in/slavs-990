@@ -164,6 +164,10 @@ transform/pos = Vector2( 1720, 1664 )
 
 transform/pos = Vector2( 1784, 1616 )
 
+[node name="vegetation_tree73" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2080, 1480 )
+
 [node name="vegetation_tree4" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1712, 1584 )
@@ -200,13 +204,33 @@ transform/pos = Vector2( 1704, 1536 )
 
 transform/pos = Vector2( 1752, 1616 )
 
+[node name="vegetation_tree73 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2080, 1232 )
+
+[node name="vegetation_tree733" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1536, 1392 )
+
+[node name="vegetation_tree734" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 960, 1272 )
+
 [node name="vegetation_tree13" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1784, 1560 )
 
+[node name="vegetation_tree73 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2080, 1424 )
+
 [node name="vegetation_tree14" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1744, 1552 )
+
+[node name="vegetation_tree73 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2040, 1416 )
 
 [node name="vegetation_tree15" parent="terrain" instance=ExtResource( 9 )]
 
@@ -220,81 +244,1296 @@ transform/pos = Vector2( 1760, 1648 )
 
 transform/pos = Vector2( 1896, 1672 )
 
+[node name="vegetation_tree80" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 136, 976 )
+
 [node name="vegetation_tree27" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1800, 2032 )
+
+[node name="vegetation_tree80 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 40, 1336 )
+
+[node name="vegetation_tree68" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 968, 2840 )
+
+[node name="vegetation_tree70" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1208, 3024 )
+
+[node name="vegetation_tree74 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2360, 1336 )
+
+[node name="vegetation_tree743" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1880, 1192 )
+
+[node name="vegetation_tree744" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2112, 1136 )
+
+[node name="vegetation_tree745" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1568, 1296 )
+
+[node name="vegetation_tree746" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 992, 1176 )
+
+[node name="vegetation_tree69" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1464, 2536 )
+
+[node name="vegetation_tree74" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2824, 1192 )
+
+[node name="vegetation_tree75" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2272, 1232 )
+
+[node name="vegetation_tree78" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1728, 1392 )
+
+[node name="vegetation_tree79" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1152, 1272 )
+
+[node name="vegetation_tree76" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1792, 1088 )
+
+[node name="vegetation_tree77" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2024, 1032 )
+
+[node name="vegetation_tree71" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2160, 2080 )
+
+[node name="vegetation_tree80 24" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 400, 1384 )
 
 [node name="vegetation_tree28" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1752, 1968 )
 
+[node name="vegetation_tree68 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 920, 2776 )
+
+[node name="vegetation_tree683" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1416, 2472 )
+
+[node name="vegetation_tree700" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3128, 2984 )
+
+[node name="vegetation_tree694 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2776, 1128 )
+
+[node name="vegetation_tree69412 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2848, 264 )
+
+[node name="vegetation_tree693 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2112, 2016 )
+
+[node name="vegetation_tree6933" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 352, 1320 )
+
+[node name="vegetation_tree692" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1800, 2280 )
+
+[node name="vegetation_tree701" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 40, 1584 )
+
+[node name="vegetation_tree690" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1416, 2472 )
+
+[node name="vegetation_tree700 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3128, 2984 )
+
+[node name="vegetation_tree694 8" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2776, 1128 )
+
+[node name="vegetation_tree69412 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2096, 336 )
+
+[node name="vegetation_tree693 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2112, 2016 )
+
+[node name="vegetation_tree6936" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 352, 1320 )
+
+[node name="vegetation_tree692 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1800, 2280 )
+
+[node name="vegetation_tree6924" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 40, 1584 )
+
+[node name="vegetation_tree691 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1744, 2792 )
+
+[node name="vegetation_tree6914" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3104, 1448 )
+
 [node name="vegetation_tree61" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1752, 1968 )
+
+[node name="vegetation_tree68 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 920, 2776 )
+
+[node name="vegetation_tree684" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1416, 2472 )
+
+[node name="vegetation_tree700 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3128, 2984 )
+
+[node name="vegetation_tree694 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2200, 1120 )
+
+[node name="vegetation_tree69410" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1656, 1280 )
+
+[node name="vegetation_tree69411" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 968, 1096 )
+
+[node name="vegetation_tree693 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2112, 2016 )
+
+[node name="vegetation_tree6934" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 352, 1320 )
+
+[node name="vegetation_tree692 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1800, 2280 )
+
+[node name="vegetation_tree6923" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 40, 1584 )
+
+[node name="vegetation_tree690 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1520, 2360 )
+
+[node name="vegetation_tree6904 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2880, 1016 )
+
+[node name="vegetation_tree6903" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1744, 2792 )
+
+[node name="vegetation_tree6904" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3104, 1448 )
 
 [node name="vegetation_tree29" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1832, 1936 )
 
+[node name="vegetation_tree80 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 72, 1240 )
+
 [node name="vegetation_tree30" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1792, 1944 )
+
+[node name="vegetation_tree80 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 32, 1248 )
 
 [node name="vegetation_tree31" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1736, 2064 )
 
+[node name="vegetation_tree68 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 904, 2872 )
+
+[node name="vegetation_tree6833 6" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1144, 3056 )
+
+[node name="vegetation_tree68337" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2296, 1368 )
+
+[node name="vegetation_tree68340 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1816, 1224 )
+
+[node name="vegetation_tree683405" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2048, 1168 )
+
+[node name="vegetation_tree683408 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1504, 1328 )
+
+[node name="vegetation_tree6834083" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 928, 1208 )
+
+[node name="vegetation_tree685" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1208, 2576 )
+
+[node name="vegetation_tree700 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2920, 3088 )
+
+[node name="vegetation_tree694 6" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2568, 1232 )
+
+[node name="vegetation_tree6947" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2016, 1272 )
+
+[node name="vegetation_tree6952" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1440, 1152 )
+
+[node name="vegetation_tree691 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1544, 2728 )
+
+[node name="vegetation_tree6913" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2904, 1384 )
+
 [node name="vegetation_tree32" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1848, 2128 )
+
+[node name="vegetation_tree80 6" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 88, 1432 )
+
+[node name="vegetation_tree68 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1016, 2936 )
+
+[node name="vegetation_tree6838 11" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2440, 1472 )
+
+[node name="vegetation_tree6833 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1256, 3120 )
+
+[node name="vegetation_tree68336" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2408, 1432 )
+
+[node name="vegetation_tree686" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1320, 2640 )
+
+[node name="vegetation_tree700 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3032, 3152 )
+
+[node name="vegetation_tree694 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2680, 1296 )
+
+[node name="vegetation_tree6946" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2128, 1336 )
+
+[node name="vegetation_tree691" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1648, 2960 )
+
+[node name="vegetation_tree694 9" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3104, 1640 )
 
 [node name="vegetation_tree33" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1872, 2056 )
 
+[node name="vegetation_tree80 7" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 288, 1264 )
+
+[node name="vegetation_tree68 6" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1184, 2832 )
+
+[node name="vegetation_tree6838 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2544, 1488 )
+
+[node name="vegetation_tree6828 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1656, 2664 )
+
+[node name="vegetation_tree682817" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3016, 1320 )
+
+[node name="vegetation_tree68283" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1304, 2544 )
+
+[node name="vegetation_tree68297" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2688, 3072 )
+
+[node name="vegetation_tree68293" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2664, 1200 )
+
+[node name="vegetation_tree68295" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1736, 1264 )
+
+[node name="vegetation_tree68296" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1232, 1232 )
+
+[node name="vegetation_tree68294" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2112, 1240 )
+
+[node name="vegetation_tree68292" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1688, 2352 )
+
+[node name="vegetation_tree68290" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1632, 2864 )
+
+[node name="vegetation_tree68293 6" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2992, 1520 )
+
+[node name="vegetation_tree687" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1536, 2560 )
+
+[node name="vegetation_tree694 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2896, 1216 )
+
+[node name="vegetation_tree6943" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2344, 1256 )
+
+[node name="vegetation_tree6944" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1864, 1112 )
+
+[node name="vegetation_tree6945" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2096, 1056 )
+
+[node name="vegetation_tree6951 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1552, 1216 )
+
+[node name="vegetation_tree693" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2232, 2104 )
+
+[node name="vegetation_tree701 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 472, 1408 )
+
 [node name="vegetation_tree34" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1840, 2008 )
+
+[node name="vegetation_tree80 8" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 80, 1312 )
+
+[node name="vegetation_tree68 7" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1152, 2784 )
+
+[node name="vegetation_tree6838 13" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2512, 1440 )
+
+[node name="vegetation_tree6831 10" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1480, 3104 )
+
+[node name="vegetation_tree683111" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2792, 1560 )
+
+[node name="vegetation_tree6828 11" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1624, 2616 )
+
+[node name="vegetation_tree682817 10" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2984, 1272 )
+
+[node name="vegetation_tree682812" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1272, 2496 )
+
+[node name="vegetation_tree682818 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2984, 3008 )
+
+[node name="vegetation_tree682817 13" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2632, 1152 )
+
+[node name="vegetation_tree68281714" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1704, 1216 )
+
+[node name="vegetation_tree682813 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1232, 2968 )
+
+[node name="vegetation_tree6828133" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2448, 1904 )
+
+[node name="vegetation_tree688" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1504, 2512 )
+
+[node name="vegetation_tree694 7" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2864, 1168 )
+
+[node name="vegetation_tree69412" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2936, 304 )
+
+[node name="vegetation_tree6948" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2312, 1208 )
+
+[node name="vegetation_tree6951" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1768, 1368 )
+
+[node name="vegetation_tree6952 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1192, 1248 )
+
+[node name="vegetation_tree6949" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1832, 1064 )
+
+[node name="vegetation_tree6950" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2064, 1008 )
+
+[node name="vegetation_tree693 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2200, 2056 )
+
+[node name="vegetation_tree6935" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 440, 1360 )
 
 [node name="vegetation_tree35" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1888, 1968 )
 
+[node name="vegetation_tree80 9" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 128, 1272 )
+
+[node name="vegetation_tree72" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2024, 1672 )
+
+[node name="vegetation_tree80 25" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 264, 976 )
+
+[node name="vegetation_tree68 8" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1200, 2744 )
+
+[node name="vegetation_tree6838" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2560, 1400 )
+
+[node name="vegetation_tree6839" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2008, 1440 )
+
+[node name="vegetation_tree6831" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1528, 3064 )
+
+[node name="vegetation_tree6838 34" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2840, 1520 )
+
+[node name="vegetation_tree6828" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1672, 2576 )
+
+[node name="vegetation_tree6838 14" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3032, 1232 )
+
+[node name="vegetation_tree6829" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1320, 2456 )
+
+[node name="vegetation_tree6840 7" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3032, 2968 )
+
+[node name="vegetation_tree6838 33" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2680, 1112 )
+
+[node name="vegetation_tree683836 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1752, 1176 )
+
+[node name="vegetation_tree6835 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1704, 2264 )
+
+[node name="vegetation_tree6834" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1320, 2456 )
+
+[node name="vegetation_tree6840 8" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3032, 2968 )
+
+[node name="vegetation_tree6838 37" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2768, 1320 )
+
+[node name="vegetation_tree683838" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2216, 1360 )
+
+[node name="vegetation_tree6835 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1704, 2264 )
+
+[node name="vegetation_tree689" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1552, 2472 )
+
+[node name="vegetation_tree694" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2800, 1408 )
+
+[node name="vegetation_tree695" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2248, 1448 )
+
+[node name="vegetation_tree698" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1976, 1152 )
+
+[node name="vegetation_tree696" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1768, 1304 )
+
+[node name="vegetation_tree699" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1192, 1184 )
+
+[node name="vegetation_tree697" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2000, 1248 )
+
+[node name="vegetation_tree699 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1424, 1128 )
+
 [node name="vegetation_tree36" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1864, 1976 )
+
+[node name="vegetation_tree80 10" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 104, 1280 )
+
+[node name="vegetation_tree68 9" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1176, 2752 )
+
+[node name="vegetation_tree6838 6" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2536, 1408 )
+
+[node name="vegetation_tree68387" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1984, 1448 )
+
+[node name="vegetation_tree6831 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1504, 3072 )
+
+[node name="vegetation_tree68315" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2816, 1528 )
+
+[node name="vegetation_tree6828 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1648, 2584 )
+
+[node name="vegetation_tree682817 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3008, 1240 )
+
+[node name="vegetation_tree68286" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1464, 2336 )
+
+[node name="vegetation_tree68291 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1304, 2424 )
+
+[node name="vegetation_tree682916" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3088, 2776 )
+
+[node name="vegetation_tree682914" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2664, 1080 )
+
+[node name="vegetation_tree682915" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1736, 1144 )
+
+[node name="vegetation_tree682913" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1688, 2232 )
+
+[node name="vegetation_tree6810" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1528, 2480 )
+
+[node name="vegetation_tree6838 22" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2776, 1416 )
+
+[node name="vegetation_tree683823" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2224, 1456 )
+
+[node name="vegetation_tree683835 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1952, 1160 )
+
+[node name="vegetation_tree6837 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2224, 2024 )
+
+[node name="vegetation_tree68374" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 464, 1328 )
 
 [node name="vegetation_tree37" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1888, 1992 )
 
+[node name="vegetation_tree80 11" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 112, 1136 )
+
+[node name="vegetation_tree72 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2024, 1696 )
+
+[node name="vegetation_tree723" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 264, 1000 )
+
+[node name="vegetation_tree68 10" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1200, 2768 )
+
+[node name="vegetation_tree6838 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2560, 1424 )
+
+[node name="vegetation_tree68386" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2008, 1464 )
+
+[node name="vegetation_tree6831 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1528, 3088 )
+
+[node name="vegetation_tree68314" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2840, 1544 )
+
+[node name="vegetation_tree6828 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1672, 2600 )
+
+[node name="vegetation_tree682817 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3032, 1256 )
+
+[node name="vegetation_tree68285" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1488, 2384 )
+
+[node name="vegetation_tree68293 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2848, 1040 )
+
+[node name="vegetation_tree6811" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1552, 2496 )
+
+[node name="vegetation_tree6838 21" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2800, 1432 )
+
 [node name="vegetation_tree38" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1912, 1976 )
+
+[node name="vegetation_tree80 12" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 224, 1152 )
+
+[node name="vegetation_tree72 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2048, 1680 )
+
+[node name="vegetation_tree724" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 288, 984 )
+
+[node name="vegetation_tree68 11" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1224, 2752 )
+
+[node name="vegetation_tree6838 7" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2584, 1408 )
+
+[node name="vegetation_tree68388" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2032, 1448 )
+
+[node name="vegetation_tree6836" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1576, 2312 )
+
+[node name="vegetation_tree6832" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 944, 2640 )
+
+[node name="vegetation_tree6831 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1592, 3016 )
+
+[node name="vegetation_tree68316" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3048, 1696 )
+
+[node name="vegetation_tree6828 6" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1696, 2584 )
+
+[node name="vegetation_tree682817 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3056, 1240 )
+
+[node name="vegetation_tree68287" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1336, 2312 )
+
+[node name="vegetation_tree6812" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1576, 2480 )
+
+[node name="vegetation_tree6838 24" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2824, 1416 )
+
+[node name="vegetation_tree683825" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2272, 1456 )
+
+[node name="vegetation_tree683835 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2000, 1160 )
+
+[node name="vegetation_tree683828 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1792, 1312 )
+
+[node name="vegetation_tree6838285" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1216, 1192 )
+
+[node name="vegetation_tree6838283" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2024, 1256 )
+
+[node name="vegetation_tree6838285 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1448, 1136 )
 
 [node name="vegetation_tree39" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1808, 1944 )
 
+[node name="vegetation_tree80 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 48, 1248 )
+
 [node name="vegetation_tree40" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1800, 1976 )
+
+[node name="vegetation_tree80 16" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 40, 1280 )
+
+[node name="vegetation_tree68 15" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 968, 2784 )
+
+[node name="vegetation_tree6816" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1464, 2480 )
+
+[node name="vegetation_tree6838 19" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2824, 1136 )
+
+[node name="vegetation_tree683822" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2024, 544 )
+
+[node name="vegetation_tree6837 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2160, 2024 )
+
+[node name="vegetation_tree68373" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 400, 1328 )
+
+[node name="vegetation_tree6830" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1464, 2480 )
+
+[node name="vegetation_tree6838 35" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2824, 1136 )
+
+[node name="vegetation_tree683843 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2960, 512 )
+
+[node name="vegetation_tree6837 10" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2160, 2024 )
+
+[node name="vegetation_tree683711" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 400, 1328 )
+
+[node name="vegetation_tree6831 18" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1792, 2800 )
 
 [node name="vegetation_tree41" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1864, 1960 )
 
+[node name="vegetation_tree80 17" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 104, 1264 )
+
+[node name="vegetation_tree68 16" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1168, 2736 )
+flip_h = true
+
+[node name="vegetation_tree6838 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2528, 1392 )
+flip_h = true
+
+[node name="vegetation_tree68385" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1976, 1432 )
+flip_h = true
+
+[node name="vegetation_tree6831 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1504, 3056 )
+
+[node name="vegetation_tree68313" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2816, 1512 )
+
+[node name="vegetation_tree6828 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1648, 2568 )
+
+[node name="vegetation_tree682817 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3008, 1224 )
+
+[node name="vegetation_tree68284" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1272, 2376 )
+
+[node name="vegetation_tree68297 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2984, 2888 )
+
+[node name="vegetation_tree68293 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2416, 1096 )
+
+[node name="vegetation_tree682933" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1488, 1160 )
+
+[node name="vegetation_tree68291" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1208, 2360 )
+
+[node name="vegetation_tree68297 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2920, 2872 )
+
+[node name="vegetation_tree68293 7" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2568, 1016 )
+
+[node name="vegetation_tree6817" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1528, 2464 )
+
+[node name="vegetation_tree6838 18" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2776, 1400 )
+
+[node name="vegetation_tree683819" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2224, 1440 )
+
+[node name="vegetation_tree683820" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1952, 1144 )
+
+[node name="vegetation_tree6837" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2224, 2008 )
+
+[node name="vegetation_tree6841 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 464, 1312 )
+
 [node name="vegetation_tree42" parent="terrain" instance=ExtResource( 9 )]
 
-transform/pos = Vector2( 1832, 1976 )
+transform/pos = Vector2( 1840, 1928 )
+
+[node name="vegetation_tree80 18" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 80, 1232 )
+
+[node name="vegetation_tree68 17" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1144, 2752 )
+
+[node name="vegetation_tree6838 9" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2504, 1408 )
+
+[node name="vegetation_tree683810" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1952, 1448 )
+
+[node name="vegetation_tree6831 7" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1552, 3128 )
+
+[node name="vegetation_tree68318" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2864, 1584 )
+
+[node name="vegetation_tree6828 8" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1616, 2584 )
+
+[node name="vegetation_tree682817 7" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2592, 1192 )
+
+[node name="vegetation_tree68281710" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1664, 1256 )
+
+[node name="vegetation_tree68281711" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 976, 1040 )
+
+[node name="vegetation_tree6828178" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2040, 1232 )
+
+[node name="vegetation_tree6828179" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1496, 1392 )
+
+[node name="vegetation_tree6828180" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 920, 1272 )
+
+[node name="vegetation_tree68289" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1224, 2432 )
+
+[node name="vegetation_tree68297 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3008, 2736 )
+
+[node name="vegetation_tree68293 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2584, 1088 )
+
+[node name="vegetation_tree682936 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1656, 1152 )
+
+[node name="vegetation_tree68291 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1464, 2576 )
+
+[node name="vegetation_tree682914 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2824, 1232 )
+
+[node name="vegetation_tree6829143" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2272, 1272 )
+
+[node name="vegetation_tree6829144" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1792, 1128 )
+
+[node name="vegetation_tree6829145" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2024, 1072 )
+
+[node name="vegetation_tree6818" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1496, 2480 )
+
+[node name="vegetation_tree6838 26" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2744, 1416 )
+
+[node name="vegetation_tree683827" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2192, 1456 )
+
+[node name="vegetation_tree683835" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1920, 1160 )
+
+[node name="vegetation_tree6837 6" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2192, 2024 )
+
+[node name="vegetation_tree68377" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 432, 1328 )
 
 [node name="vegetation_tree43" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1768, 2016 )
 
+[node name="vegetation_tree68 18" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 936, 2824 )
+
+[node name="vegetation_tree6833 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1176, 3008 )
+
+[node name="vegetation_tree68335" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2328, 1320 )
+
+[node name="vegetation_tree68340" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1848, 1176 )
+
+[node name="vegetation_tree68341" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2080, 1120 )
+
+[node name="vegetation_tree68342" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1536, 1280 )
+
+[node name="vegetation_tree68344" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 960, 1160 )
+
+[node name="vegetation_tree6819" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1432, 2520 )
+
+[node name="vegetation_tree6840 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3144, 3032 )
+
+[node name="vegetation_tree6838 23" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2792, 1176 )
+
+[node name="vegetation_tree683843 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2800, 584 )
+
+[node name="vegetation_tree683824" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2240, 1216 )
+
+[node name="vegetation_tree683830 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1696, 1376 )
+
+[node name="vegetation_tree6838303" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1040, 1496 )
+
+[node name="vegetation_tree683828 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1760, 1072 )
+
+[node name="vegetation_tree6838284" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1992, 1016 )
+
+[node name="vegetation_tree6837 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2008, 2104 )
+
+[node name="vegetation_tree68375" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 96, 1968 )
+
+[node name="vegetation_tree6835" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1816, 2328 )
+
+[node name="vegetation_tree6841" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 56, 1632 )
+
+[node name="vegetation_tree6831 14" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1760, 2840 )
+
 [node name="vegetation_tree44" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1728, 2008 )
+
+[node name="vegetation_tree68 19" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 896, 2816 )
+
+[node name="vegetation_tree6820" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1392, 2512 )
+
+[node name="vegetation_tree6840 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3104, 3024 )
+
+[node name="vegetation_tree6838 31" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2752, 1168 )
+
+[node name="vegetation_tree683843 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2120, 536 )
+
+[node name="vegetation_tree683832" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2200, 1208 )
+
+[node name="vegetation_tree683834" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1656, 1368 )
+
+[node name="vegetation_tree683842 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1080, 1248 )
+
+[node name="vegetation_tree6837 8" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2088, 2056 )
+
+[node name="vegetation_tree68379" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 328, 1360 )
+
+[node name="vegetation_tree6835 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1776, 2320 )
+
+[node name="vegetation_tree6831 16" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1720, 2832 )
+
+[node name="vegetation_tree683117" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3080, 1488 )
 
 [node name="vegetation_tree60" parent="terrain" instance=ExtResource( 9 )]
 
@@ -328,9 +1567,145 @@ transform/pos = Vector2( 1272, 1544 )
 
 transform/pos = Vector2( 1792, 2112 )
 
+[node name="vegetation_tree80 19" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 32, 1416 )
+
+[node name="vegetation_tree68 20" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 960, 2920 )
+
+[node name="vegetation_tree6833 3" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1200, 3104 )
+
+[node name="vegetation_tree68334" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2352, 1416 )
+
+[node name="vegetation_tree68340 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1872, 1272 )
+
+[node name="vegetation_tree683409" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1296, 1152 )
+
+[node name="vegetation_tree683403" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2104, 1216 )
+
+[node name="vegetation_tree683408" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1560, 1376 )
+
+[node name="vegetation_tree683409 4" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 984, 1256 )
+
+[node name="vegetation_tree6821" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1264, 2624 )
+
+[node name="vegetation_tree6840 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2976, 3136 )
+
+[node name="vegetation_tree6838 20" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2656, 640 )
+
+[node name="vegetation_tree683821" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2072, 1320 )
+
+[node name="vegetation_tree6831 13" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1592, 2944 )
+
+[node name="vegetation_tree683114" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3048, 1624 )
+
 [node name="vegetation_tree46" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1912, 2040 )
+
+[node name="vegetation_tree80 20" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 152, 1344 )
+
+[node name="vegetation_tree68 21" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1224, 2816 )
+
+[node name="vegetation_tree6838 12" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2584, 1472 )
+
+[node name="vegetation_tree6831 8" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1456, 3024 )
+
+[node name="vegetation_tree68319" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2816, 1680 )
+
+[node name="vegetation_tree6828 9" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1696, 2648 )
+
+[node name="vegetation_tree682817 8" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3056, 1304 )
+
+[node name="vegetation_tree682810" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1344, 2528 )
+
+[node name="vegetation_tree682818" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 3056, 3040 )
+
+[node name="vegetation_tree682817 11" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2704, 1184 )
+
+[node name="vegetation_tree68281716" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2552, 560 )
+
+[node name="vegetation_tree68281712" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2152, 1224 )
+
+[node name="vegetation_tree68281713 2" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1608, 1384 )
+
+[node name="vegetation_tree682817133" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1032, 1264 )
+
+[node name="vegetation_tree682814" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1728, 2336 )
+
+[node name="vegetation_tree682813" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1304, 3000 )
+
+[node name="vegetation_tree682817 14" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2440, 1832 )
+
+[node name="vegetation_tree6822" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1576, 2544 )
+
+[node name="vegetation_tree6838 28" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2936, 1200 )
 
 [node name="vegetation_tree18" parent="terrain" instance=ExtResource( 9 )]
 
@@ -340,13 +1715,29 @@ transform/pos = Vector2( 1832, 1664 )
 
 transform/pos = Vector2( 1880, 1560 )
 
+[node name="vegetation_tree73 5" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2176, 1424 )
+
+[node name="vegetation_tree736" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1904, 1128 )
+
 [node name="vegetation_tree20" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1816, 1520 )
 
+[node name="vegetation_tree73 6" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2112, 1384 )
+
 [node name="vegetation_tree21" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1808, 1600 )
+
+[node name="vegetation_tree73 7" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2104, 1464 )
 
 [node name="vegetation_tree22" parent="terrain" instance=ExtResource( 9 )]
 
@@ -364,6 +1755,14 @@ transform/pos = Vector2( 1736, 1464 )
 
 transform/pos = Vector2( 1760, 1504 )
 
+[node name="vegetation_tree73 8" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 2056, 1368 )
+
+[node name="vegetation_tree739" parent="terrain" instance=ExtResource( 9 )]
+
+transform/pos = Vector2( 1480, 1248 )
+
 [node name="vegetation_tree26" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1904, 1456 )
@@ -371,6 +1770,10 @@ transform/pos = Vector2( 1904, 1456 )
 [node name="vegetation_tree2" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1792, 1736 )
+
+[node name="vegetation_tree80 21" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 32, 1040 )
 
 [node name="vegetation_tree47" parent="terrain" instance=ExtResource( 10 )]
 
@@ -380,6 +1783,86 @@ transform/pos = Vector2( 1688, 1840 )
 
 transform/pos = Vector2( 1752, 2024 )
 
+[node name="vegetation_tree68 22" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 920, 2832 )
+
+[node name="vegetation_tree6833 8" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1160, 3016 )
+
+[node name="vegetation_tree68339" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2312, 1328 )
+
+[node name="vegetation_tree68340 6" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1832, 1184 )
+
+[node name="vegetation_tree683407" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2064, 1128 )
+
+[node name="vegetation_tree683408 4" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1520, 1288 )
+
+[node name="vegetation_tree6834085" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 944, 1168 )
+
+[node name="vegetation_tree6823" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1416, 2528 )
+
+[node name="vegetation_tree6840 6" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 3128, 3040 )
+
+[node name="vegetation_tree6838 32" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2776, 1184 )
+
+[node name="vegetation_tree683843 3" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2744, 224 )
+
+[node name="vegetation_tree683833" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2224, 1224 )
+
+[node name="vegetation_tree683834 2" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1680, 1384 )
+
+[node name="vegetation_tree6838343" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1104, 1264 )
+
+[node name="vegetation_tree6837 9" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1936, 2224 )
+
+[node name="vegetation_tree683710" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 176, 1528 )
+
+[node name="vegetation_tree6835 3" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1800, 2336 )
+
+[node name="vegetation_tree68354" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 40, 1640 )
+
+[node name="vegetation_tree6831 17" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1744, 2848 )
+
+[node name="vegetation_tree683118" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 3104, 1504 )
+
 [node name="vegetation_tree59" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1560, 1928 )
@@ -388,25 +1871,436 @@ transform/pos = Vector2( 1560, 1928 )
 
 transform/pos = Vector2( 1816, 1992 )
 
+[node name="vegetation_tree80 13" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 120, 2112 )
+
+[node name="vegetation_tree68 12" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1152, 2832 )
+
+[node name="vegetation_tree6838 10" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2512, 1488 )
+
+[node name="vegetation_tree6813" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1480, 2496 )
+
+[node name="vegetation_tree6838 27" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2528, 1120 )
+
+[node name="vegetation_tree683836" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1600, 1184 )
+
+[node name="vegetation_tree6837 7" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2176, 2040 )
+
+[node name="vegetation_tree68378" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 80, 2064 )
+
+[node name="vegetation_tree68380" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 80, 2064 )
+
+[node name="vegetation_tree6830 2" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1480, 2496 )
+
+[node name="vegetation_tree68304" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2560, 1048 )
+
+[node name="vegetation_tree68305" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1632, 1112 )
+
+[node name="vegetation_tree68303" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2152, 1920 )
+
+[node name="vegetation_tree68306" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 392, 1224 )
+
 [node name="vegetation_tree50" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1856, 2016 )
+
+[node name="vegetation_tree80 14" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 448, 2272 )
+
+[node name="vegetation_tree68 13" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1296, 2752 )
+
+[node name="vegetation_tree6838 8" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2656, 1408 )
+
+[node name="vegetation_tree68389" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2104, 1448 )
+
+[node name="vegetation_tree6836 2" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1296, 2752 )
+
+[node name="vegetation_tree68363" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2656, 1408 )
+
+[node name="vegetation_tree68364" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2104, 1448 )
+
+[node name="vegetation_tree6832 2" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1016, 2640 )
+
+[node name="vegetation_tree68323" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2376, 1296 )
+
+[node name="vegetation_tree68325" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2200, 624 )
+
+[node name="vegetation_tree68326" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2128, 1096 )
+
+[node name="vegetation_tree68327" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1584, 1256 )
+
+[node name="vegetation_tree68328 2" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 928, 1088 )
+
+[node name="vegetation_tree68324" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1824, 1336 )
+
+[node name="vegetation_tree68328" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1320, 1240 )
+
+[node name="vegetation_tree6831 6" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1496, 3112 )
+
+[node name="vegetation_tree68317" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2808, 1568 )
+
+[node name="vegetation_tree6828 7" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1632, 2624 )
+flip_h = true
+
+[node name="vegetation_tree682817 6" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2992, 1280 )
+flip_h = true
+
+[node name="vegetation_tree68288" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1184, 2520 )
+
+[node name="vegetation_tree68293 4" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2544, 1176 )
+
+[node name="vegetation_tree682936" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1616, 1240 )
+
+[node name="vegetation_tree682935" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1992, 1216 )
+
+[node name="vegetation_tree68290 2" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1248, 2976 )
+
+[node name="vegetation_tree682903" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2464, 1912 )
+
+[node name="vegetation_tree6814" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1520, 2520 )
+
+[node name="vegetation_tree6838 25" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2880, 1176 )
+
+[node name="vegetation_tree683843" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 3088, 192 )
+
+[node name="vegetation_tree683826" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2328, 1216 )
+
+[node name="vegetation_tree683830" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1784, 1376 )
+
+[node name="vegetation_tree683842 3" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1248, 1424 )
+
+[node name="vegetation_tree683828" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1848, 1072 )
+
+[node name="vegetation_tree683829" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2080, 1016 )
+
+[node name="vegetation_tree6837 5" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2216, 2064 )
+
+[node name="vegetation_tree68376" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 384, 2400 )
 
 [node name="vegetation_tree51" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1816, 2072 )
 
+[node name="vegetation_tree80 15" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 384, 2272 )
+
+[node name="vegetation_tree68 14" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 984, 2880 )
+
+[node name="vegetation_tree6833" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1224, 3064 )
+
+[node name="vegetation_tree6838 36" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2376, 1376 )
+
+[node name="vegetation_tree683839" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1896, 1232 )
+
+[node name="vegetation_tree683840" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2128, 1176 )
+
+[node name="vegetation_tree683841" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1584, 1336 )
+
+[node name="vegetation_tree683842 2" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1128, 1160 )
+
+[node name="vegetation_tree683837" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1824, 1416 )
+
+[node name="vegetation_tree6815" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1288, 2584 )
+
+[node name="vegetation_tree6840" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 3000, 3096 )
+
+[node name="vegetation_tree6838 15" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2464, 1152 )
+
+[node name="vegetation_tree683816" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1536, 1216 )
+
+[node name="vegetation_tree6831 11" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1616, 2904 )
+
+[node name="vegetation_tree683112" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 3072, 1584 )
+
 [node name="vegetation_tree52" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1920, 2120 )
+
+[node name="vegetation_tree80 22" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 64, 1584 )
+
+[node name="vegetation_tree68 23" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1088, 2928 )
+
+[node name="vegetation_tree6838 3" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2504, 1840 )
+
+[node name="vegetation_tree6824" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1584, 2624 )
+
+[node name="vegetation_tree6838 17" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2944, 1280 )
 
 [node name="vegetation_tree53" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1952, 1992 )
 
+[node name="vegetation_tree80 23" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 192, 1296 )
+
+[node name="vegetation_tree72 4" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2088, 1696 )
+
+[node name="vegetation_tree725" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 328, 1000 )
+
+[node name="vegetation_tree68 24" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1632, 2312 )
+
+[node name="vegetation_tree6832 3" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 984, 2656 )
+
+[node name="vegetation_tree6831 9" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1592, 3088 )
+
+[node name="vegetation_tree683110" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2960, 1760 )
+
+[node name="vegetation_tree6828 10" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1736, 2600 )
+
+[node name="vegetation_tree682817 9" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 3096, 1256 )
+
+[node name="vegetation_tree682811" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1384, 2480 )
+
+[node name="vegetation_tree682818 2" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2924, 3060 )
+transform/scale = Vector2( 2.875, 1.625 )
+
+[node name="vegetation_tree682817 12" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2176, 1128 )
+
+[node name="vegetation_tree68281713" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1632, 1288 )
+
+[node name="vegetation_tree68281715" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1080, 1296 )
+
+[node name="vegetation_tree682815" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2080, 2024 )
+
+[node name="vegetation_tree682819" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 136, 2200 )
+
+[node name="vegetation_tree682816" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2104, 1560 )
+
+[node name="vegetation_tree682814 2" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1768, 2288 )
+
+[node name="vegetation_tree6825" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1616, 2496 )
+
+[node name="vegetation_tree6838 29" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2864, 1432 )
+
 [node name="vegetation_tree54" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1704, 2096 )
+
+[node name="vegetation_tree68 25" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 872, 2904 )
+
+[node name="vegetation_tree6833 2" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1112, 3088 )
+
+[node name="vegetation_tree68333" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2264, 1400 )
+
+[node name="vegetation_tree68343" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1992, 1104 )
+
+[node name="vegetation_tree68340 3" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1784, 1256 )
+
+[node name="vegetation_tree683409 2" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1208, 1136 )
+
+[node name="vegetation_tree683404" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2016, 1200 )
+
+[node name="vegetation_tree6826" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1176, 2608 )
+
+[node name="vegetation_tree6838 16" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2536, 1264 )
+
+[node name="vegetation_tree683817" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1984, 1304 )
+
+[node name="vegetation_tree683818" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1408, 1184 )
+
+[node name="vegetation_tree6831 12" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1384, 2872 )
+
+[node name="vegetation_tree683113" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2744, 1528 )
 
 [node name="vegetation_tree55" parent="terrain" instance=ExtResource( 10 )]
 
@@ -424,6 +2318,66 @@ transform/pos = Vector2( 1264, 1880 )
 
 transform/pos = Vector2( 1768, 2096 )
 
+[node name="vegetation_tree68 26" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 936, 2904 )
+
+[node name="vegetation_tree6833 7" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1176, 3088 )
+
+[node name="vegetation_tree68338" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2328, 1400 )
+
+[node name="vegetation_tree68340 5" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1848, 1256 )
+
+[node name="vegetation_tree683409 3" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1368, 1160 )
+
+[node name="vegetation_tree683406" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1808, 640 )
+
+[node name="vegetation_tree683408 3" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1536, 1360 )
+
+[node name="vegetation_tree6834084" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1152, 1264 )
+
+[node name="vegetation_tree6827" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1240, 2608 )
+
+[node name="vegetation_tree6840 4" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2952, 3120 )
+
+[node name="vegetation_tree6838 30" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2600, 1264 )
+
+[node name="vegetation_tree683831" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2048, 1304 )
+
+[node name="vegetation_tree683842" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1472, 1184 )
+
+[node name="vegetation_tree6831 15" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 1568, 2928 )
+
+[node name="vegetation_tree683116" parent="terrain" instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 2928, 1584 )
+
 [node name="vegetation_berries1" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1520, 1888 )
@@ -432,25 +2386,308 @@ transform/pos = Vector2( 1520, 1888 )
 
 transform/pos = Vector2( 1768, 2048 )
 
+[node name="vegetation_berries28" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1088, 2736 )
+
+[node name="vegetation_berries33" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2448, 1392 )
+
+[node name="vegetation_berries34" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1896, 1432 )
+
+[node name="vegetation_berries29" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1240, 2560 )
+
+[node name="vegetation_berries35" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2952, 3072 )
+
+[node name="vegetation_berries33 2" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2600, 1216 )
+
+[node name="vegetation_berries333" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2048, 1256 )
+
+[node name="vegetation_berries334" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1472, 1136 )
+
+[node name="vegetation_berries30" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1552, 2864 )
+flip_h = true
+
+[node name="vegetation_berries33 3" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2912, 1520 )
+flip_h = true
+
 [node name="vegetation_berries3" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1696, 2056 )
 
+[node name="vegetation_berries28 2" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 864, 2864 )
+
+[node name="vegetation_berries2810" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1104, 3048 )
+
+[node name="vegetation_berries2811 2" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2256, 1360 )
+
+[node name="vegetation_berries28113" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2680, 448 )
+
+[node name="vegetation_berries28114" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2008, 1160 )
+
+[node name="vegetation_berries283" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1168, 2568 )
+
+[node name="vegetation_berries291 2" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2432, 848 )
+
+[node name="vegetation_berries2913" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1976, 1264 )
+
+[node name="vegetation_berries2915" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1400, 1144 )
+
+[node name="vegetation_berries288 2" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1496, 2888 )
+
+[node name="vegetation_berries2883" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2856, 1544 )
+
 [node name="vegetation_berries4" parent="terrain" instance=ExtResource( 11 )]
 
-transform/pos = Vector2( 1912, 2048 )
+transform/pos = Vector2( 648, 1872 )
+
+[node name="vegetation_berries14" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 696, 1840 )
+
+[node name="vegetation_berries15" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 768, 1824 )
+
+[node name="vegetation_berries16" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 728, 1816 )
+
+[node name="vegetation_berries17" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 656, 1840 )
+
+[node name="vegetation_berries18" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 680, 1856 )
+flip_h = true
+
+[node name="vegetation_berries19" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 768, 1752 )
+flip_h = true
+
+[node name="vegetation_berries27" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 872, 1752 )
+flip_h = true
+
+[node name="vegetation_berries20" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 872, 1712 )
+flip_h = true
+
+[node name="vegetation_berries21" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 840, 1688 )
+
+[node name="vegetation_berries22" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 880, 1656 )
+
+[node name="vegetation_berries23" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 864, 1688 )
+
+[node name="vegetation_berries24" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 800, 1720 )
+
+[node name="vegetation_berries25" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 808, 1736 )
+
+[node name="vegetation_berries26" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 856, 1776 )
+flip_h = true
 
 [node name="vegetation_berries5" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1832, 2128 )
 
+[node name="vegetation_berries36" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 72, 1432 )
+
+[node name="vegetation_berries28 3" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1000, 2936 )
+
+[node name="vegetation_berries2810 2" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1240, 3120 )
+
+[node name="vegetation_berries28103" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2392, 1432 )
+
+[node name="vegetation_berries284" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1304, 2640 )
+
+[node name="vegetation_berries292" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 3016, 3152 )
+
+[node name="vegetation_berries291 3" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2664, 1296 )
+
+[node name="vegetation_berries2914" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2112, 1336 )
+
+[node name="vegetation_berries288 3" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1632, 2960 )
+
+[node name="vegetation_berries2884" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 3088, 1640 )
+
 [node name="vegetation_berries6" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1936, 2024 )
 
+[node name="vegetation_berries36 2" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 176, 1328 )
+
+[node name="vegetation_berries31" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2072, 1728 )
+
+[node name="vegetation_berries36 4" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 312, 1032 )
+
+[node name="vegetation_berries28 4" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1248, 2800 )
+
+[node name="vegetation_berries2811" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2608, 1456 )
+
+[node name="vegetation_berries289" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 968, 2688 )
+
+[node name="vegetation_berries288" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1576, 3120 )
+
+[node name="vegetation_berries291 6" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2936, 1776 )
+
+[node name="vegetation_berries286" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1720, 2632 )
+
+[node name="vegetation_berries291" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 3080, 1288 )
+
+[node name="vegetation_berries287" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1368, 2512 )
+
+[node name="vegetation_berries292 2" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 3080, 3024 )
+
+[node name="vegetation_berries291 5" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2728, 1168 )
+
+[node name="vegetation_berries2919 2" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2520, 328 )
+
+[node name="vegetation_berries2916" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2176, 1208 )
+
+[node name="vegetation_berries2917" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1632, 1368 )
+
+[node name="vegetation_berries2918" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1264, 1304 )
+
+[node name="vegetation_berries290" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1752, 2320 )
+
+[node name="vegetation_berries288 4" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1328, 2984 )
+
+[node name="vegetation_berries2885" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2376, 1896 )
+
+[node name="vegetation_berries285" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1600, 2528 )
+
+[node name="vegetation_berries291 4" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2960, 1184 )
+
+[node name="vegetation_berries2919" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 3032, 320 )
+
 [node name="vegetation_berries7" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1840, 1672 )
+
+[node name="vegetation_berries36 3" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 80, 976 )
 
 [node name="vegetation_berries8" parent="terrain" instance=ExtResource( 11 )]
 
@@ -472,6 +2709,10 @@ transform/pos = Vector2( 1864, 1472 )
 
 transform/pos = Vector2( 1768, 1528 )
 
+[node name="vegetation_berries32" parent="terrain" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 2096, 1368 )
+
 [node name="vegetation_berries13" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1568, 1528 )
@@ -492,7 +2733,7 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( 2424877, 4, 2621476, 4, 2687029, 4, 3211304, 0, 3211305, 0, 3211306, 0, 3211307, 0, 3211309, 0, 3211310, 0, 3211311, 0, 3211312, 0, 3211313, 0, 3276830, 2, 3276840, 0, 3276849, 0, 3276850, 0, 3342376, 0, 3342386, 0, 3342387, 0, 3342388, 0, 3407912, 0, 3407924, 0, 3473447, 0, 3473448, 0, 3473460, 0, 3538983, 0, 3538990, 1, 3538991, 1, 3538996, 0, 3604519, 0, 3604524, 5, 3604526, 1, 3604527, 1, 3604532, 0, 3670055, 0, 3670068, 0, 3735591, 0, 3735603, 0, 3735604, 0, 3801114, 3, 3801127, 0, 3801128, 0, 3801129, 0, 3801130, 0, 3801138, 0, 3801139, 0, 3866666, 0, 3866667, 0, 3866669, 0, 3866670, 0, 3866671, 0, 3866672, 0, 3866673, 0, 3866674, 0 )
+tile_data = IntArray( 2424877, 4, 2621476, 4, 2687029, 4, 3211304, 0, 3211305, 0, 3211306, 0, 3211307, 0, 3211309, 0, 3211310, 0, 3211311, 0, 3211312, 0, 3211313, 0, 3276830, 2, 3276840, 0, 3276849, 0, 3276850, 0, 3342376, 0, 3342386, 0, 3342387, 0, 3342388, 0, 3407912, 0, 3407924, 0, 3473447, 0, 3473448, 0, 3473460, 0, 3538983, 0, 3538990, 1, 3538991, 1, 3538996, 0, 3604519, 0, 3604524, 5, 3604526, 1, 3604527, 1, 3604532, 0, 3670040, 3, 3670055, 0, 3670068, 0, 3735591, 0, 3735603, 0, 3735604, 0, 3801127, 0, 3801128, 0, 3801129, 0, 3801130, 0, 3801138, 0, 3801139, 0, 3866666, 0, 3866667, 0, 3866669, 0, 3866670, 0, 3866671, 0, 3866672, 0, 3866673, 0, 3866674, 0 )
 __meta__ = { "_edit_lock_":true }
 
 

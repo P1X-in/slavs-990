@@ -1,0 +1,285 @@
+[gd_scene load_steps=8 format=1]
+
+[ext_resource path="res://themes/master.tres" type="Theme" id=1]
+[ext_resource path="res://assets/logo/sun.png" type="Texture" id=2]
+[ext_resource path="res://themes/font_h1.tres" type="Theme" id=3]
+[ext_resource path="res://assets/entities/slav_units.png" type="Texture" id=4]
+[ext_resource path="res://assets/gui/panel_gray.png" type="Texture" id=5]
+[ext_resource path="res://themes/font_14.tres" type="Theme" id=6]
+[ext_resource path="res://assets/entities/cmuch.png" type="Texture" id=7]
+
+[node name="battle" type="Control"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 1 )
+margin/left = 32.0
+margin/top = 32.0
+margin/right = 32.0
+margin/bottom = 32.0
+
+[node name="panel" type="Panel" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+
+[node name="container" type="VBoxContainer" parent="panel"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 32.0
+margin/top = 32.0
+margin/right = 32.0
+margin/bottom = 7.0
+custom_constants/separation = 32
+alignment = 1
+
+[node name="header" type="HBoxContainer" parent="panel/container"]
+
+editor/display_folded = true
+rect/min_size = Vector2( 0, 32 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 27.0
+margin/right = 896.0
+margin/bottom = 63.0
+custom_constants/separation = 128
+alignment = 1
+
+[node name="sun_left" type="Container" parent="panel/container/header"]
+
+editor/display_folded = true
+rect/min_size = Vector2( 90, 32 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 129.0
+margin/top = 0.0
+margin/right = 219.0
+margin/bottom = 36.0
+
+[node name="Sprite" type="Sprite" parent="panel/container/header/sun_left"]
+
+transform/pos = Vector2( 0, -32 )
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Label" type="Label" parent="panel/container/header"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+theme/theme = ExtResource( 3 )
+margin/left = 347.0
+margin/top = 0.0
+margin/right = 548.0
+margin/bottom = 36.0
+text = "Potyczka"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="sun_right" type="Container" parent="panel/container/header"]
+
+editor/display_folded = true
+rect/min_size = Vector2( 90, 32 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 676.0
+margin/top = 0.0
+margin/right = 766.0
+margin/bottom = 36.0
+
+[node name="Sprite" type="Sprite" parent="panel/container/header/sun_right"]
+
+transform/pos = Vector2( 0, -32 )
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="body" type="VBoxContainer" parent="panel/container"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 95.0
+margin/right = 896.0
+margin/bottom = 351.0
+custom_constants/separation = 16
+alignment = 0
+
+[node name="log" type="HBoxContainer" parent="panel/container/body"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 896.0
+margin/bottom = 256.0
+custom_constants/separation = 32
+alignment = 1
+
+[node name="ally" type="Container" parent="panel/container/body/log"]
+
+editor/display_folded = true
+rect/min_size = Vector2( 64, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 32.0
+margin/top = 0.0
+margin/right = 96.0
+margin/bottom = 256.0
+
+[node name="Sprite" type="Sprite" parent="panel/container/body/log/ally"]
+
+transform/pos = Vector2( 8, 56 )
+transform/scale = Vector2( 4, 4 )
+texture = ExtResource( 4 )
+vframes = 2
+hframes = 2
+
+[node name="Container" type="Container" parent="panel/container/body/log"]
+
+rect/min_size = Vector2( 640, 256 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 128.0
+margin/top = 0.0
+margin/right = 768.0
+margin/bottom = 256.0
+
+[node name="background" type="Patch9Frame" parent="panel/container/body/log/Container"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 5 )
+patch_margin/left = 30
+patch_margin/top = 30
+patch_margin/right = 30
+patch_margin/bottom = 30
+
+[node name="text" type="RichTextLabel" parent="panel/container/body/log/Container"]
+
+anchor/right = 1
+anchor/bottom = 1
+rect/min_size = Vector2( 608, 224 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+theme/theme = ExtResource( 6 )
+margin/left = 16.0
+margin/top = 16.0
+margin/right = 16.0
+margin/bottom = 16.0
+bbcode/enabled = true
+bbcode/bbcode = "# Dzikia ryjówka ugryzła Swodzibora Walecznego zadając mu 30 obrażeń. #\n\n# Swodzibor Waleczny ucieka z pola walki. #\n\n# Przegrałeś walkę. Nie jesteś zwyciężcą. #"
+visible_characters = -1
+
+[node name="enemy" type="Container" parent="panel/container/body/log"]
+
+editor/display_folded = true
+rect/min_size = Vector2( 64, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 800.0
+margin/top = 0.0
+margin/right = 864.0
+margin/bottom = 256.0
+
+[node name="Sprite1" type="Sprite" parent="panel/container/body/log/enemy"]
+
+transform/pos = Vector2( 56, 64 )
+transform/scale = Vector2( 4, 4 )
+texture = ExtResource( 7 )
+flip_h = true
+
+[node name="buttons" type="HBoxContainer" parent="panel/container"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 383.0
+margin/right = 896.0
+margin/bottom = 470.0
+custom_constants/separation = 16
+alignment = 2
+
+[node name="skip_button" type="Button" parent="panel/container/buttons"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 246.0
+margin/top = 0.0
+margin/right = 578.0
+margin/bottom = 87.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Przyspiesz walkę"
+flat = false
+
+[node name="exit_button" type="Button" parent="panel/container/buttons"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 594.0
+margin/top = 0.0
+margin/right = 896.0
+margin/bottom = 87.0
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Powrót do mapy"
+flat = false
+
+

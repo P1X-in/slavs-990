@@ -13,9 +13,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 theme/theme = ExtResource( 1 )
-margin/left = 64.0
-margin/top = 64.0
-margin/right = 64.0
+margin/left = 32.0
+margin/top = 32.0
+margin/right = 32.0
 margin/bottom = 64.0
 
 [node name="panel" type="Panel" parent="."]
@@ -39,12 +39,12 @@ focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 0.0
-margin/bottom = 0.0
+margin/left = 32.0
+margin/top = 32.0
+margin/right = 32.0
+margin/bottom = 32.0
 custom_constants/separation = 32
-alignment = 0
+alignment = 1
 
 [node name="header" type="HBoxContainer" parent="panel/container"]
 
@@ -54,9 +54,9 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 0.0
+margin/top = 8.0
 margin/right = 896.0
-margin/bottom = 90.0
+margin/bottom = 98.0
 custom_constants/separation = 128
 alignment = 1
 
@@ -121,9 +121,9 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 122.0
+margin/top = 130.0
 margin/right = 896.0
-margin/bottom = 304.0
+margin/bottom = 312.0
 custom_constants/separation = 16
 alignment = 0
 
@@ -409,81 +409,84 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="panel/container"]
+[node name="buttons" type="HBoxContainer" parent="panel/container"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 336.0
+margin/top = 344.0
 margin/right = 896.0
-margin/bottom = 423.0
+margin/bottom = 431.0
 custom_constants/separation = 16
 alignment = 1
 
-[node name="Button" type="Button" parent="panel/container/HBoxContainer"]
+[node name="Button" type="Button" parent="panel/container/buttons"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 65.0
+margin/left = 16.0
 margin/top = 0.0
-margin/right = 251.0
+margin/right = 202.0
 margin/bottom = 87.0
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 text = "Ludność"
 flat = false
 
-[node name="Button1" type="Button" parent="panel/container/HBoxContainer"]
+[node name="Button1" type="Button" parent="panel/container/buttons"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 267.0
+margin/left = 218.0
 margin/top = 0.0
-margin/right = 453.0
+margin/right = 376.0
 margin/bottom = 87.0
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Budowle"
+text = "Chaty"
 flat = false
 
-[node name="Button2" type="Button" parent="panel/container/HBoxContainer"]
+[node name="Button2" type="Button" parent="panel/container/buttons"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 469.0
+margin/left = 392.0
 margin/top = 0.0
-margin/right = 639.0
+margin/right = 562.0
 margin/bottom = 87.0
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 text = "Zasoby"
 flat = false
 
-[node name="Button3" type="Button" parent="panel/container/HBoxContainer"]
+[node name="exit_button" type="Button" parent="panel/container/buttons"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 655.0
+margin/left = 578.0
 margin/top = 0.0
-margin/right = 830.0
+margin/right = 880.0
 margin/bottom = 87.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Wyjście"
+text = "Powrót do mapy"
 flat = false
 
 
