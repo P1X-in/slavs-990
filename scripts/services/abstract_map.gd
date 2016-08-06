@@ -1,5 +1,6 @@
 
 const TILE_VILLAGE = 1
+const TILE_START = 5
 
 var bag
 
@@ -12,6 +13,7 @@ var field_template = preload('res://scripts/services/abstract_field.gd')
 const MAX_MAP_DIMENSION = 100
 
 var village_tile = null
+var start_tile = null
 
 func _init_bag(bag):
 	self.bag = bag
@@ -60,12 +62,16 @@ func extend(position):
 		size.y = position.y
 
 func create_field(position):
-	var field = field_template.new()
+	var field = self.field_template.new()
 	field.position = position
-	field.terrain_type = tilemap.get_cell(position.x, position.y)
+	field.terrain_type = self.tilemap.get_cell(position.x, position.y)
 	field.abstract_map = self
 
 	if field.terrain_type == self.TILE_VILLAGE:
 		self.village_tile = field
+	if field.terrain_type == self.TILE_START:
+		self.start_tile = field
+		self.tilemap.set_cell(position.x, position.y, -1)
+		field.terrain_type = -1
 
 	return field
