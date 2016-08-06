@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://assets/gui/resources.png" type="Texture" id=1]
+
+[node name="amber" type="Container"]
+
+rect/min_size = Vector2( 64, 64 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 32.0
+margin/bottom = 55.0
+
+[node name="icon" type="Sprite" parent="."]
+
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+centered = false
+region = true
+region_rect = Rect2( 0, 32, 32, 32 )
+
+[node name="value" type="Label" parent="."]
+
+anchor/left = 1
+anchor/top = 1
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 16.0
+margin/top = 16.0
+margin/right = 16.0
+margin/bottom = 16.0
+text = "x2"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
