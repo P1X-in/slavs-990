@@ -9,6 +9,7 @@ func load_game():
     self.bag.camera.set_pos_map(self.bag.abstract_map.village_tile.position)
     self.bag.camera.unlock()
     self.bag.party.set_map_pos(self.bag.abstract_map.start_tile.position)
+    self.bag.unit_factory.spawn_events()
 
 func handle_screen_click(position):
     self.handle_map_click(self.bag.map.translate_screen_to_map(position))

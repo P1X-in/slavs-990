@@ -10,12 +10,16 @@ var event_template = preload("res://scripts/units/event.gd")
 func _init_bag(bag):
     self.bag = bag
 
+func spawn_events():
+    for tile in self.bag.abstract_map.events['animals']:
+        self.spawn_event_on_field(tile)
+
 func spawn_event_on_field(field):
     var new_event = self.event_template.new()
     new_event._init_bag(bag)
 
     new_event.attach()
-    new_event.go_to_map(field)
+    new_event.go_to_field(field)
 
 
 func generate(challenge, player=0):

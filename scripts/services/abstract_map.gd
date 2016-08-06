@@ -1,11 +1,16 @@
 
 const TILE_VILLAGE = 1
 const TILE_START = 5
+const TILE_FOREST_ANIMAL = 4
 
 var bag
 
 var size = Vector2(0, 0)
 var fields = [[null]]
+
+var events = {
+	'animals' : []
+}
 
 var tilemap
 var field_template = preload('res://scripts/services/abstract_field.gd')
@@ -24,6 +29,10 @@ func reset():
 	self.size = Vector2(0, 0)
 	self.fields = [[null]]
 	self.village_tile = null
+	self.start_tile = null
+	self.events = {
+		'animals' : []
+	}
 
 func get_field(position):
 	if position.x < 0 || position.y < 0:
@@ -73,5 +82,11 @@ func create_field(position):
 		self.start_tile = field
 		self.tilemap.set_cell(position.x, position.y, -1)
 		field.terrain_type = -1
+
+	if field.terrain_type == self.TILE_FOREST_ANIMAL:
+		self.events['animals'].append(field)
+		self.tilemap.set_cell(position.x, position.y, -1)
+		field.terrain_type = -1
+
 
 	return field

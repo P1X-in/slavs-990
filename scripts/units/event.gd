@@ -10,7 +10,7 @@ func _init_bag(bag):
 
 
 func attach():
-    self.bag.map.objects_mount.add_child(self.party_scene)
+    self.bag.map.objects_mount.add_child(self.event_scene)
 
 
 func set_map_pos(position):

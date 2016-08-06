@@ -37,6 +37,7 @@ func _init(root_node):
     self.menu._init_bag(self, root_node.mount)
     self.board._init_bag(self, root_node.mount)
     self.camera._init_bag(self)
+    self.unit_factory._init_bag(self)
     self.map._init_bag(self, self.board.map_mount)
     self.abstract_map._init_bag(self)
     self.settlement._init_bag(self, root_node.mount)
@@ -46,4 +47,3 @@ func _init(root_node):
     self.hud._init_bag(self)
     self.party._init_bag(self)
     self.party_manager._init_bag(self, root_node.mount)
-    self.unit_factory._init_bag(self)
