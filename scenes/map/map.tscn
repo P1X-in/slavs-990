@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=1]
+[gd_scene load_steps=20 format=1]
 
 [ext_resource path="res://tilesets/terrain.tres" type="TileSet" id=1]
 [ext_resource path="res://scenes/map/settlement/swiatowid.tscn" type="PackedScene" id=2]
@@ -17,7 +17,8 @@
 [ext_resource path="res://scenes/map/settlement/settlement_house_wood.tscn" type="PackedScene" id=15]
 [ext_resource path="res://scenes/map/settlement/settlement_house_metal.tscn" type="PackedScene" id=16]
 [ext_resource path="res://scenes/map/settlement/settlement_house_hunter.tscn" type="PackedScene" id=17]
-[ext_resource path="res://tilesets/types.tres" type="TileSet" id=18]
+[ext_resource path="res://scenes/entities/animals/kura.tscn" type="PackedScene" id=18]
+[ext_resource path="res://tilesets/types.tres" type="TileSet" id=19]
 
 [node name="map" type="Control"]
 
@@ -2837,10 +2838,55 @@ transform/pos = Vector2( 2784, 712 )
 
 transform/pos = Vector2( 1336, 1016 )
 
+[node name="kura" parent="terrain" instance=ExtResource( 18 )]
+
+margin/left = 872.0
+margin/top = 2280.0
+margin/right = 904.0
+margin/bottom = 2312.0
+
+[node name="kura1" parent="terrain" instance=ExtResource( 18 )]
+
+margin/left = 864.0
+margin/top = 2312.0
+margin/right = 896.0
+margin/bottom = 2344.0
+
+[node name="kura2" parent="terrain" instance=ExtResource( 18 )]
+
+editor/display_folded = true
+margin/left = 968.0
+margin/top = 2264.0
+margin/right = 1000.0
+margin/bottom = 2296.0
+
+[node name="sprite" parent="terrain/kura2"]
+
+flip_h = true
+
+[node name="kura3" parent="terrain" instance=ExtResource( 18 )]
+
+margin/left = 768.0
+margin/top = 2264.0
+margin/right = 800.0
+margin/bottom = 2296.0
+
+[node name="kura4" parent="terrain" instance=ExtResource( 18 )]
+
+editor/display_folded = true
+margin/left = 848.0
+margin/top = 2296.0
+margin/right = 880.0
+margin/bottom = 2328.0
+
+[node name="sprite" parent="terrain/kura4"]
+
+flip_h = true
+
 [node name="types" type="TileMap" parent="."]
 
 mode = 0
-tile_set = ExtResource( 18 )
+tile_set = ExtResource( 19 )
 cell/size = Vector2( 32, 32 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -2853,7 +2899,9 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( 458800, 3, 458830, 4, 786519, 4, 1048649, 4, 1114171, 6, 1572910, 4, 1703993, 4, 1769509, 4, 1900576, 4, 1966102, 3, 2031665, 4, 2097198, 4, 2097229, 8, 2228297, 6, 2228318, 8, 2424877, 4, 2424887, 4, 2621476, 4, 2687029, 4, 2752573, 8, 2883592, 8, 3211304, 0, 3211305, 0, 3211306, 0, 3211307, 0, 3211309, 0, 3211310, 0, 3211311, 0, 3211312, 0, 3211313, 0, 3276840, 0, 3276849, 0, 3276850, 0, 3342376, 0, 3342386, 0, 3342387, 0, 3342388, 0, 3342405, 8, 3407912, 0, 3407917, 0, 3407918, 0, 3407919, 0, 3407924, 0, 3473447, 0, 3473448, 0, 3473454, 0, 3473455, 0, 3473456, 0, 3473460, 0, 3538983, 0, 3538990, 1, 3538991, 1, 3538993, 0, 3538994, 0, 3538995, 0, 3538996, 0, 3604519, 0, 3604520, 0, 3604521, 0, 3604522, 0, 3604524, 5, 3604526, 1, 3604527, 1, 3604532, 0, 3670040, 3, 3670055, 0, 3670068, 0, 3735591, 0, 3735603, 0, 3735604, 0, 3801127, 0, 3801128, 0, 3801129, 0, 3801130, 0, 3801138, 0, 3801139, 0, 3866666, 0, 3866667, 0, 3866669, 0, 3866670, 0, 3866671, 0, 3866672, 0, 3866673, 0, 3866674, 0, 3932246, 6, 3997703, 4, 4325399, 4, 4325442, 6, 4390970, 8, 4718616, 4, 4980778, 8, 5373997, 4, 5439508, 4, 5963865, 8, 5963866, 8, 6094877, 6, 6225927, 3, 6225975, 4, 6291470, 4 )
+tile_data = IntArray( 458800, 3, 458830, 4, 786519, 4, 1048649, 4, 1114171, 6, 1572910, 4, 1703993, 4, 1769509, 4, 1900576, 4, 1966102, 3, 2031665, 4, 2097198, 4, 2097229, 8, 2228297, 6, 2228318, 8, 2424877, 4, 2424887, 4, 2621476, 4, 2687029, 4, 2752573, 8, 2883592, 8, 3211304, 0, 3211305, 0, 3211306, 0, 3211307, 0, 3211309, 0, 3211310, 0, 3211311, 0, 3211312, 0, 3211313, 0, 3276840, 0, 3276849, 0, 3276850, 0, 3342376, 0, 3342386, 0, 3342387, 0, 3342388, 0, 3342405, 8, 3407912, 0, 3407917, 0, 3407918, 0, 3407919, 0, 3407924, 0, 3473447, 0, 3473448, 0, 3473454, 0, 3473455, 0, 3473456, 0, 3473460, 0, 3538983, 0, 3538990, 1, 3538991, 1, 3538993, 0, 3538994, 0, 3538995, 0, 3538996, 0, 3604519, 0, 3604520, 0, 3604521, 0, 3604522, 0, 3604524, 5, 3604526, 1, 3604527, 1, 3604532, 0, 3670040, 3, 3670055, 0, 3670068, 0, 3735591, 0, 3735603, 0, 3735604, 0, 3801127, 0, 3801128, 0, 3801129, 0, 3801130, 0, 3801138, 0, 3801139, 0, 3866666, 0, 3866667, 0, 3866669, 0, 3866670, 0, 3866671, 0, 3866672, 0, 3866673, 0, 3866674, 0, 3932246, 6, 3997703, 4, 4325399, 4, 4325442, 6, 4390970, 8, 4980778, 8, 5242906, 4, 5242907, 4, 5373997, 4, 5439508, 4, 5963865, 8, 5963866, 8, 6094877, 6, 6225927, 3, 6225975, 4, 6291470, 4 )
 __meta__ = { "_edit_lock_":true }
 
 
+[editable path="terrain/kura2"]
+[editable path="terrain/kura4"]
