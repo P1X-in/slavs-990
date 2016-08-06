@@ -1,0 +1,136 @@
+[gd_scene format=1]
+
+[node name="resources_panel" type="Panel"]
+
+anchor/right = 1
+rect/min_size = Vector2( 0, 64 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 40.0
+
+[node name="list" type="HBoxContainer" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 32.0
+margin/top = 0.0
+margin/right = 32.0
+margin/bottom = 0.0
+custom_constants/separation = 16
+alignment = 0
+
+[node name="resources" type="Label" parent="list"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 25.0
+margin/right = 57.0
+margin/bottom = 39.0
+text = "Surowce:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="drewno" type="Label" parent="list"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 73.0
+margin/top = 25.0
+margin/right = 152.0
+margin/bottom = 39.0
+text = "drewno: 600"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="mieso" type="Label" parent="list"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 168.0
+margin/top = 25.0
+margin/right = 232.0
+margin/bottom = 39.0
+text = "mieso: 50"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="zborze" type="Label" parent="list"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 248.0
+margin/top = 25.0
+margin/right = 323.0
+margin/bottom = 39.0
+text = "zborze: 100"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="metal" type="Label" parent="list"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 339.0
+margin/top = 25.0
+margin/right = 392.0
+margin/bottom = 39.0
+text = "metal: 0"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="futra" type="Label" parent="list"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 408.0
+margin/top = 25.0
+margin/right = 453.0
+margin/bottom = 39.0
+text = "futra: 0"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="bursztyn" type="Label" parent="list"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 469.0
+margin/top = 25.0
+margin/right = 547.0
+margin/bottom = 39.0
+text = "bursztyny: 0"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
