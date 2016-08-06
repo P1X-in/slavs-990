@@ -24,4 +24,9 @@ var items = {
         'description': '',
         'availability' : 1
     },
+    'amber' : {
+        'name': 'bursztyn',
+        'description': '',
+        'availability' : 1
+    },
 }

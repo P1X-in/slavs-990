@@ -14,6 +14,8 @@ func _ready():
     # var loot = self.bag.item_factory.generate_for_opponents(units)
     # print(loot)
 
+    self.bag.hud.refresh_resources()
+
     #self.bag.sound.play_soundtrack('intro')
 
 func _input(event):
