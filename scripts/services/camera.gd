@@ -2,6 +2,7 @@
 const NEAR_SCREEN_THRESHOLD = 0.2
 const MAP_STEP = 0.01
 const PAN_THRESHOLD = 20
+const NEAR_THRESHOLD = 20
 
 var bag
 
@@ -10,7 +11,7 @@ var zoom
 var locked = true
 var pan_to_position
 var game_size
-var movement_time_delta
+var movement_time_delta = 0.0
 var panning = false
 var dragging = false
 
@@ -52,10 +53,16 @@ func set_pos(position):
     self.pan_to_position = position
     self.camera.set_offset(position)
 
+func set_pos_map(position):
+    self.set_pos(self.bag.map.translate_map_to_global(position))
+
 func offset_camera(offset):
     var position = self.get_pos()
     position = position + offset
     self.set_pos(position)
+
+func pan_to_map(position):
+    self.pan_to(self.bag.map.translate_map_to_global(position))
 
 func pan_to(position):
     self.game_size = self.bag.root.get_size()
@@ -102,7 +109,7 @@ func process(delta):
                 self_pos.y = self_pos.y + diff_y * self.movement_time_delta;
                 var new_pos = Vector2(self_pos.x, self_pos.y)
                 self.camera.set_offset(new_pos)
-            self.movement_time_delta = 0
+            self.movement_time_delta = 0.0
     else:
         self.panning = false
 

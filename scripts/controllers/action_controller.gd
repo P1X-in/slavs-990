@@ -6,6 +6,8 @@ func _init_bag(bag):
 func load_game():
     self.bag.board.load_map()
     self.bag.map.load_tiles()
+    self.bag.camera.set_pos_map(self.bag.abstract_map.village_tile.position)
+    self.bag.camera.unlock()
 
 func handle_screen_click(position):
     self.handle_map_click(self.bag.map.translate_screen_to_map(position))
