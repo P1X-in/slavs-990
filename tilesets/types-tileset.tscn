@@ -34,14 +34,14 @@ texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 64, 0, 32, 32 )
 
-[node name="creature_spawner" type="Sprite" parent="."]
+[node name="cmuch" type="Sprite" parent="."]
 
 transform/pos = Vector2( 232, 64 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 96, 0, 32, 32 )
 
-[node name="forest_animals" type="Sprite" parent="."]
+[node name="wolf" type="Sprite" parent="."]
 
 transform/pos = Vector2( 64, 120 )
 texture = ExtResource( 1 )
@@ -54,5 +54,19 @@ transform/pos = Vector2( 120, 120 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 32, 32, 32, 32 )
+
+[node name="borowy" type="Sprite" parent="."]
+
+transform/pos = Vector2( 176, 120 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 64, 32, 32, 32 )
+
+[node name="future_creature" type="Sprite" parent="."]
+
+transform/pos = Vector2( 240, 120 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 96, 32, 32, 32 )
 
 
