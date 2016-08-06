@@ -1,19 +1,17 @@
-[gd_scene load_steps=15 format=1]
+[gd_scene load_steps=13 format=1]
 
 [ext_resource path="res://tilesets/terrain.tres" type="TileSet" id=1]
 [ext_resource path="res://scenes/map/settlement/swiatowid.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/entities/entity_animals_wolf.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/entities/entity_slav_unit1.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/map/settlement/settlement_enter.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/map/settlement/settlement_palisade1.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/map/settlement/settlement_palisade_corner_left.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scenes/map/settlement/settlement_palisade_corner_right.tscn" type="PackedScene" id=8]
-[ext_resource path="res://scenes/map/settlement/settlement_palisade_left_wall.tscn" type="PackedScene" id=9]
-[ext_resource path="res://scenes/map/settlement/settlement_palisade_wall_right.tscn" type="PackedScene" id=10]
-[ext_resource path="res://scenes/map/vegetation/vegetation_tree1.tscn" type="PackedScene" id=11]
-[ext_resource path="res://scenes/map/vegetation/vegetation_tree2.tscn" type="PackedScene" id=12]
-[ext_resource path="res://scenes/map/vegetation/vegetation_berries1.tscn" type="PackedScene" id=13]
-[ext_resource path="res://tilesets/types.tres" type="TileSet" id=14]
+[ext_resource path="res://scenes/map/settlement/settlement_enter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/map/settlement/settlement_palisade1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/map/settlement/settlement_palisade_corner_left.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/map/settlement/settlement_palisade_corner_right.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/map/settlement/settlement_palisade_left_wall.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/map/settlement/settlement_palisade_wall_right.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/map/vegetation/vegetation_tree1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/map/vegetation/vegetation_tree2.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/map/vegetation/vegetation_berries1.tscn" type="PackedScene" id=11]
+[ext_resource path="res://tilesets/types.tres" type="TileSet" id=12]
 
 [node name="map" type="Control"]
 
@@ -58,458 +56,430 @@ __meta__ = { "_edit_lock_":true }
 
 transform/pos = Vector2( 1504, 1752 )
 
-[node name="entity_animals_wolf" parent="terrain" instance=ExtResource( 3 )]
-
-margin/left = 1768.0
-margin/top = 1664.0
-margin/right = 1800.0
-margin/bottom = 1696.0
-
-[node name="entity_animals_wolf1" parent="terrain" instance=ExtResource( 3 )]
-
-margin/left = 1440.0
-margin/top = 1200.0
-margin/right = 1472.0
-margin/bottom = 1232.0
-
-[node name="entity_animals_wolf2" parent="terrain" instance=ExtResource( 3 )]
-
-margin/left = 1872.0
-margin/top = 2080.0
-margin/right = 1904.0
-margin/bottom = 2112.0
-
-[node name="entity_slav_unit1" parent="terrain" instance=ExtResource( 4 )]
-
-margin/left = 1400.0
-margin/top = 1744.0
-margin/right = 1432.0
-margin/bottom = 1776.0
-
-[node name="settlement_enter" parent="terrain" instance=ExtResource( 5 )]
+[node name="settlement_enter" parent="terrain" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 1424, 1888 )
 
-[node name="settlement_enter1" parent="terrain" instance=ExtResource( 5 )]
+[node name="settlement_enter1" parent="terrain" instance=ExtResource( 3 )]
 
 transform/pos = Vector2( 1424, 1568 )
 
-[node name="settlement_palisade1" parent="terrain" instance=ExtResource( 6 )]
+[node name="settlement_palisade1" parent="terrain" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 1488, 1880 )
 
-[node name="settlement_palisade2" parent="terrain" instance=ExtResource( 6 )]
+[node name="settlement_palisade2" parent="terrain" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 1552, 1872 )
 
-[node name="settlement_palisade3" parent="terrain" instance=ExtResource( 6 )]
+[node name="settlement_palisade3" parent="terrain" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 1608, 1864 )
 
-[node name="settlement_palisade6" parent="terrain" instance=ExtResource( 6 )]
+[node name="settlement_palisade6" parent="terrain" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 1368, 1872 )
 
-[node name="settlement_palisade7" parent="terrain" instance=ExtResource( 6 )]
+[node name="settlement_palisade7" parent="terrain" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 1352, 1848 )
 
-[node name="settlement_palisade8" parent="terrain" instance=ExtResource( 6 )]
+[node name="settlement_palisade8" parent="terrain" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 1288, 1848 )
 
-[node name="settlement_palisade9" parent="terrain" instance=ExtResource( 6 )]
+[node name="settlement_palisade9" parent="terrain" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 1360, 1568 )
 
-[node name="settlement_palisade10" parent="terrain" instance=ExtResource( 6 )]
+[node name="settlement_palisade10" parent="terrain" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 1488, 1568 )
 
-[node name="settlement_palisade11" parent="terrain" instance=ExtResource( 6 )]
+[node name="settlement_palisade11" parent="terrain" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 1552, 1568 )
 
-[node name="settlement_palisade13" parent="terrain" instance=ExtResource( 6 )]
+[node name="settlement_palisade13" parent="terrain" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 1624, 1632 )
 
-[node name="settlement_palisade4" parent="terrain" instance=ExtResource( 6 )]
+[node name="settlement_palisade4" parent="terrain" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 1632, 1840 )
 
-[node name="settlement_palisade5" parent="terrain" instance=ExtResource( 6 )]
+[node name="settlement_palisade5" parent="terrain" instance=ExtResource( 4 )]
 
 transform/pos = Vector2( 1664, 1808 )
 
-[node name="settlement_palisade_corner_left" parent="terrain" instance=ExtResource( 7 )]
+[node name="settlement_palisade_corner_left" parent="terrain" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1280, 1696 )
 
-[node name="settlement_palisade_corner_left1" parent="terrain" instance=ExtResource( 7 )]
+[node name="settlement_palisade_corner_left1" parent="terrain" instance=ExtResource( 5 )]
 
 transform/pos = Vector2( 1312, 1568 )
 
-[node name="settlement_palisade_corner_right" parent="terrain" instance=ExtResource( 8 )]
+[node name="settlement_palisade_corner_right" parent="terrain" instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 1664, 1632 )
 
-[node name="settlement_palisade_corner_right1" parent="terrain" instance=ExtResource( 8 )]
+[node name="settlement_palisade_corner_right1" parent="terrain" instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 1592, 1600 )
 
-[node name="settlement_palisade_leftwall" parent="terrain" instance=ExtResource( 9 )]
+[node name="settlement_palisade_leftwall" parent="terrain" instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 1696, 1720 )
 
-[node name="settlement_palisade_leftwall2" parent="terrain" instance=ExtResource( 9 )]
+[node name="settlement_palisade_leftwall2" parent="terrain" instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 1696, 1680 )
 
-[node name="settlement_palisade_leftwall1" parent="terrain" instance=ExtResource( 9 )]
+[node name="settlement_palisade_leftwall1" parent="terrain" instance=ExtResource( 7 )]
 
 transform/pos = Vector2( 1696, 1784 )
 
-[node name="settlement_palisade_wall_right" parent="terrain" instance=ExtResource( 10 )]
+[node name="settlement_palisade_wall_right" parent="terrain" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 1248, 1824 )
 
-[node name="settlement_palisade_wall_right1" parent="terrain" instance=ExtResource( 10 )]
+[node name="settlement_palisade_wall_right1" parent="terrain" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 1248, 1760 )
 
-[node name="settlement_palisade_wall_right2" parent="terrain" instance=ExtResource( 10 )]
+[node name="settlement_palisade_wall_right2" parent="terrain" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 1280, 1680 )
 
-[node name="settlement_palisade_wall_right3" parent="terrain" instance=ExtResource( 10 )]
+[node name="settlement_palisade_wall_right3" parent="terrain" instance=ExtResource( 8 )]
 
 transform/pos = Vector2( 1280, 1632 )
 
-[node name="vegetation_tree1" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree1" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1720, 1664 )
 
-[node name="vegetation_tree3" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree3" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1784, 1616 )
 
-[node name="vegetation_tree4" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree4" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1712, 1584 )
 
-[node name="vegetation_tree5" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree5" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1632, 1608 )
 
-[node name="vegetation_tree6" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree6" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1592, 1568 )
 
-[node name="vegetation_tree7" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree7" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1528, 1536 )
 
-[node name="vegetation_tree8" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree8" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1656, 1520 )
 
-[node name="vegetation_tree9" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree9" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1728, 1504 )
 
-[node name="vegetation_tree10" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree10" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1664, 1552 )
 
-[node name="vegetation_tree11" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree11" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1704, 1536 )
 
-[node name="vegetation_tree12" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree12" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1752, 1616 )
 
-[node name="vegetation_tree13" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree13" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1784, 1560 )
 
-[node name="vegetation_tree14" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree14" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1744, 1552 )
 
-[node name="vegetation_tree15" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree15" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1728, 1624 )
 
-[node name="vegetation_tree16" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree16" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1760, 1648 )
 
-[node name="vegetation_tree17" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree17" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1896, 1672 )
 
-[node name="vegetation_tree27" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree27" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1800, 2032 )
 
-[node name="vegetation_tree28" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree28" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1752, 1968 )
 
-[node name="vegetation_tree61" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree61" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1752, 1968 )
 
-[node name="vegetation_tree29" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree29" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1832, 1936 )
 
-[node name="vegetation_tree30" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree30" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1792, 1944 )
 
-[node name="vegetation_tree31" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree31" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1736, 2064 )
 
-[node name="vegetation_tree32" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree32" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1848, 2128 )
 
-[node name="vegetation_tree33" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree33" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1872, 2056 )
 
-[node name="vegetation_tree34" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree34" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1840, 2008 )
 
-[node name="vegetation_tree35" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree35" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1888, 1968 )
 
-[node name="vegetation_tree36" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree36" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1864, 1976 )
 
-[node name="vegetation_tree37" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree37" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1888, 1992 )
 
-[node name="vegetation_tree38" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree38" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1912, 1976 )
 
-[node name="vegetation_tree39" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree39" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1808, 1944 )
 
-[node name="vegetation_tree40" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree40" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1800, 1976 )
 
-[node name="vegetation_tree41" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree41" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1864, 1960 )
 
-[node name="vegetation_tree42" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree42" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1832, 1976 )
 
-[node name="vegetation_tree43" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree43" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1768, 2016 )
 
-[node name="vegetation_tree44" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree44" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1728, 2008 )
 
-[node name="vegetation_tree60" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree60" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1576, 1944 )
 
-[node name="vegetation_tree62" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree62" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1576, 1944 )
 
-[node name="vegetation_tree63" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree63" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1360, 1888 )
 
-[node name="vegetation_tree64" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree64" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1232, 1760 )
 
-[node name="vegetation_tree67" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree67" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1224, 1920 )
 
-[node name="vegetation_tree65" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree65" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1264, 1648 )
 
-[node name="vegetation_tree66" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree66" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1272, 1544 )
 
-[node name="vegetation_tree45" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree45" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1792, 2112 )
 
-[node name="vegetation_tree46" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree46" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1912, 2040 )
 
-[node name="vegetation_tree18" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree18" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1832, 1664 )
 
-[node name="vegetation_tree19" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree19" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1880, 1560 )
 
-[node name="vegetation_tree20" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree20" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1816, 1520 )
 
-[node name="vegetation_tree21" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree21" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1808, 1600 )
 
-[node name="vegetation_tree22" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree22" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1656, 1472 )
 
-[node name="vegetation_tree23" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree23" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1768, 1424 )
 
-[node name="vegetation_tree24" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree24" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1736, 1464 )
 
-[node name="vegetation_tree25" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree25" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1760, 1504 )
 
-[node name="vegetation_tree26" parent="terrain" instance=ExtResource( 11 )]
+[node name="vegetation_tree26" parent="terrain" instance=ExtResource( 9 )]
 
 transform/pos = Vector2( 1904, 1456 )
 
-[node name="vegetation_tree2" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree2" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1792, 1736 )
 
-[node name="vegetation_tree47" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree47" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1688, 1840 )
 
-[node name="vegetation_tree48" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree48" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1752, 2024 )
 
-[node name="vegetation_tree59" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree59" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1560, 1928 )
 
-[node name="vegetation_tree49" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree49" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1816, 1992 )
 
-[node name="vegetation_tree50" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree50" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1856, 2016 )
 
-[node name="vegetation_tree51" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree51" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1816, 2072 )
 
-[node name="vegetation_tree52" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree52" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1920, 2120 )
 
-[node name="vegetation_tree53" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree53" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1952, 1992 )
 
-[node name="vegetation_tree54" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree54" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1704, 2096 )
 
-[node name="vegetation_tree55" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree55" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1672, 2032 )
 
-[node name="vegetation_tree57" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree57" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1344, 2056 )
 
-[node name="vegetation_tree58" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree58" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1264, 1880 )
 
-[node name="vegetation_tree56" parent="terrain" instance=ExtResource( 12 )]
+[node name="vegetation_tree56" parent="terrain" instance=ExtResource( 10 )]
 
 transform/pos = Vector2( 1768, 2096 )
 
-[node name="vegetation_berries1" parent="terrain" instance=ExtResource( 13 )]
+[node name="vegetation_berries1" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1520, 1888 )
 
-[node name="vegetation_berries2" parent="terrain" instance=ExtResource( 13 )]
+[node name="vegetation_berries2" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1768, 2048 )
 
-[node name="vegetation_berries3" parent="terrain" instance=ExtResource( 13 )]
+[node name="vegetation_berries3" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1696, 2056 )
 
-[node name="vegetation_berries4" parent="terrain" instance=ExtResource( 13 )]
+[node name="vegetation_berries4" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1912, 2048 )
 
-[node name="vegetation_berries5" parent="terrain" instance=ExtResource( 13 )]
+[node name="vegetation_berries5" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1832, 2128 )
 
-[node name="vegetation_berries6" parent="terrain" instance=ExtResource( 13 )]
+[node name="vegetation_berries6" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1936, 2024 )
 
-[node name="vegetation_berries7" parent="terrain" instance=ExtResource( 13 )]
+[node name="vegetation_berries7" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1840, 1672 )
 
-[node name="vegetation_berries8" parent="terrain" instance=ExtResource( 13 )]
+[node name="vegetation_berries8" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1672, 1512 )
 
-[node name="vegetation_berries9" parent="terrain" instance=ExtResource( 13 )]
+[node name="vegetation_berries9" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1784, 1440 )
 
-[node name="vegetation_berries10" parent="terrain" instance=ExtResource( 13 )]
+[node name="vegetation_berries10" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1608, 1456 )
 
-[node name="vegetation_berries11" parent="terrain" instance=ExtResource( 13 )]
+[node name="vegetation_berries11" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1864, 1472 )
 
-[node name="vegetation_berries12" parent="terrain" instance=ExtResource( 13 )]
+[node name="vegetation_berries12" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1768, 1528 )
 
-[node name="vegetation_berries13" parent="terrain" instance=ExtResource( 13 )]
+[node name="vegetation_berries13" parent="terrain" instance=ExtResource( 11 )]
 
 transform/pos = Vector2( 1568, 1528 )
 
 [node name="types" type="TileMap" parent="."]
 
 mode = 0
-tile_set = ExtResource( 14 )
+tile_set = ExtResource( 12 )
 cell/size = Vector2( 32, 32 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
