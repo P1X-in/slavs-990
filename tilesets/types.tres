@@ -4,7 +4,7 @@
 
 [resource]
 
-0/name = "non_movable"
+0/name = "not_set"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/region = Rect2( 0, 0, 64, 64 )
@@ -36,4 +36,12 @@
 3/navigation_offset = Vector2( 32, 32 )
 3/shape_offset = Vector2( 0, 0 )
 3/shapes = [  ]
+4/name = "forest_animals"
+4/texture = ExtResource( 1 )
+4/tex_offset = Vector2( 0, 0 )
+4/region = Rect2( 0, 64, 64, 64 )
+4/occluder_offset = Vector2( 32, 32 )
+4/navigation_offset = Vector2( 32, 32 )
+4/shape_offset = Vector2( 0, 0 )
+4/shapes = [  ]
 

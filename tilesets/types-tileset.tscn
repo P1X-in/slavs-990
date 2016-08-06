@@ -13,7 +13,7 @@ margin/top = 0.0
 margin/right = 0.0
 margin/bottom = 0.0
 
-[node name="non_movable" type="Sprite" parent="."]
+[node name="not_set" type="Sprite" parent="."]
 
 transform/pos = Vector2( 64, 64 )
 texture = ExtResource( 1 )
@@ -40,5 +40,12 @@ transform/pos = Vector2( 352, 64 )
 texture = ExtResource( 1 )
 region = true
 region_rect = Rect2( 192, 0, 64, 64 )
+
+[node name="forest_animals" type="Sprite" parent="."]
+
+transform/pos = Vector2( 64, 160 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 0, 64, 64, 64 )
 
 
