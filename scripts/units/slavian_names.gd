@@ -1,5 +1,4 @@
-var
-male = [
+var male = [
     'Bądzsław',
     'Bąsław',
     'Bdzigost',

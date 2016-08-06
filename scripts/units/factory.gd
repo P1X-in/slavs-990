@@ -1,15 +1,9 @@
-<<<<<<< 9a91224f6e14fd07f58e93ee84056b5dd2eac789
-
 var bag
-
-var units = preload('units.gd').new()
-=======
 var creatures = preload('types/creatures.gd').new()
 
 var slavs = preload('types/slavs.gd').new()
 var slavian_names = preload('slavian_names.gd').new()
 
->>>>>>> generate party factory method
 var adjectives = preload('adjectives.gd').new()
 var enemy = preload('enemy.gd')
 
