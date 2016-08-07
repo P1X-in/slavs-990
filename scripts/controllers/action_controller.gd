@@ -1,7 +1,9 @@
 var bag
+var moves_made
 
 func _init_bag(bag):
     self.bag = bag
+    self.moves_made = 0
 
 func load_game():
     self.bag.board.load_map()
@@ -30,6 +32,7 @@ func handle_map_click(position):
         self.bag.battle.attach()
         self.bag.battle.battle_event(field.event)
     elif self.bag.party.selected and self.bag.party.can_move_to(field):
+        self.moves_made = self.moves_made + self.get_distance(self.bag.party.get_pos(), field.position)
         self.bag.party.go_to_field(field)
         self.bag.abstract_map.shuffle_events()
     elif (not self.bag.party.selected or not self.bag.party.can_move_to(field)) and field.event != null and field.event.event_scene.is_visible():
@@ -38,3 +41,8 @@ func handle_map_click(position):
         self.bag.inspect.inspect_event(field.event)
     else:
         self.bag.party.unselect()
+
+    self.bag.hud.refresh_moon(self.moves_made)
+
+func get_distance(start, end):
+    return abs(start.x - end.x) + abs(start.y - end.y)

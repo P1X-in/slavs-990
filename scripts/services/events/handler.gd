@@ -16,6 +16,12 @@ func next_day():
 
     return self.days.ordinary_day
 
+func get_day_name(day):
+    if self.days.days.has(day):
+        return self.days.days[day].name
+
+    return self.days.ordinary_day.name
+
 func handle_event(event):
     if not event.mission == '':
         var mission = self.missions.missions[event.mission]

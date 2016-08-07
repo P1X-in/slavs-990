@@ -15,12 +15,12 @@ var days = {
         'mission': 'prepare_for_small_celebration',
     },
     16: {
-        'name': 'Wierzbica, Pasieka Wiosenna',
+        'name': 'Wierzbica',
         'description': 'Chłostanie gałązką wierzby. Oświęcenie pasieki, modły o pszczoły.',
         'mission': '',
     }, 
     18: {
-        'name': 'Wiosenne Zrównanie Dnia z Nocą - Święto Dadźboga',
+        'name': 'Święto Dadźboga',
         'description': 'Modły do Dadźboga, korowody dziewcząt.',
         'mission': '',
     }, 
@@ -65,7 +65,7 @@ var days = {
         'mission': '',
     }, 
     62: {
-        'name': 'Tydzień Rusalny – Rusalia',
+        'name': 'Rusalia',
         'description': 'Kobiety składają ofiary dla rusałek - kawałki plótna oraz wianki.',
         'mission': '',
     }, 
@@ -100,7 +100,7 @@ var days = {
         'mission': '',
     }, 
     123: {
-        'name': 'Święto Swaroga - Święto Kowali',
+        'name': 'Święto Swaroga',
         'description': 'Czczenie Swaroga jako boga kowalstwa, początek Sianokosów.',
         'mission': '',
     }, 
@@ -145,7 +145,7 @@ var days = {
         'mission': '',
     }, 
     191: {
-        'name': 'Rodzanice - początek babiego lata',
+        'name': 'Rodzanice',
         'description': 'Modły kobiet o dobry połóg, zdrowie niemowląt i całej rodziny.',
         'mission': '',
     }, 
@@ -237,7 +237,7 @@ var days = {
 }
 
 var ordinary_day = {
-    'name': 'Zwykły dzień',
+    'name': '',
     'description': 'Kolejny zwykły dzień.',
     'mission': '',
 }

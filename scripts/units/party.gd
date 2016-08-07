@@ -11,6 +11,7 @@ var range_selector_template = preload('res://scenes/selector.tscn')
 var current_range = {}
 var current_tile
 var selected = false
+var position
 
 var units
 
@@ -26,6 +27,7 @@ func attach():
     self.bag.map.objects_mount.add_child(self.party_scene)
 
 func set_map_pos(position):
+    self.position = position
     var global_position = self.bag.map.translate_map_to_global(position)
 
     self.party_scene.set_pos(global_position)
@@ -38,6 +40,9 @@ func set_map_pos(position):
 
     self.current_tile = self.bag.abstract_map.get_field(position)
     self.current_tile.party = self
+
+func get_pos():
+    return self.position
 
 func go_to_field(field):
     self.set_map_pos(field.position)

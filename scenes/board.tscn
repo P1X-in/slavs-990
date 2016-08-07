@@ -84,3 +84,4 @@ margin/bottom = 64.0
 [node name="calendar" parent="corner" instance=ExtResource( 2 )]
 
 
+[editable path="corner/calendar"]
