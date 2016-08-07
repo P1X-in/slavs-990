@@ -26,7 +26,7 @@ var units = {
         'name': 'borowy',
         'family' : 'borowe',
         'description': 'małe i gryzie',
-        'hp': 50,
+        'hp': 20,
         'resistances' : {
             'normal' : {'threshold' : 2, 'resistance': 0.20}
             # 'slashing'
@@ -50,7 +50,7 @@ var units = {
         'name': 'cmoch',
         'family' : 'cmuchy',
         'description': 'małe i gryzie',
-        'hp': 50,
+        'hp': 12,
         'resistances' : {
             'normal' : {'threshold' : 1, 'resistance': 0.10}
             # 'slashing'

@@ -8,7 +8,7 @@ var units = {
             'normal' : {'threshold' : 5, 'resistance': 0.20}
         },
         'attacks' : {
-            'hit' : {'damage' : 6, 'skill' : 0.30, 'critical': 0.02}
+            'hit' : {'damage' : 6, 'skill' : 0.70, 'critical': 0.05}
         },
         'loot' : {
         },
@@ -28,7 +28,7 @@ var units = {
             'normal' : {'threshold' : 3, 'resistance': 0.20}
         },
         'attacks' : {
-            'hit' : {'damage' : 5, 'skill' : 0.33, 'critical': 0.08}
+            'hit' : {'damage' : 5, 'skill' : 0.80, 'critical': 0.08}
         },
         'loot' : {
         },
@@ -48,7 +48,7 @@ var units = {
             'normal' : {'threshold' : 6, 'resistance': 0.30}
         },
         'attacks' : {
-            'hit' : {'damage' : 5, 'skill' : 0.33, 'critical': 0.03}
+            'hit' : {'damage' : 5, 'skill' : 0.75, 'critical': 0.05}
         },
         'loot' : {
         },
@@ -68,7 +68,7 @@ var units = {
             'normal' : {'threshold' : 5, 'resistance': 0.30}
         },
         'attacks' : {
-            'hit' : {'damage' : 5, 'skill' : 0.40, 'critical': 0.05}
+            'hit' : {'damage' : 5, 'skill' : 0.85, 'critical': 0.10}
         },
         'loot' : {
         },

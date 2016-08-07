@@ -22,16 +22,6 @@ func generate_for_opponents(units):
 
     return loot
 
-# func generate(name, chance):
-#     randomize()
-#     var name = null
-#     # var type = self.__get_item_type(name)
-#
-#     if randf() <= chance:
-#         return name
-#
-#     return -1
-
 func __get_item_type(name):
     for type in self.items.keys():
         if not self.items[type].items.keys().find('fur') == -1:

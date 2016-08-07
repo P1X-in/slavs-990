@@ -3,7 +3,7 @@ var units = {
         'name': 'wilk',
         'family' : 'wilki',
         'description': 'duże i gryzie',
-        'hp': 20,
+        'hp': 8,
         'resistances' : {
             'normal' : {'threshold' : 2, 'resistance': 0.10}
             # 'slashing'

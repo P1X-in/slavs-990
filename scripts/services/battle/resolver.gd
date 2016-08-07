@@ -39,6 +39,7 @@ func __make_attack(attacker, defender):
     var attack = attacker['attacks'][attack_type]
     var critical = false
     if randf() <= attack['skill']:
+        randomize()
         var damage = randi() % attack['damage'] + 1
         if randf() <= attack['critical']:
             damage = damage + damage
