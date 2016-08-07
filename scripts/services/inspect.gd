@@ -52,7 +52,7 @@ func inspect_event(event):
     if event.enemy_icon_type == self.bag.abstract_map.TILE_WATER_CREATURE:
         self.cmuch_avatar.show()
         self.cmuch_description.show()
-        self.name_label.set_text('ĆMOCH')
+        self.name_label.set_text('ĆMUCH')
     if event.enemy_icon_type == self.bag.abstract_map.TILE_FOREST_CREATURE:
         self.borowy_avatar.show()
         self.borowy_description.show()
