@@ -161,8 +161,8 @@ margin/bottom = 256.0
 
 visibility/visible = false
 rect/scale = Vector2( 4, 4 )
-margin/top = 120.0
-margin/bottom = 152.0
+margin/top = 8.0
+margin/bottom = 40.0
 
 [node name="borowy" parent="panel/container/body/info/avatars" instance=ExtResource( 5 )]
 
@@ -174,10 +174,10 @@ margin/bottom = 152.0
 
 visibility/visible = false
 rect/scale = Vector2( 4, 4 )
-margin/top = 120.0
-margin/bottom = 152.0
+margin/top = 8.0
+margin/bottom = 40.0
 
-[node name="details" type="RichTextLabel" parent="panel/container/body/info"]
+[node name="Container" type="Container" parent="panel/container/body/info"]
 
 rect/min_size = Vector2( 360, 0 )
 focus/ignore_mouse = false
@@ -188,8 +188,52 @@ margin/left = 372.0
 margin/top = 0.0
 margin/right = 732.0
 margin/bottom = 256.0
+
+[node name="borowy" type="RichTextLabel" parent="panel/container/body/info/Container"]
+
+rect/min_size = Vector2( 360, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 360.0
+margin/bottom = 256.0
 bbcode/enabled = false
 bbcode/bbcode = "Borowy zwany leszym, był prastarym puszczańskim duchem, opiekunem kniei i pasterzem leśnych zwierząt.\n\nZazdroścnie strzegł własnych tajemnic przed okiem intruza. Niechcianym gościom plątał ścieżki, rzucał pod nogi kłodyu bądź zmieniał sie w niedźwiedzia i straszył ich okropnym rykiem."
+visible_characters = -1
+
+[node name="wilk" type="RichTextLabel" parent="panel/container/body/info/Container"]
+
+visibility/visible = false
+rect/min_size = Vector2( 360, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 360.0
+margin/bottom = 256.0
+bbcode/enabled = false
+bbcode/bbcode = "Wilk jaki jest każdy widzi."
+visible_characters = -1
+
+[node name="cmuch" type="RichTextLabel" parent="panel/container/body/info/Container"]
+
+visibility/visible = false
+rect/min_size = Vector2( 360, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 360.0
+margin/bottom = 256.0
+bbcode/enabled = false
+bbcode/bbcode = "Ćmuch to tajemnicza istota, której nikt nigdy niue widział osobiście.\n\nTen zamieskujący w sąsiedztwie jezior, stawów i bagien stworek podobno był wielkości psa, podobno sylwetką przyopominał żabę."
 visible_characters = -1
 
 [node name="footer" type="HBoxContainer" parent="panel/container"]
