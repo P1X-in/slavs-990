@@ -1,14 +1,224 @@
-[gd_scene format=1]
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://themes/master.tres" type="Theme" id=1]
+[ext_resource path="res://assets/logo/sun.png" type="Texture" id=2]
+[ext_resource path="res://themes/font_h1.tres" type="Theme" id=3]
+[ext_resource path="res://scenes/entities/animals/wilk.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/entities/creatures/borowy.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/entities/creatures/cmuch.tscn" type="PackedScene" id=6]
 
 [node name="inspect" type="Control"]
 
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 1 )
+margin/left = 32.0
+margin/top = 32.0
+margin/right = 32.0
+margin/bottom = 32.0
+
+[node name="panel" type="Panel" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 40.0
-margin/bottom = 40.0
+margin/right = 0.0
+margin/bottom = 0.0
+
+[node name="container" type="VBoxContainer" parent="panel"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 32.0
+margin/top = 32.0
+margin/right = 16.0
+margin/bottom = 32.0
+custom_constants/separation = 32
+alignment = 1
+
+[node name="header" type="HBoxContainer" parent="panel/container"]
+
+rect/min_size = Vector2( 0, 32 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 14.0
+margin/right = 912.0
+margin/bottom = 50.0
+custom_constants/separation = 128
+alignment = 1
+
+[node name="sun_left" type="Container" parent="panel/container/header"]
+
+editor/display_folded = true
+rect/min_size = Vector2( 90, 32 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 163.0
+margin/top = 0.0
+margin/right = 253.0
+margin/bottom = 36.0
+
+[node name="Sprite" type="Sprite" parent="panel/container/header/sun_left"]
+
+transform/pos = Vector2( 0, -32 )
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Label" type="Label" parent="panel/container/header"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+theme/theme = ExtResource( 3 )
+margin/left = 381.0
+margin/top = 0.0
+margin/right = 530.0
+margin/bottom = 36.0
+text = "Borowy"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="sun_right" type="Container" parent="panel/container/header"]
+
+editor/display_folded = true
+rect/min_size = Vector2( 90, 32 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 658.0
+margin/top = 0.0
+margin/right = 748.0
+margin/bottom = 36.0
+
+[node name="Sprite" type="Sprite" parent="panel/container/header/sun_right"]
+
+transform/pos = Vector2( 0, -32 )
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="body" type="VBoxContainer" parent="panel/container"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 82.0
+margin/right = 912.0
+margin/bottom = 338.0
+custom_constants/separation = 16
+alignment = 0
+
+[node name="info" type="HBoxContainer" parent="panel/container/body"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 912.0
+margin/bottom = 256.0
+custom_constants/separation = 64
+alignment = 1
+
+[node name="avatars" type="Container" parent="panel/container/body/info"]
+
+rect/min_size = Vector2( 128, 256 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 180.0
+margin/top = 0.0
+margin/right = 308.0
+margin/bottom = 256.0
+
+[node name="wilk" parent="panel/container/body/info/avatars" instance=ExtResource( 4 )]
+
+visibility/visible = false
+rect/scale = Vector2( 4, 4 )
+margin/top = 120.0
+margin/bottom = 152.0
+
+[node name="borowy" parent="panel/container/body/info/avatars" instance=ExtResource( 5 )]
+
+rect/scale = Vector2( 4, 4 )
+margin/top = 120.0
+margin/bottom = 152.0
+
+[node name="cmuch" parent="panel/container/body/info/avatars" instance=ExtResource( 6 )]
+
+visibility/visible = false
+rect/scale = Vector2( 4, 4 )
+margin/top = 120.0
+margin/bottom = 152.0
+
+[node name="details" type="RichTextLabel" parent="panel/container/body/info"]
+
+rect/min_size = Vector2( 360, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 372.0
+margin/top = 0.0
+margin/right = 732.0
+margin/bottom = 256.0
+bbcode/enabled = false
+bbcode/bbcode = "Borowy zwany leszym, był prastarym puszczańskim duchem, opiekunem kniei i pasterzem leśnych zwierząt.\n\nZazdroścnie strzegł własnych tajemnic przed okiem intruza. Niechcianym gościom plątał ścieżki, rzucał pod nogi kłodyu bądź zmieniał sie w niedźwiedzia i straszył ich okropnym rykiem."
+visible_characters = -1
+
+[node name="footer" type="HBoxContainer" parent="panel/container"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 370.0
+margin/right = 912.0
+margin/bottom = 457.0
+custom_constants/separation = 16
+alignment = 1
+
+[node name="exit_button" type="Button" parent="panel/container/footer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 305.0
+margin/top = 0.0
+margin/right = 607.0
+margin/bottom = 87.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Powrót do mapy"
+flat = false
 
 
