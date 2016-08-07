@@ -12,6 +12,7 @@ func resolve_fight(units):
     var stack = self.battle_stack.new(units)
     self.bag.battle_actions.prepare_for_units(units)
     var match
+    self.bag.battle_log.clear()
     while stack.check_winner() == -1:
         match = stack.prepare_match()
         self.__resolve_turn(match)
