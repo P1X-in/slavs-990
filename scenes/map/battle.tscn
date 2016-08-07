@@ -1,12 +1,14 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=10 format=1]
 
 [ext_resource path="res://themes/master.tres" type="Theme" id=1]
 [ext_resource path="res://assets/logo/sun.png" type="Texture" id=2]
 [ext_resource path="res://themes/font_h1.tres" type="Theme" id=3]
-[ext_resource path="res://assets/entities/slavs/slav1.png" type="Texture" id=4]
+[ext_resource path="res://scenes/entities/slavs/slav1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/gui/panel_gray.png" type="Texture" id=5]
 [ext_resource path="res://themes/font_14.tres" type="Theme" id=6]
-[ext_resource path="res://assets/entities/creatures/cmuch.png" type="Texture" id=7]
+[ext_resource path="res://scenes/entities/animals/wilk.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/entities/creatures/borowy.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/entities/creatures/cmuch.tscn" type="PackedScene" id=9]
 
 [node name="battle" type="Control"]
 
@@ -173,11 +175,9 @@ margin/top = 30.0
 margin/right = 128.0
 margin/bottom = 158.0
 
-[node name="Sprite" type="Sprite" parent="panel/container/body/log/ally/Container"]
+[node name="slav1" parent="panel/container/body/log/ally/Container" instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 62, 10 )
-transform/scale = Vector2( 4, 4 )
-texture = ExtResource( 4 )
+rect/scale = Vector2( 4, 4 )
 
 [node name="Label" type="Label" parent="panel/container/body/log/ally"]
 
@@ -260,7 +260,6 @@ alignment = 1
 
 [node name="Container" type="Container" parent="panel/container/body/log/enemy"]
 
-editor/display_folded = true
 rect/min_size = Vector2( 32, 128 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -271,12 +270,20 @@ margin/top = 30.0
 margin/right = 128.0
 margin/bottom = 158.0
 
-[node name="Sprite" type="Sprite" parent="panel/container/body/log/enemy/Container"]
+[node name="wilk" parent="panel/container/body/log/enemy/Container" instance=ExtResource( 7 )]
 
-transform/pos = Vector2( 62, 10 )
-transform/scale = Vector2( 4, 4 )
-texture = ExtResource( 7 )
-flip_h = true
+visibility/visible = false
+rect/scale = Vector2( 4, 4 )
+
+[node name="borowy" parent="panel/container/body/log/enemy/Container" instance=ExtResource( 8 )]
+
+visibility/visible = false
+rect/scale = Vector2( 4, 4 )
+
+[node name="cmuch" parent="panel/container/body/log/enemy/Container" instance=ExtResource( 9 )]
+
+visibility/visible = false
+rect/scale = Vector2( 4, 4 )
 
 [node name="Label" type="Label" parent="panel/container/body/log/enemy"]
 
