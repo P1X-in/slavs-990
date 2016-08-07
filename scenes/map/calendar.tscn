@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://assets/moon.png" type="Texture" id=1]
+
+[node name="calendar" type="Panel"]
+
+rect/min_size = Vector2( 128, 128 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = -128.0
+margin/right = 128.0
+margin/bottom = 0.0
+
+[node name="moon" type="Sprite" parent="."]
+
+transform/pos = Vector2( 32, 24 )
+texture = ExtResource( 1 )
+centered = false
+vframes = 2
+hframes = 4
+frame = 4
+
+[node name="Label" type="Label" parent="."]
+
+anchor/top = 1
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 36.0
+margin/right = 0.0
+margin/bottom = 22.0
+text = "Sierpień"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
