@@ -31,6 +31,7 @@ func handle_map_click(position):
         self.bag.battle.battle_event(field.event)
     elif self.bag.party.selected and self.bag.party.can_move_to(field):
         self.bag.party.go_to_field(field)
+        self.bag.abstract_map.shuffle_events()
     elif (not self.bag.party.selected or not self.bag.party.can_move_to(field)) and field.event != null and field.event.event_scene.is_visible():
         self.bag.board.detach()
         self.bag.inspect.attach()

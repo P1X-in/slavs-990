@@ -111,3 +111,18 @@ func reveal_events(field):
 			if field.get_distance_factor(event_field) < 200:
 				if event_field.event != null:
 					event_field.event.reveal()
+
+func shuffle_events():
+	randomize()
+	var neighbours
+	var new_position
+
+	for group in self.events:
+		for event_field in self.events[group]:
+			if event_field.event != null:
+				if randi() % 3 == 0:
+					neighbours = event_field.get_neighbours()
+					new_position = neighbours[randi() % neighbours.size()]
+					if new_position.is_passable() and new_position.event == null and new_position.party == null:
+						event_field.event.go_to_field(new_position)
+					self.events[group][self.events[group].find(event_field)] = new_position
