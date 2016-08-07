@@ -25,6 +25,7 @@ var event_handler = preload("res://scripts/services/events/handler.gd").new()
 var resources = preload("res://scripts/services/resources.gd").new()
 var hud = preload("res://scripts/controllers/hud_controller.gd").new()
 var battle = preload("res://scripts/services/battle.gd").new()
+var inspect = preload("res://scripts/services/inspect.gd").new()
 
 func _init(root_node):
     self.root = root_node
@@ -49,3 +50,4 @@ func _init(root_node):
     self.party._init_bag(self)
     self.party_manager._init_bag(self, root_node.mount)
     self.battle._init_bag(self, root_node.mount)
+    self.inspect._init_bag(self, root_node.mount)
