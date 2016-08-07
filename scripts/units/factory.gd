@@ -35,13 +35,13 @@ func spawn_event_on_field(field, type):
 
     if type == self.bag.abstract_map.TILE_FOREST_ANIMAL:
         new_event.animal_icon.show()
-        new_event.units = self.generate_units('animals', 'wolf', randi() % 10)
+        new_event.units = self.generate_units('animals', 'wolf', randi() % 10 + 1)
     if type == self.bag.abstract_map.TILE_WATER_CREATURE:
         new_event.water_icon.show()
-        new_event.units = self.generate_units('monsters', 'rat', randi() % 4)
+        new_event.units = self.generate_units('monsters', 'rat', randi() % 4 + 1)
     if type == self.bag.abstract_map.TILE_FOREST_CREATURE:
         new_event.forest_icon.show()
-        new_event.units = self.generate_units('monsters', 'rat', randi() % 2)
+        new_event.units = self.generate_units('monsters', 'rat', randi() % 2 + 1)
 
     new_event.loot = self.bag.item_factory.generate_for_opponents(new_event.units)
     new_event.randomize_animation()
