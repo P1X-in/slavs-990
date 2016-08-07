@@ -20,6 +20,7 @@ transform/pos = Vector2( 96, 60 )
 texture = ExtResource( 1 )
 vframes = 2
 hframes = 4
+frame = 4
 
 [node name="day" type="Label" parent="."]
 
@@ -48,7 +49,7 @@ margin/left = 0.0
 margin/top = 92.0
 margin/right = 192.0
 margin/bottom = 132.0
-text = "description"
+text = "Jaskółka"
 align = 1
 autowrap = true
 percent_visible = 1.0
