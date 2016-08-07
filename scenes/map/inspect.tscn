@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=9 format=1]
 
 [ext_resource path="res://themes/master.tres" type="Theme" id=1]
 [ext_resource path="res://assets/logo/sun.png" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://scenes/entities/animals/wilk.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/entities/creatures/borowy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/entities/creatures/cmuch.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/map/vegetation.png" type="Texture" id=7]
+[ext_resource path="res://scenes/entities/animals/kura.tscn" type="PackedScene" id=8]
 
 [node name="inspect" type="Control"]
 
@@ -92,7 +94,7 @@ size_flags/vertical = 0
 theme/theme = ExtResource( 3 )
 margin/left = 381.0
 margin/top = 0.0
-margin/right = 531.0
+margin/right = 530.0
 margin/bottom = 36.0
 text = "Borowy"
 percent_visible = 1.0
@@ -107,9 +109,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 659.0
+margin/left = 658.0
 margin/top = 0.0
-margin/right = 749.0
+margin/right = 748.0
 margin/bottom = 36.0
 
 [node name="Sprite" type="Sprite" parent="panel/container/header/sun_right"]
@@ -245,7 +247,7 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 370.0
 margin/right = 912.0
-margin/bottom = 458.0
+margin/bottom = 457.0
 custom_constants/separation = 16
 alignment = 1
 
@@ -255,14 +257,71 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 304.0
+margin/left = 305.0
 margin/top = 0.0
 margin/right = 607.0
-margin/bottom = 88.0
+margin/bottom = 87.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 text = "Powrót do mapy"
 flat = false
+
+[node name="Sprite" type="Sprite" parent="panel/container/footer"]
+
+transform/pos = Vector2( 688, -154 )
+transform/scale = Vector2( 4, 4 )
+texture = ExtResource( 7 )
+centered = false
+region = true
+region_rect = Rect2( 0, 0, 64, 64 )
+
+[node name="Sprite1" type="Sprite" parent="panel/container/footer"]
+
+transform/pos = Vector2( -32, -146 )
+transform/scale = Vector2( 4, 4 )
+texture = ExtResource( 7 )
+centered = false
+region = true
+region_rect = Rect2( 64, 0, 64, 64 )
+
+[node name="Sprite2" type="Sprite" parent="panel/container/footer"]
+
+transform/pos = Vector2( 32, 6 )
+transform/scale = Vector2( 4, 4 )
+texture = ExtResource( 7 )
+centered = false
+region = true
+region_rect = Rect2( 64, 96, 64, 32 )
+
+[node name="Sprite3" type="Sprite" parent="panel/container/footer"]
+
+transform/pos = Vector2( -104, 6 )
+transform/scale = Vector2( 4, 4 )
+texture = ExtResource( 7 )
+centered = false
+region = true
+region_rect = Rect2( 0, 96, 64, 32 )
+
+[node name="Sprite4" type="Sprite" parent="panel/container/footer"]
+
+transform/pos = Vector2( 624, -2 )
+transform/scale = Vector2( 4, 4 )
+texture = ExtResource( 7 )
+centered = false
+flip_h = true
+region = true
+region_rect = Rect2( 0, 96, 64, 32 )
+
+[node name="Sprite 2" type="Sprite" parent="panel/container/footer"]
+
+transform/pos = Vector2( 800, -8 )
+
+[node name="kura" parent="panel/container/footer/Sprite 2" instance=ExtResource( 8 )]
+
+rect/min_size = Vector2( 64, 64 )
+rect/scale = Vector2( 4, 4 )
+margin/right = 64.0
+margin/bottom = 87.0
 
 
