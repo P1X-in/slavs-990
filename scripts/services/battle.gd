@@ -42,6 +42,7 @@ func _exit_button_pressed():
     self.bag.board.attach()
 
 func battle_event(event):
+    self.combat_log.clear()
     self.show_enemy_icon(event.enemy_icon_type)
 
     self.last_event = event
