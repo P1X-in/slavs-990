@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=10 format=1]
 
 [ext_resource path="res://themes/master.tres" type="Theme" id=1]
 [ext_resource path="res://assets/logo/sun.png" type="Texture" id=2]
 [ext_resource path="res://themes/font_h1.tres" type="Theme" id=3]
+[ext_resource path="res://scenes/map/settlement/settlement_house_hunter.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/map/settlement/settlement_house_metal.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/map/settlement/settlement_house_wood.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/map/settlement/settlement_house.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/map/settlement/settlement_farm.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/entities/animals/kura.tscn" type="PackedScene" id=9]
 
 [node name="settlement" type="Control"]
 
@@ -42,7 +48,7 @@ size_flags/vertical = 2
 margin/left = 32.0
 margin/top = 32.0
 margin/right = 32.0
-margin/bottom = 32.0
+margin/bottom = 21.0
 custom_constants/separation = 32
 alignment = 1
 
@@ -54,9 +60,9 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 8.0
+margin/top = 42.0
 margin/right = 896.0
-margin/bottom = 98.0
+margin/bottom = 132.0
 custom_constants/separation = 128
 alignment = 1
 
@@ -121,54 +127,24 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 130.0
+margin/top = 164.0
 margin/right = 896.0
-margin/bottom = 312.0
+margin/bottom = 287.0
 custom_constants/separation = 16
-alignment = 0
+alignment = 1
 
-[node name="stat1" type="HBoxContainer" parent="panel/container/stats"]
+[node name="Label" type="Label" parent="panel/container/stats"]
 
-editor/display_folded = true
-focus/ignore_mouse = false
-focus/stop_mouse = false
+focus/ignore_mouse = true
+focus/stop_mouse = true
 size_flags/horizontal = 2
-size_flags/vertical = 2
+size_flags/vertical = 0
 margin/left = 0.0
 margin/top = 0.0
 margin/right = 896.0
 margin/bottom = 17.0
-custom_constants/separation = 32
-alignment = 1
-
-[node name="Label" type="Label" parent="panel/container/stats/stat1"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 355.0
-margin/top = 0.0
-margin/right = 467.0
-margin/bottom = 17.0
-text = "some stats"
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="Label1" type="Label" parent="panel/container/stats/stat1"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 499.0
-margin/top = 0.0
-margin/right = 541.0
-margin/bottom = 17.0
-custom_colors/font_color = Color( 0.270588, 0.156863, 0.235294, 1 )
-text = "1234"
+text = "budynki specjalne"
+align = 1
 uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
@@ -176,7 +152,7 @@ max_lines_visible = -1
 
 [node name="stat2" type="HBoxContainer" parent="panel/container/stats"]
 
-editor/display_folded = true
+rect/min_size = Vector2( 0, 90 )
 focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
@@ -184,226 +160,171 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 33.0
 margin/right = 896.0
-margin/bottom = 50.0
+margin/bottom = 123.0
 custom_constants/separation = 32
 alignment = 1
 
-[node name="Label" type="Label" parent="panel/container/stats/stat2"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 355.0
-margin/top = 0.0
-margin/right = 467.0
-margin/bottom = 17.0
-text = "some stats"
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="Label1" type="Label" parent="panel/container/stats/stat2"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 499.0
-margin/top = 0.0
-margin/right = 541.0
-margin/bottom = 17.0
-custom_colors/font_color = Color( 0.270588, 0.156863, 0.235294, 1 )
-text = "1234"
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="stat3" type="HBoxContainer" parent="panel/container/stats"]
+[node name="Container" type="Container" parent="panel/container/stats/stat2"]
 
 editor/display_folded = true
+rect/min_size = Vector2( 128, 64 )
 focus/ignore_mouse = false
-focus/stop_mouse = false
+focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 144.0
+margin/top = 0.0
+margin/right = 272.0
+margin/bottom = 90.0
+
+[node name="settlement_house_hunter" parent="panel/container/stats/stat2/Container" instance=ExtResource( 4 )]
+
+centered = false
+
+[node name="Label1" type="Label" parent="panel/container/stats/stat2/Container"]
+
+anchor/right = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
 margin/left = 0.0
-margin/top = 66.0
-margin/right = 896.0
-margin/bottom = 83.0
-custom_constants/separation = 32
-alignment = 1
-
-[node name="Label" type="Label" parent="panel/container/stats/stat3"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 355.0
-margin/top = 0.0
-margin/right = 467.0
-margin/bottom = 17.0
-text = "some stats"
+margin/top = 74.0
+margin/right = 0.0
+margin/bottom = 91.0
+text = "Myśliwy"
+align = 1
 uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Label1" type="Label" parent="panel/container/stats/stat3"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 499.0
-margin/top = 0.0
-margin/right = 541.0
-margin/bottom = 17.0
-custom_colors/font_color = Color( 0.270588, 0.156863, 0.235294, 1 )
-text = "1234"
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="stat4" type="HBoxContainer" parent="panel/container/stats"]
+[node name="Container1" type="Container" parent="panel/container/stats/stat2"]
 
 editor/display_folded = true
+rect/min_size = Vector2( 128, 64 )
 focus/ignore_mouse = false
-focus/stop_mouse = false
+focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 304.0
+margin/top = 0.0
+margin/right = 432.0
+margin/bottom = 90.0
+
+[node name="settlement_house_metal" parent="panel/container/stats/stat2/Container1" instance=ExtResource( 5 )]
+
+centered = false
+
+[node name="Label2" type="Label" parent="panel/container/stats/stat2/Container1"]
+
+anchor/right = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
 margin/left = 0.0
-margin/top = 99.0
-margin/right = 896.0
-margin/bottom = 116.0
-custom_constants/separation = 32
-alignment = 1
-
-[node name="Label" type="Label" parent="panel/container/stats/stat4"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 355.0
-margin/top = 0.0
-margin/right = 467.0
-margin/bottom = 17.0
-text = "some stats"
+margin/top = 74.0
+margin/right = 0.0
+margin/bottom = 91.0
+text = "Kowal"
+align = 1
 uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Label1" type="Label" parent="panel/container/stats/stat4"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 499.0
-margin/top = 0.0
-margin/right = 541.0
-margin/bottom = 17.0
-custom_colors/font_color = Color( 0.270588, 0.156863, 0.235294, 1 )
-text = "1234"
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="stat5" type="HBoxContainer" parent="panel/container/stats"]
+[node name="Container2" type="Container" parent="panel/container/stats/stat2"]
 
 editor/display_folded = true
+rect/min_size = Vector2( 128, 64 )
 focus/ignore_mouse = false
-focus/stop_mouse = false
+focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 464.0
+margin/top = 0.0
+margin/right = 592.0
+margin/bottom = 90.0
+
+[node name="settlement_house_wood" parent="panel/container/stats/stat2/Container2" instance=ExtResource( 6 )]
+
+centered = false
+
+[node name="Label3" type="Label" parent="panel/container/stats/stat2/Container2"]
+
+anchor/right = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
 margin/left = 0.0
-margin/top = 132.0
-margin/right = 896.0
-margin/bottom = 149.0
-custom_constants/separation = 32
-alignment = 1
-
-[node name="Label" type="Label" parent="panel/container/stats/stat5"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 355.0
-margin/top = 0.0
-margin/right = 467.0
-margin/bottom = 17.0
-text = "some stats"
+margin/top = 74.0
+margin/right = 0.0
+margin/bottom = 91.0
+text = "Drwal"
+align = 1
 uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Label1" type="Label" parent="panel/container/stats/stat5"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 499.0
-margin/top = 0.0
-margin/right = 541.0
-margin/bottom = 17.0
-custom_colors/font_color = Color( 0.270588, 0.156863, 0.235294, 1 )
-text = "1234"
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="stat6" type="HBoxContainer" parent="panel/container/stats"]
+[node name="Container3" type="Container" parent="panel/container/stats/stat2"]
 
 editor/display_folded = true
+rect/min_size = Vector2( 128, 64 )
 focus/ignore_mouse = false
-focus/stop_mouse = false
+focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 624.0
+margin/top = 0.0
+margin/right = 752.0
+margin/bottom = 90.0
+
+[node name="settlement_house" parent="panel/container/stats/stat2/Container3" instance=ExtResource( 7 )]
+
+centered = false
+
+[node name="settlement_farm" parent="panel/container/stats/stat2/Container3" instance=ExtResource( 8 )]
+
+transform/pos = Vector2( 136, 42 )
+
+[node name="kura" parent="panel/container/stats/stat2/Container3" instance=ExtResource( 9 )]
+
+margin/left = 16.0
+margin/top = 34.0
+margin/right = 48.0
+margin/bottom = 66.0
+
+[node name="kura2" parent="panel/container/stats/stat2/Container3" instance=ExtResource( 9 )]
+
+margin/left = 128.0
+margin/top = 26.0
+margin/right = 160.0
+margin/bottom = 58.0
+
+[node name="kura1" parent="panel/container/stats/stat2/Container3" instance=ExtResource( 9 )]
+
+editor/display_folded = true
+margin/left = 72.0
+margin/top = 42.0
+margin/right = 104.0
+margin/bottom = 74.0
+
+[node name="Label4" type="Label" parent="panel/container/stats/stat2/Container3"]
+
+anchor/right = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
 margin/left = 0.0
-margin/top = 165.0
-margin/right = 896.0
-margin/bottom = 182.0
-custom_constants/separation = 32
-alignment = 1
-
-[node name="Label" type="Label" parent="panel/container/stats/stat6"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 355.0
-margin/top = 0.0
-margin/right = 467.0
-margin/bottom = 17.0
-text = "some stats"
-uppercase = true
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="Label1" type="Label" parent="panel/container/stats/stat6"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 499.0
-margin/top = 0.0
-margin/right = 541.0
-margin/bottom = 17.0
-custom_colors/font_color = Color( 0.270588, 0.156863, 0.235294, 1 )
-text = "1234"
+margin/top = 74.0
+margin/right = 0.0
+margin/bottom = 91.0
+text = "Farma"
+align = 1
 uppercase = true
 percent_visible = 1.0
 lines_skipped = 0
@@ -411,33 +332,17 @@ max_lines_visible = -1
 
 [node name="buttons" type="HBoxContainer" parent="panel/container"]
 
+rect/min_size = Vector2( 0, 90 )
 focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 344.0
+margin/top = 319.0
 margin/right = 896.0
-margin/bottom = 431.0
+margin/bottom = 409.0
 custom_constants/separation = 16
 alignment = 1
-
-[node name="Button" type="Button" parent="panel/container/buttons"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 16.0
-margin/top = 0.0
-margin/right = 202.0
-margin/bottom = 87.0
-disabled = true
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-text = "Ludność"
-flat = false
 
 [node name="Button1" type="Button" parent="panel/container/buttons"]
 
@@ -445,32 +350,31 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 218.0
+margin/left = 59.0
 margin/top = 0.0
-margin/right = 376.0
-margin/bottom = 87.0
-disabled = true
+margin/right = 316.0
+margin/bottom = 90.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Chaty"
+text = "Zabudowania"
 flat = false
 
-[node name="Button2" type="Button" parent="panel/container/buttons"]
+[node name="Button" type="Button" parent="panel/container/buttons"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 392.0
+margin/left = 332.0
 margin/top = 0.0
-margin/right = 562.0
-margin/bottom = 87.0
+margin/right = 518.0
+margin/bottom = 90.0
 disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Zasoby"
+text = "Ludność"
 flat = false
 
 [node name="exit_button" type="Button" parent="panel/container/buttons"]
@@ -479,10 +383,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 578.0
+margin/left = 534.0
 margin/top = 0.0
-margin/right = 880.0
-margin/bottom = 87.0
+margin/right = 836.0
+margin/bottom = 90.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
