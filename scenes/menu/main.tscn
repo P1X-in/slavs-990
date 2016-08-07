@@ -21,7 +21,7 @@ alignment = 0
 
 [node name="header" type="CenterContainer" parent="."]
 
-rect/min_size = Vector2( 0, 256 )
+rect/min_size = Vector2( 0, 212 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -29,7 +29,7 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
 margin/right = 896.0
-margin/bottom = 256.0
+margin/bottom = 212.0
 use_top_left = false
 
 [node name="logo" type="Container" parent="header"]
@@ -40,9 +40,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 448.0
-margin/top = 128.0
+margin/top = 106.0
 margin/right = 448.0
-margin/bottom = 128.0
+margin/bottom = 106.0
 
 [node name="logo" type="Sprite" parent="header/logo"]
 
@@ -56,9 +56,9 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 260.0
+margin/top = 216.0
 margin/right = 896.0
-margin/bottom = 438.0
+margin/bottom = 521.0
 use_top_left = false
 
 [node name="menu_container" type="VBoxContainer" parent="main"]
@@ -68,10 +68,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 320.0
+margin/left = 305.0
 margin/top = 0.0
-margin/right = 576.0
-margin/bottom = 178.0
+margin/right = 591.0
+margin/bottom = 305.0
 alignment = 0
 
 [node name="play_button" type="Button" parent="main/menu_container"]
@@ -82,7 +82,7 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 256.0
+margin/right = 286.0
 margin/bottom = 87.0
 toggle_mode = false
 enabled_focus_mode = 2
@@ -90,21 +90,32 @@ shortcut = null
 text = "GRAJ"
 flat = false
 
-[node name="credits_button" type="Button" parent="main/menu_container"]
+[node name="Container" type="Container" parent="main/menu_container"]
 
-visibility/visible = false
+rect/min_size = Vector2( 0, 32 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 91.0
-margin/right = 256.0
-margin/bottom = 178.0
+margin/right = 286.0
+margin/bottom = 123.0
+
+[node name="credits_button" type="Button" parent="main/menu_container"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 127.0
+margin/right = 286.0
+margin/bottom = 214.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "CREDITS"
+text = "podziękowania"
 flat = false
 
 [node name="quit_button" type="Button" parent="main/menu_container"]
@@ -114,9 +125,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 91.0
-margin/right = 256.0
-margin/bottom = 178.0
+margin/top = 218.0
+margin/right = 286.0
+margin/bottom = 305.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -131,9 +142,9 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 442.0
+margin/top = 525.0
 margin/right = 896.0
-margin/bottom = 506.0
+margin/bottom = 589.0
 use_top_left = false
 
 [node name="grass" type="Container" parent="footer"]

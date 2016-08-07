@@ -1,11 +1,8 @@
-[gd_scene load_steps=7 format=1]
+[gd_scene load_steps=4 format=1]
 
 [ext_resource path="res://themes/master.tres" type="Theme" id=1]
 [ext_resource path="res://assets/logo/sun.png" type="Texture" id=2]
 [ext_resource path="res://themes/font_h1.tres" type="Theme" id=3]
-[ext_resource path="res://scenes/entities/animals/wilk.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/entities/creatures/borowy.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/entities/creatures/cmuch.tscn" type="PackedScene" id=6]
 
 [node name="inspect" type="Control"]
 
@@ -57,9 +54,9 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 14.0
+margin/top = 70.0
 margin/right = 912.0
-margin/bottom = 50.0
+margin/bottom = 106.0
 custom_constants/separation = 128
 alignment = 1
 
@@ -71,9 +68,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 163.0
+margin/left = 87.0
 margin/top = 0.0
-margin/right = 253.0
+margin/right = 177.0
 margin/bottom = 36.0
 
 [node name="Sprite" type="Sprite" parent="panel/container/header/sun_left"]
@@ -90,11 +87,11 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
 theme/theme = ExtResource( 3 )
-margin/left = 381.0
+margin/left = 305.0
 margin/top = 0.0
-margin/right = 530.0
+margin/right = 607.0
 margin/bottom = 36.0
-text = "Borowy"
+text = "Podziękowania"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -107,9 +104,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 658.0
+margin/left = 735.0
 margin/top = 0.0
-margin/right = 748.0
+margin/right = 825.0
 margin/bottom = 36.0
 
 [node name="Sprite" type="Sprite" parent="panel/container/header/sun_right"]
@@ -126,14 +123,15 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 82.0
+margin/top = 138.0
 margin/right = 912.0
-margin/bottom = 338.0
+margin/bottom = 282.0
 custom_constants/separation = 16
 alignment = 0
 
 [node name="info" type="HBoxContainer" parent="panel/container/body"]
 
+rect/min_size = Vector2( 0, 64 )
 focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
@@ -141,100 +139,68 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
 margin/right = 912.0
-margin/bottom = 256.0
+margin/bottom = 64.0
 custom_constants/separation = 64
 alignment = 1
 
-[node name="avatars" type="Container" parent="panel/container/body/info"]
+[node name="Label" type="Label" parent="panel/container/body/info"]
 
-rect/min_size = Vector2( 128, 256 )
-focus/ignore_mouse = false
+focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 180.0
-margin/top = 0.0
-margin/right = 308.0
-margin/bottom = 256.0
-
-[node name="wilk" parent="panel/container/body/info/avatars" instance=ExtResource( 4 )]
-
-visibility/visible = false
-rect/scale = Vector2( 4, 4 )
-margin/top = 8.0
+size_flags/vertical = 0
+margin/left = 107.0
+margin/top = 23.0
+margin/right = 411.0
 margin/bottom = 40.0
+text = "Grand Beats Studio za muzykę"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
-[node name="borowy" parent="panel/container/body/info/avatars" instance=ExtResource( 5 )]
+[node name="Label1" type="Label" parent="panel/container/body/info"]
 
-rect/scale = Vector2( 4, 4 )
-margin/top = 120.0
-margin/bottom = 152.0
-
-[node name="cmuch" parent="panel/container/body/info/avatars" instance=ExtResource( 6 )]
-
-visibility/visible = false
-rect/scale = Vector2( 4, 4 )
-margin/top = 8.0
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 475.0
+margin/top = 23.0
+margin/right = 804.0
 margin/bottom = 40.0
+text = "DawnBringer za paletę kolorów"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
-[node name="Container" type="Container" parent="panel/container/body/info"]
+[node name="info1" type="HBoxContainer" parent="panel/container/body"]
 
-rect/min_size = Vector2( 360, 0 )
+rect/min_size = Vector2( 0, 64 )
 focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 372.0
-margin/top = 0.0
-margin/right = 732.0
-margin/bottom = 256.0
-
-[node name="borowy" type="RichTextLabel" parent="panel/container/body/info/Container"]
-
-rect/min_size = Vector2( 360, 0 )
-focus/ignore_mouse = false
-focus/stop_mouse = true
+focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 0.0
-margin/right = 360.0
-margin/bottom = 256.0
-bbcode/enabled = false
-bbcode/bbcode = "Borowy zwany leszym, był prastarym puszczańskim duchem, opiekunem kniei i pasterzem leśnych zwierząt.\n\nZazdroścnie strzegł własnych tajemnic przed okiem intruza. Niechcianym gościom plątał ścieżki, rzucał pod nogi kłodyu bądź zmieniał sie w niedźwiedzia i straszył ich okropnym rykiem."
-visible_characters = -1
+margin/top = 80.0
+margin/right = 912.0
+margin/bottom = 144.0
+custom_constants/separation = 64
+alignment = 1
 
-[node name="wilk" type="RichTextLabel" parent="panel/container/body/info/Container"]
+[node name="Label" type="Label" parent="panel/container/body/info1"]
 
-visibility/visible = false
-rect/min_size = Vector2( 360, 0 )
-focus/ignore_mouse = false
+focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 360.0
-margin/bottom = 256.0
-bbcode/enabled = false
-bbcode/bbcode = "Wilk jaki jest każdy widzi."
-visible_characters = -1
-
-[node name="cmuch" type="RichTextLabel" parent="panel/container/body/info/Container"]
-
-visibility/visible = false
-rect/min_size = Vector2( 360, 0 )
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 360.0
-margin/bottom = 256.0
-bbcode/enabled = false
-bbcode/bbcode = "Ćmuch to tajemnicza istota, której nikt nigdy niue widział osobiście.\n\nTen zamieskujący w sąsiedztwie jezior, stawów i bagien stworek podobno był wielkości psa, podobno sylwetką przyopominał żabę."
-visible_characters = -1
+size_flags/vertical = 0
+margin/left = 243.0
+margin/top = 23.0
+margin/right = 669.0
+margin/bottom = 40.0
+text = "Zespół Slavic Game Jam za wspaniały dżem"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
 [node name="footer" type="HBoxContainer" parent="panel/container"]
 
@@ -243,9 +209,9 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 370.0
+margin/top = 314.0
 margin/right = 912.0
-margin/bottom = 457.0
+margin/bottom = 401.0
 custom_constants/separation = 16
 alignment = 1
 
@@ -255,14 +221,14 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 305.0
+margin/left = 365.0
 margin/top = 0.0
-margin/right = 607.0
+margin/right = 547.0
 margin/bottom = 87.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
-text = "Powrót do mapy"
+text = "Zamknij"
 flat = false
 
 
