@@ -193,7 +193,6 @@ margin/bottom = 256.0
 
 [node name="borowy" type="RichTextLabel" parent="panel/container/body/info/Container"]
 
-visibility/visible = false
 rect/min_size = Vector2( 360, 0 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
@@ -220,11 +219,12 @@ margin/top = 0.0
 margin/right = 360.0
 margin/bottom = 256.0
 bbcode/enabled = false
-bbcode/bbcode = "Wilk, jaki jest, każdy widzi."
+bbcode/bbcode = "Wilk występuje w grupach liczących od trzech do aż dziesięciu osobników. \nPoluje zwykle na ścierwojady, zwierzęta gospodarskie (np. kury) oraz jelenie.\n\nW trakcie walki wyje, powiadamiając o zagrożeniu inne wilki. "
 visible_characters = -1
 
 [node name="cmuch" type="RichTextLabel" parent="panel/container/body/info/Container"]
 
+visibility/visible = false
 rect/min_size = Vector2( 360, 0 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
