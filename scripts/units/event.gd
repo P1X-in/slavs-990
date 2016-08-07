@@ -23,6 +23,10 @@ func attach():
     self.bag.map.objects_mount.add_child(self.event_scene)
     self.event_scene.hide()
 
+func remove():
+    self.bag.map.objects_mount.remove_child(self.event_scene)
+    self.current_tile.event = null
+
 func reveal():
     self.event_scene.show()
 

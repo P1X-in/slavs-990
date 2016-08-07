@@ -61,7 +61,7 @@ func progress_log():
 
     if self.iteration == self.current_log.size():
         self.log_in_progress = false
-        self.show_loot()
+        self.finish_battle()
         return
 
     var text = self.current_log[self.iteration]
@@ -72,6 +72,15 @@ func progress_log():
     self.iteration = self.iteration + 1
 
     self.bag.timers.set_timeout(self.LOG_TIME_INTERVAL, self, 'progress_log')
+
+func finish_battle():
+    self.show_loot()
+
+    if self.last_winner == 0:
+        self.last_event.remove()
+    else:
+        self.bag.party.go_to_field(self.bag.abstract_map.start_tile)
+        self.bag.camera.pan_to_map(self.bag.abstract_map.start_tile.position)
 
 func show_loot():
     var loot = []
@@ -90,7 +99,7 @@ func skip_log():
         return
 
     self.log_in_progress = false
-    self.show_loot()
+    self.finish_battle()
 
 func show_enemy_icon(type):
     self.icon_wolf.hide()

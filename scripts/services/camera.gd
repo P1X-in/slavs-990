@@ -32,10 +32,12 @@ func _init_bag(bag):
 func attach():
     self.bag.processing.register(self)
     self.camera.make_current()
+    self.unlock()
 
 func detach():
     self.bag.processing.remove(self)
     self.dragging = false
+    self.lock()
 
 func get_pos():
     return self.camera.get_offset()
