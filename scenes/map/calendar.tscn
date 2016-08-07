@@ -21,9 +21,8 @@ texture = ExtResource( 1 )
 centered = false
 vframes = 2
 hframes = 4
-frame = 4
 
-[node name="Label" type="Label" parent="."]
+[node name="day" type="Label" parent="."]
 
 anchor/top = 1
 anchor/right = 1
@@ -33,10 +32,29 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 0.0
-margin/top = 36.0
+margin/top = 40.0
 margin/right = 0.0
-margin/bottom = 22.0
-text = "Sierpień"
+margin/bottom = 26.0
+text = "day 1"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="description" type="Label" parent="."]
+
+anchor/top = 1
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 24.0
+margin/right = 0.0
+margin/bottom = 10.0
+text = "description"
 align = 1
 percent_visible = 1.0
 lines_skipped = 0
