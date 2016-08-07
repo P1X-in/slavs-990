@@ -96,7 +96,7 @@ size_flags/vertical = 0
 theme/theme = ExtResource( 3 )
 margin/left = 355.0
 margin/top = 0.0
-margin/right = 556.0
+margin/right = 557.0
 margin/bottom = 36.0
 text = "Potyczka"
 percent_visible = 1.0
@@ -111,9 +111,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 684.0
+margin/left = 685.0
 margin/top = 0.0
-margin/right = 774.0
+margin/right = 775.0
 margin/bottom = 36.0
 
 [node name="Sprite" type="Sprite" parent="panel/container/header/sun_right"]
@@ -190,7 +190,7 @@ margin/left = 0.0
 margin/top = 162.0
 margin/right = 128.0
 margin/bottom = 226.0
-text = "Moje Imię Nazwisko"
+text = "DRUŻYNA"
 align = 1
 autowrap = true
 percent_visible = 1.0
@@ -312,7 +312,7 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 370.0
 margin/right = 912.0
-margin/bottom = 457.0
+margin/bottom = 458.0
 custom_constants/separation = 16
 alignment = 1
 
@@ -323,10 +323,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 41.0
+margin/left = 40.0
 margin/top = 0.0
-margin/right = 553.0
-margin/bottom = 87.0
+margin/right = 552.0
+margin/bottom = 88.0
 
 [node name="background" type="Patch9Frame" parent="panel/container/footer/rewards"]
 
@@ -366,10 +366,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 569.0
+margin/left = 568.0
 margin/top = 0.0
 margin/right = 871.0
-margin/bottom = 87.0
+margin/bottom = 88.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
