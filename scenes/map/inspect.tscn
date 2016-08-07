@@ -251,6 +251,45 @@ margin/bottom = 457.0
 custom_constants/separation = 16
 alignment = 1
 
+[node name="Container" type="Container" parent="panel/container/footer"]
+
+rect/min_size = Vector2( 256, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 33.0
+margin/top = 0.0
+margin/right = 289.0
+margin/bottom = 87.0
+
+[node name="Sprite1" type="Sprite" parent="panel/container/footer/Container"]
+
+transform/pos = Vector2( -88, -146 )
+transform/scale = Vector2( 4, 4 )
+texture = ExtResource( 7 )
+centered = false
+region = true
+region_rect = Rect2( 64, 0, 64, 64 )
+
+[node name="Sprite2" type="Sprite" parent="panel/container/footer/Container"]
+
+transform/pos = Vector2( -8, 6 )
+transform/scale = Vector2( 4, 4 )
+texture = ExtResource( 7 )
+centered = false
+region = true
+region_rect = Rect2( 64, 96, 64, 32 )
+
+[node name="Sprite3" type="Sprite" parent="panel/container/footer/Container"]
+
+transform/pos = Vector2( -40, 6 )
+transform/scale = Vector2( 4, 4 )
+texture = ExtResource( 7 )
+centered = false
+region = true
+region_rect = Rect2( 0, 96, 64, 32 )
+
 [node name="exit_button" type="Button" parent="panel/container/footer"]
 
 focus/ignore_mouse = false
@@ -267,45 +306,30 @@ shortcut = null
 text = "Powrót do mapy"
 flat = false
 
-[node name="Sprite" type="Sprite" parent="panel/container/footer"]
+[node name="Container 2" type="Container" parent="panel/container/footer"]
 
-transform/pos = Vector2( 688, -154 )
+rect/min_size = Vector2( 256, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 623.0
+margin/top = 0.0
+margin/right = 879.0
+margin/bottom = 87.0
+
+[node name="Sprite" type="Sprite" parent="panel/container/footer/Container 2"]
+
+transform/pos = Vector2( 65, -154 )
 transform/scale = Vector2( 4, 4 )
 texture = ExtResource( 7 )
 centered = false
 region = true
 region_rect = Rect2( 0, 0, 64, 64 )
 
-[node name="Sprite1" type="Sprite" parent="panel/container/footer"]
+[node name="Sprite4" type="Sprite" parent="panel/container/footer/Container 2"]
 
-transform/pos = Vector2( -32, -146 )
-transform/scale = Vector2( 4, 4 )
-texture = ExtResource( 7 )
-centered = false
-region = true
-region_rect = Rect2( 64, 0, 64, 64 )
-
-[node name="Sprite2" type="Sprite" parent="panel/container/footer"]
-
-transform/pos = Vector2( 32, 6 )
-transform/scale = Vector2( 4, 4 )
-texture = ExtResource( 7 )
-centered = false
-region = true
-region_rect = Rect2( 64, 96, 64, 32 )
-
-[node name="Sprite3" type="Sprite" parent="panel/container/footer"]
-
-transform/pos = Vector2( -104, 6 )
-transform/scale = Vector2( 4, 4 )
-texture = ExtResource( 7 )
-centered = false
-region = true
-region_rect = Rect2( 0, 96, 64, 32 )
-
-[node name="Sprite4" type="Sprite" parent="panel/container/footer"]
-
-transform/pos = Vector2( 624, -2 )
+transform/pos = Vector2( 1, -2 )
 transform/scale = Vector2( 4, 4 )
 texture = ExtResource( 7 )
 centered = false
@@ -313,11 +337,11 @@ flip_h = true
 region = true
 region_rect = Rect2( 0, 96, 64, 32 )
 
-[node name="Sprite 2" type="Sprite" parent="panel/container/footer"]
+[node name="Sprite 2" type="Sprite" parent="panel/container/footer/Container 2"]
 
-transform/pos = Vector2( 800, -8 )
+transform/pos = Vector2( 177, -8 )
 
-[node name="kura" parent="panel/container/footer/Sprite 2" instance=ExtResource( 8 )]
+[node name="kura" parent="panel/container/footer/Container 2/Sprite 2" instance=ExtResource( 8 )]
 
 rect/min_size = Vector2( 64, 64 )
 rect/scale = Vector2( 4, 4 )
