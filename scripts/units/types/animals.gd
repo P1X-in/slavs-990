@@ -3,9 +3,9 @@ var units = {
         'name': 'wilk',
         'family' : 'wilki',
         'description': 'duże i gryzie',
-        'hp': 8,
+        'hp': 5,
         'resistances' : {
-            'normal' : {'threshold' : 2, 'resistance': 0.10}
+            'normal' : {'threshold' : 0, 'resistance': 0.10}
             # 'slashing'
             # 'bludgeoning'
             # 'piercing'

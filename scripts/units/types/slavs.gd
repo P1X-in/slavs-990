@@ -5,10 +5,10 @@ var units = {
         'description': '',
         'hp': 60,
         'resistances' : {
-            'normal' : {'threshold' : 5, 'resistance': 0.20}
+            'normal' : {'threshold' : 1, 'resistance': 0.20}
         },
         'attacks' : {
-            'hit' : {'damage' : 6, 'skill' : 0.70, 'critical': 0.05}
+            'hit' : {'damage' : 7, 'skill' : 0.70, 'critical': 0.05}
         },
         'loot' : {
         },
@@ -25,7 +25,7 @@ var units = {
         'description': '',
         'hp': 60,
         'resistances' : {
-            'normal' : {'threshold' : 3, 'resistance': 0.20}
+            'normal' : {'threshold' : 1, 'resistance': 0.20}
         },
         'attacks' : {
             'hit' : {'damage' : 5, 'skill' : 0.80, 'critical': 0.08}
@@ -45,7 +45,7 @@ var units = {
         'description': '',
         'hp': 60,
         'resistances' : {
-            'normal' : {'threshold' : 6, 'resistance': 0.30}
+            'normal' : {'threshold' : 2, 'resistance': 0.30}
         },
         'attacks' : {
             'hit' : {'damage' : 5, 'skill' : 0.75, 'critical': 0.05}
@@ -65,10 +65,10 @@ var units = {
         'description': '',
         'hp': 60,
         'resistances' : {
-            'normal' : {'threshold' : 5, 'resistance': 0.30}
+            'normal' : {'threshold' : 2, 'resistance': 0.30}
         },
         'attacks' : {
-            'hit' : {'damage' : 5, 'skill' : 0.85, 'critical': 0.10}
+            'hit' : {'damage' : 6, 'skill' : 0.85, 'critical': 0.10}
         },
         'loot' : {
         },

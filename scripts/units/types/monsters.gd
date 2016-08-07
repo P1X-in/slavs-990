@@ -26,9 +26,9 @@ var units = {
         'name': 'borowy',
         'family' : 'borowe',
         'description': 'małe i gryzie',
-        'hp': 20,
+        'hp': 12,
         'resistances' : {
-            'normal' : {'threshold' : 2, 'resistance': 0.20}
+            'normal' : {'threshold' : 1, 'resistance': 0.20}
             # 'slashing'
             # 'bludgeoning'
             # 'piercing'
@@ -50,9 +50,9 @@ var units = {
         'name': 'cmoch',
         'family' : 'cmuchy',
         'description': 'małe i gryzie',
-        'hp': 12,
+        'hp': 8,
         'resistances' : {
-            'normal' : {'threshold' : 1, 'resistance': 0.10}
+            'normal' : {'threshold' : 0, 'resistance': 0.10}
             # 'slashing'
             # 'bludgeoning'
             # 'piercing'
