@@ -11,6 +11,7 @@ var current_tile = null
 
 var units = null
 var loot = null
+var enemy_icon_type
 
 func _init_bag(bag):
     self.bag = bag

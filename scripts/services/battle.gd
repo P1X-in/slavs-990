@@ -5,9 +5,12 @@ const LOG_TIME_INTERVAL = 0.5
 var exit_button
 
 var enemy_label
-
 var combat_log
 var reward_bar
+
+var icon_wolf
+var icon_cmuch
+var icon_borowy
 
 var current_log
 var log_in_progress = false
@@ -29,12 +32,17 @@ func bind():
 
     self.combat_log.set_scroll_follow(true)
 
+    self.icon_wolf = self.screen_scene.get_node('panel/container/body/log/enemy/Container/wilk')
+    self.icon_cmuch = self.screen_scene.get_node('panel/container/body/log/enemy/Container/cmuch')
+    self.icon_borowy = self.screen_scene.get_node('panel/container/body/log/enemy/Container/borowy')
+
 func _exit_button_pressed():
     self.skip_log()
     self.detach()
     self.bag.board.attach()
 
 func battle_event(event):
+    self.show_enemy_icon(event.enemy_icon_type)
 
     self.last_event = event
     self.last_winner = self.bag.battle_resolver.resolve_fight(self.bag.party.units + event.units)
@@ -83,3 +91,15 @@ func skip_log():
 
     self.log_in_progress = false
     self.show_loot()
+
+func show_enemy_icon(type):
+    self.icon_wolf.hide()
+    self.icon_cmuch.hide()
+    self.icon_borowy.hide()
+
+    if type == self.bag.abstract_map.TILE_FOREST_ANIMAL:
+        self.icon_wolf.show()
+    if type == self.bag.abstract_map.TILE_WATER_CREATURE:
+        self.icon_cmuch.show()
+    if type == self.bag.abstract_map.TILE_FOREST_CREATURE:
+        self.icon_borowy.show()
