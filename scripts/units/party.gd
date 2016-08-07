@@ -3,6 +3,7 @@ const MOVE_RANGE = 8
 
 var party_scene = preload("res://scenes/entities/party.tscn").instance()
 var inner_selector
+var party_avatar
 
 var bag
 
@@ -15,6 +16,7 @@ var units
 
 func _init():
     self.inner_selector = self.party_scene.get_node('selector')
+    self.party_avatar = self.party_scene.get_node('slav1/slav')
     self.unselect()
 
 func _init_bag(bag):
@@ -29,6 +31,11 @@ func set_map_pos(position):
     self.party_scene.set_pos(global_position)
     if self.current_tile:
         self.current_tile.party = null
+        if position.x < self.current_tile.position.x:
+            self.party_avatar.set_flip_h(true)
+        if position.x > self.current_tile.position.x:
+            self.party_avatar.set_flip_h(false)
+
     self.current_tile = self.bag.abstract_map.get_field(position)
     self.current_tile.party = self
 
