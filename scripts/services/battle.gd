@@ -2,6 +2,15 @@ extends "res://scripts/services/abstract_screen.gd"
 
 const LOG_TIME_INTERVAL = 0.5
 
+var loot_templates = {
+    'amber' : preload("res://scenes/map/resources/amber.tscn"),
+    'leather' : preload("res://scenes/map/resources/leather.tscn"),
+    'meat' : preload("res://scenes/map/resources/meat.tscn"),
+    'metal' : preload("res://scenes/map/resources/metal.tscn"),
+    'wheat' : preload("res://scenes/map/resources/wheat.tscn"),
+    'wood' : preload("res://scenes/map/resources/wood.tscn"),
+}
+
 var exit_button
 
 var enemy_label
@@ -17,6 +26,8 @@ var log_in_progress = false
 var iteration = 0
 var last_winner
 var last_event
+
+var loot_icons = []
 
 func _init():
     self.screen_scene = preload("res://scenes/map/battle.tscn").instance()
@@ -43,6 +54,7 @@ func _exit_button_pressed():
 
 func battle_event(event):
     self.combat_log.clear()
+    self.clear_loot()
     self.show_enemy_icon(event.enemy_icon_type)
 
     self.last_event = event
@@ -85,15 +97,24 @@ func finish_battle():
 
 func show_loot():
     var loot = []
+    var loot_icon
 
     if self.last_winner == 0:
         loot = self.bag.item_factory.generate_for_opponents(self.last_event.units)
         for name in loot.keys():
             self.bag.resources.add(name, loot[name])
-            #TODO add loot named <name> with quantity <loot[name]>
+            if self.loot_templates.has(name):
+                loot_icon = self.loot_templates[name].instance()
+                self.reward_bar.add_child(loot_icon)
+                self.loot_icons.append(loot_icon)
+                loot_icon.get_node('value').set_text(str(loot[name]))
 
         self.bag.hud.refresh_resources()
-        #TODO - defeated enemy remove
+
+func clear_loot():
+    for loot in self.loot_icons:
+        self.reward_bar.remove_child(loot)
+    self.loot_icons = []
 
 func skip_log():
     if not self.log_in_progress:
