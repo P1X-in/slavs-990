@@ -5,7 +5,7 @@
 [ext_resource path="res://themes/font_h1.tres" type="Theme" id=3]
 [ext_resource path="res://scenes/entities/slavs/slav1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/gui/panel_gray.png" type="Texture" id=5]
-[ext_resource path="res://themes/font_14.tres" type="Theme" id=6]
+[ext_resource path="res://themes/font_12.tres" type="Theme" id=6]
 [ext_resource path="res://scenes/entities/animals/wilk.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/entities/creatures/borowy.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/entities/creatures/cmuch.tscn" type="PackedScene" id=9]
@@ -61,9 +61,9 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 14.0
+margin/top = 0.0
 margin/right = 912.0
-margin/bottom = 50.0
+margin/bottom = 36.0
 custom_constants/separation = 128
 alignment = 1
 
@@ -130,9 +130,9 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 82.0
+margin/top = 68.0
 margin/right = 912.0
-margin/bottom = 338.0
+margin/bottom = 580.0
 custom_constants/separation = 16
 alignment = 0
 
@@ -145,7 +145,7 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
 margin/right = 912.0
-margin/bottom = 256.0
+margin/bottom = 512.0
 custom_constants/separation = 8
 alignment = 1
 
@@ -159,7 +159,7 @@ size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
 margin/right = 128.0
-margin/bottom = 256.0
+margin/bottom = 512.0
 alignment = 1
 
 [node name="Container" type="Container" parent="panel/container/body/log/ally"]
@@ -171,9 +171,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 30.0
+margin/top = 158.0
 margin/right = 128.0
-margin/bottom = 158.0
+margin/bottom = 286.0
 
 [node name="slav1" parent="panel/container/body/log/ally/Container" instance=ExtResource( 4 )]
 
@@ -187,9 +187,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 0.0
-margin/top = 162.0
+margin/top = 290.0
 margin/right = 128.0
-margin/bottom = 226.0
+margin/bottom = 354.0
 text = "DRUŻYNA"
 align = 1
 autowrap = true
@@ -199,7 +199,7 @@ max_lines_visible = -1
 
 [node name="container" type="Container" parent="panel/container/body/log"]
 
-rect/min_size = Vector2( 640, 256 )
+rect/min_size = Vector2( 640, 512 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
@@ -207,7 +207,7 @@ size_flags/vertical = 2
 margin/left = 136.0
 margin/top = 0.0
 margin/right = 776.0
-margin/bottom = 256.0
+margin/bottom = 512.0
 
 [node name="background" type="Patch9Frame" parent="panel/container/body/log/container"]
 
@@ -255,7 +255,7 @@ size_flags/vertical = 2
 margin/left = 784.0
 margin/top = 0.0
 margin/right = 912.0
-margin/bottom = 256.0
+margin/bottom = 512.0
 alignment = 1
 
 [node name="Container" type="Container" parent="panel/container/body/log/enemy"]
@@ -266,9 +266,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 30.0
+margin/top = 158.0
 margin/right = 128.0
-margin/bottom = 158.0
+margin/bottom = 286.0
 
 [node name="wilk" parent="panel/container/body/log/enemy/Container" instance=ExtResource( 7 )]
 
@@ -293,9 +293,9 @@ focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 0.0
-margin/top = 162.0
+margin/top = 290.0
 margin/right = 128.0
-margin/bottom = 226.0
+margin/bottom = 354.0
 text = "Moje Imię Nazwisko"
 align = 1
 autowrap = true
@@ -310,9 +310,9 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 370.0
+margin/top = 612.0
 margin/right = 912.0
-margin/bottom = 457.0
+margin/bottom = 699.0
 custom_constants/separation = 16
 alignment = 1
 
