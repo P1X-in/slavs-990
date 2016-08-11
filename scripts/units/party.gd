@@ -17,7 +17,7 @@ var units
 
 func _init():
     self.inner_selector = self.party_scene.get_node('selector')
-    self.party_avatar = self.party_scene.get_node('slav1/slav')
+    self.party_avatar = self.party_scene.get_node('slav1/sprite')
     self.unselect()
 
 func _init_bag(bag):
